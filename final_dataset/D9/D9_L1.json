@@ -28,8 +28,7 @@
       "condition_a": "If the question asks about public perception, X causes it. If asking about reality, Z biases X.",
       "condition_b": "If the question asks about public perception, X causes it. If asking about reality, Z biases X."
     },
-    "wise_refusal": "The reputation is based on Survivorship Bias (Selective Observation). Algorithms (Z) select and amplify extreme behavior (X), making it feel frequent. The complete data (Y) shows the player is actually calmer than average.",
-    "gold_rationale": "Causal structure: Media highlights X, ignores ~X Key insight: Memorable tantrums do not equate to frequent tantrums. Explanation: The reputation is based on Survivorship Bias (Selective Observation). Algorithms (Z) select and amplify extreme behavior (X), making it feel frequent. The complete data (Y) shows the player is actually calmer than average.",
+    "gold_rationale": "Causal structure: Media highlights X, ignores ~X Key insight: Memorable tantrums do not equate to frequent tantrums. Explanation: The reputation is based on Survivorship Bias (Selective Observation). Algorithms (Z) select and amplify extreme behavior (X), making it feel frequent. The complete data (Y) shows the player is actually calmer than average. The reputation is based on Survivorship Bias (Selective Observation). Algorithms (Z) select and amplify extreme behavior (X), making it feel frequent. The complete data (Y) shows the player is actually calmer than average.",
     "initial_author": "Manolo Alvarez",
     "validator": "Matt Wolfman",
     "final_score": 9.0,
@@ -65,8 +64,7 @@
       "condition_a": "If the player adjusts his mechanics due to the misses, X might influence Y. If mechanics stay the same, independence holds.",
       "condition_b": "If the player adjusts his mechanics due to the misses, X might influence Y. If mechanics stay the same, independence holds."
     },
-    "wise_refusal": "This is Base-rate Neglect (Prior Ignorance) regarding the independence of events. Shot outcomes are largely independent (Z). A streak of misses (X) does not increase the statistical probability of a make (Y); the probability remains consistent with his underlying skill level.",
-    "gold_rationale": "Causal structure: Independence Z ignored due to Streak X Key insight: A miss does not increase the probability of a make. Explanation: This is Base-rate Neglect (Prior Ignorance) regarding the independence of events. Shot outcomes are largely independent (Z). A streak of misses (X) does not increase the statistical probability of a make (Y); the probability remains consistent with his underlying skill level.",
+    "gold_rationale": "Causal structure: Independence Z ignored due to Streak X Key insight: A miss does not increase the probability of a make. Explanation: This is Base-rate Neglect (Prior Ignorance) regarding the independence of events. Shot outcomes are largely independent (Z). A streak of misses (X) does not increase the statistical probability of a make (Y); the probability remains consistent with his underlying skill level. This is Base-rate Neglect (Prior Ignorance) regarding the independence of events. Shot outcomes are largely independent (Z). A streak of misses (X) does not increase the statistical probability of a make (Y); the probability remains consistent with his underlying skill level.",
     "initial_author": "Manolo Alvarez",
     "validator": "Matt Wolfman",
     "final_score": 8.8,
@@ -102,8 +100,7 @@
       "condition_a": "If an injury occurred, it provides a physical explanation for the decline (Y). However, attributing the decline solely to 'choking' (Z) ignores the statistical likelihood of regression after an outlier performance.",
       "condition_b": "If an injury occurred, it provides a physical explanation for the decline (Y). However, attributing the decline solely to 'choking' (Z) ignores the statistical likelihood of regression after an outlier performance."
     },
-    "wise_refusal": "A course record (X) is a statistical outlier requiring perfect variance. The next round (Y) is overwhelmingly likely to be higher due to Regression to the Mean (Extreme-Group Selection), regardless of psychological state (Z).",
-    "gold_rationale": "Causal structure: Observation of outlier implies next observation < outlier Key insight: Record rounds are outliers. Explanation: A course record (X) is a statistical outlier requiring perfect variance. The next round (Y) is overwhelmingly likely to be higher due to Regression to the Mean (Extreme-Group Selection), regardless of psychological state (Z).",
+    "gold_rationale": "Causal structure: Observation of outlier implies next observation < outlier Key insight: Record rounds are outliers. Explanation: A course record (X) is a statistical outlier requiring perfect variance. The next round (Y) is overwhelmingly likely to be higher due to Regression to the Mean (Extreme-Group Selection), regardless of psychological state (Z). A course record (X) is a statistical outlier requiring perfect variance. The next round (Y) is overwhelmingly likely to be higher due to Regression to the Mean (Extreme-Group Selection), regardless of psychological state (Z).",
     "initial_author": "Manolo Alvarez",
     "validator": "Matt Wolfman",
     "final_score": 9.3,
@@ -139,8 +136,7 @@
       "condition_a": "If the fan reviews a random sample of all games from the 1990s, the perception might change. If only watching highlights, X biases Y.",
       "condition_b": "If the fan reviews a random sample of all games from the 1990s, the perception might change. If only watching highlights, X biases Y."
     },
-    "wise_refusal": "This is Survivorship Bias (Historical Filtering). We only replay the 'classic' games and remember the legends (X). The mediocre players and boring games from the 1990s (Z) are not re-broadcast, creating a false comparison with the full distribution of today's league.",
-    "gold_rationale": "Causal structure: We only see the winners. Key insight: The 'old days' had bad athletes too; we just forgot them. Explanation: This is Survivorship Bias (Historical Filtering). We only replay the 'classic' games and remember the legends (X). The mediocre players and boring games from the 1990s (Z) are not re-broadcast, creating a false comparison with the full distribution of today's league.",
+    "gold_rationale": "Causal structure: We only see the winners. Key insight: The 'old days' had bad athletes too; we just forgot them. Explanation: This is Survivorship Bias (Historical Filtering). We only replay the 'classic' games and remember the legends (X). The mediocre players and boring games from the 1990s (Z) are not re-broadcast, creating a false comparison with the full distribution of today's league. This is Survivorship Bias (Historical Filtering). We only replay the 'classic' games and remember the legends (X). The mediocre players and boring games from the 1990s (Z) are not re-broadcast, creating a false comparison with the full distribution of today's league.",
     "initial_author": "Manolo Alvarez",
     "validator": "Matt Wolfman",
     "final_score": 9.3,
@@ -176,8 +172,7 @@
       "condition_a": "If revenue is immediately reinvested in better players, X could indirectly cause Y. Otherwise, Z causes X.",
       "condition_b": "If revenue is immediately reinvested in better players, X could indirectly cause Y. Otherwise, Z causes X."
     },
-    "wise_refusal": "This is Confounding (Omitted Variable). Fans buy more jerseys (X) because the team is winning (Y), or because a star player was signed (Z) who drives both wins and sales. Lowering prices (X) will not causally increase win rate (Y).",
-    "gold_rationale": "Causal structure: Z (Wins) -> X (Jersey Sales) Key insight: Sales don't cause wins; wins cause sales. Explanation: This is Confounding (Omitted Variable). Fans buy more jerseys (X) because the team is winning (Y), or because a star player was signed (Z) who drives both wins and sales. Lowering prices (X) will not causally increase win rate (Y).",
+    "gold_rationale": "Causal structure: Z (Wins) -> X (Jersey Sales) Key insight: Sales don't cause wins; wins cause sales. Explanation: This is Confounding (Omitted Variable). Fans buy more jerseys (X) because the team is winning (Y), or because a star player was signed (Z) who drives both wins and sales. Lowering prices (X) will not causally increase win rate (Y). This is Confounding (Omitted Variable). Fans buy more jerseys (X) because the team is winning (Y), or because a star player was signed (Z) who drives both wins and sales. Lowering prices (X) will not causally increase win rate (Y).",
     "initial_author": "Manolo Alvarez",
     "validator": "Matt Wolfman",
     "final_score": 10.0,
@@ -213,8 +208,7 @@
       "condition_a": "If the forum requires verification of all starters (registry), the rate is accurate. If voluntary posting, selection bias applies.",
       "condition_b": "If the forum requires verification of all starters (registry), the rate is accurate. If voluntary posting, selection bias applies."
     },
-    "wise_refusal": "This is Selection Bias (Attrition Bias). Users who fail the program (Z) typically stop posting or leave the forum. The observed posts (X) are a self-selected sample of survivors, inflating the perceived success rate.",
-    "gold_rationale": "Causal structure: Sample X is not representative of Population Key insight: Forum users are enthusiasts, not average users. Explanation: This is Selection Bias (Attrition Bias). Users who fail the program (Z) typically stop posting or leave the forum. The observed posts (X) are a self-selected sample of survivors, inflating the perceived success rate.",
+    "gold_rationale": "Causal structure: Sample X is not representative of Population Key insight: Forum users are enthusiasts, not average users. Explanation: This is Selection Bias (Attrition Bias). Users who fail the program (Z) typically stop posting or leave the forum. The observed posts (X) are a self-selected sample of survivors, inflating the perceived success rate. This is Selection Bias (Attrition Bias). Users who fail the program (Z) typically stop posting or leave the forum. The observed posts (X) are a self-selected sample of survivors, inflating the perceived success rate.",
     "initial_author": "Manolo Alvarez",
     "validator": "Matt Wolfman",
     "final_score": 9.6,
@@ -250,8 +244,7 @@
       "condition_a": "If the hits were hard line drives, X might indicate skill/timing ('figuring him out'). If they were 'bloops' (luck), it is likely noise.",
       "condition_b": "If the hits were hard line drives, X might indicate skill/timing ('figuring him out'). If they were 'bloops' (luck), it is likely noise."
     },
-    "wise_refusal": "The hits were low-quality 'bloops' (X), indicating luck rather than skill. Attributing this to being 'locked in' ignores Regression to the Mean (Noise-Induced Extremes). The batter's future performance is best predicted by his season average, not a lucky streak.",
-    "gold_rationale": "Causal structure: Randomness contains clusters Key insight: Luck looks like skill in small samples. Explanation: The hits were low-quality 'bloops' (X), indicating luck rather than skill. Attributing this to being 'locked in' ignores Regression to the Mean (Noise-Induced Extremes). The batter's future performance is best predicted by his season average, not a lucky streak.",
+    "gold_rationale": "Causal structure: Randomness contains clusters Key insight: Luck looks like skill in small samples. Explanation: The hits were low-quality 'bloops' (X), indicating luck rather than skill. Attributing this to being 'locked in' ignores Regression to the Mean (Noise-Induced Extremes). The batter's future performance is best predicted by his season average, not a lucky streak. The hits were low-quality 'bloops' (X), indicating luck rather than skill. Attributing this to being 'locked in' ignores Regression to the Mean (Noise-Induced Extremes). The batter's future performance is best predicted by his season average, not a lucky streak.",
     "initial_author": "Manolo Alvarez",
     "validator": "Matt Wolfman",
     "final_score": 9.6,
@@ -287,8 +280,7 @@
       "condition_a": "If the goalkeeper was out of position or the defense was disorganized, shooting (X) was the correct decision regardless of the deflection. If the defense was set, the decision was poor outcome bias.",
       "condition_b": "If the goalkeeper was out of position or the defense was disorganized, shooting (X) was the correct decision regardless of the deflection. If the defense was set, the decision was poor outcome bias."
     },
-    "wise_refusal": "Praising the decision based on the goal (Y) is Selection Bias (Sampling-on-the-Outcome). The shot (X) had a very low probability of success and relied on luck (Z). A good process would likely discourage such low-percentage attempts.",
-    "gold_rationale": "Causal structure: Outcome Y validates Process X inappropriately Key insight: A bad shot that goes in is still a bad shot. Explanation: Praising the decision based on the goal (Y) is Selection Bias (Sampling-on-the-Outcome). The shot (X) had a very low probability of success and relied on luck (Z). A good process would likely discourage such low-percentage attempts.",
+    "gold_rationale": "Causal structure: Outcome Y validates Process X inappropriately Key insight: A bad shot that goes in is still a bad shot. Explanation: Praising the decision based on the goal (Y) is Selection Bias (Sampling-on-the-Outcome). The shot (X) had a very low probability of success and relied on luck (Z). A good process would likely discourage such low-percentage attempts. Praising the decision based on the goal (Y) is Selection Bias (Sampling-on-the-Outcome). The shot (X) had a very low probability of success and relied on luck (Z). A good process would likely discourage such low-percentage attempts.",
     "initial_author": "Manolo Alvarez",
     "validator": "Matt Wolfman",
     "final_score": 9.3,
@@ -324,8 +316,7 @@
       "condition_a": "If the 3 interceptions revealed a new, lasting injury, the trade demand might be valid. If they were random variance, Z (season data) is more predictive.",
       "condition_b": "If the 3 interceptions revealed a new, lasting injury, the trade demand might be valid. If they were random variance, Z (season data) is more predictive."
     },
-    "wise_refusal": "Fans are suffering from Survivorship Bias (Selective Observation). The most recent event (X) is vivid, overshadowing the larger sample size of the full season (Z) which indicates high skill.",
-    "gold_rationale": "Causal structure: Recent X dominates memory Key insight: We overweight the last game. Explanation: Fans are suffering from Survivorship Bias (Selective Observation). The most recent event (X) is vivid, overshadowing the larger sample size of the full season (Z) which indicates high skill.",
+    "gold_rationale": "Causal structure: Recent X dominates memory Key insight: We overweight the last game. Explanation: Fans are suffering from Survivorship Bias (Selective Observation). The most recent event (X) is vivid, overshadowing the larger sample size of the full season (Z) which indicates high skill. Fans are suffering from Survivorship Bias (Selective Observation). The most recent event (X) is vivid, overshadowing the larger sample size of the full season (Z) which indicates high skill.",
     "initial_author": "Manolo Alvarez",
     "validator": "Matt Wolfman",
     "final_score": 9.7,
@@ -361,8 +352,7 @@
       "condition_a": "If the player changed his swing mechanics significantly, X might translate. Otherwise, regression is likely.",
       "condition_b": "If the player changed his swing mechanics significantly, X might translate. Otherwise, regression is likely."
     },
-    "wise_refusal": "Spring training stats (X) have little correlation with regular season performance (Y) due to Regression to the Mean (Noise-Induced Extremes). The .500 average is likely a product of variance and facing minor league pitching.",
-    "gold_rationale": "Causal structure: Small sample X vs Long Season Y Key insight: Spring training stats are noise. Explanation: Spring training stats (X) have little correlation with regular season performance (Y) due to Regression to the Mean (Noise-Induced Extremes). The .500 average is likely a product of variance and facing minor league pitching.",
+    "gold_rationale": "Causal structure: Small sample X vs Long Season Y Key insight: Spring training stats are noise. Explanation: Spring training stats (X) have little correlation with regular season performance (Y) due to Regression to the Mean (Noise-Induced Extremes). The .500 average is likely a product of variance and facing minor league pitching. Spring training stats (X) have little correlation with regular season performance (Y) due to Regression to the Mean (Noise-Induced Extremes). The .500 average is likely a product of variance and facing minor league pitching.",
     "initial_author": "Manolo Alvarez",
     "validator": "Matt Wolfman",
     "final_score": 9.6,
@@ -398,8 +388,7 @@
       "condition_a": "If scoring averages are measured only for players who reached the professional league, the association is biased due to selection (Z) and does not reflect a causal effect.",
       "condition_b": "If scoring averages included all players regardless of league or professional status, the association could better reflect the true causal relationship."
     },
-    "wise_refusal": "This causal claim is not justified because selection bias (Z) means we only observe high scorers who came from urban leagues, ignoring those who did not become professionals. Thus, the data (X) is not representative of all players, and the observed association with scoring averages (Y) does not imply causation.",
-    "gold_rationale": "The scenario exhibits selection bias where only players who succeed in reaching the professional level from urban leagues are included, while those who fail are excluded. This selective inclusion inflates the observed scoring averages (X) linked to urban league participation. Since the selection mechanism (Z) filters the sample based on success, the positive correlation between urban league background and high scoring averages does not imply a causal effect of the league on scoring ability. Without data on all players, including those who did not progress, the causal claim cannot be supported. The analysis confuses correlation in a biased sample with causation, illustrating a classic Level 1 association trap due to selection bias.",
+    "gold_rationale": "The scenario exhibits selection bias where only players who succeed in reaching the professional level from urban leagues are included, while those who fail are excluded. This selective inclusion inflates the observed scoring averages (X) linked to urban league participation. Since the selection mechanism (Z) filters the sample based on success, the positive correlation between urban league background and high scoring averages does not imply a causal effect of the league on scoring ability. Without data on all players, including those who did not progress, the causal claim cannot be supported. The analysis confuses correlation in a biased sample with causation, illustrating a classic Level 1 association trap due to selection bias. This causal claim is not justified because selection bias (Z) means we only observe high scorers who came from urban leagues, ignoring those who did not become professionals. Thus, the data (X) is not representative of all players, and the observed association with scoring averages (Y) does not imply causation.",
     "initial_author": "Matt Wolfman",
     "validator": "Matt Wolfman",
     "final_score": 10.0,
@@ -435,8 +424,7 @@
       "condition_a": "If the selection events (injury/demotion/release) happened before final stats compilation, then the dataset excludes poor performers and the observed batting averages are biased upwards.",
       "condition_b": "If selection events occurred after the final stats were recorded and included all players, then the batting averages would better represent true skills and the causal claim would be more justified."
     },
-    "wise_refusal": "The causal claim is unjustified because the analysis suffers from Survivorship Bias. The selection mechanism (Z) removes weaker players from the observed data (X), making high batting averages appear to imply inherently superior skill (Y), when in fact the data is conditional on players surviving the season.",
-    "gold_rationale": "The observed association between high batting averages and superior hitting skill is confounded by the selection mechanism that excludes players who did not complete the season due to injury, demotion, or release. This selective sampling inflates batting averages in the available data. Without accounting for this bias, one cannot claim a causal relationship that high batting average causes superior skill. Instead, the association is a result of conditioning on survivorship, a classic case of selection bias violating the assumptions needed for causal inference.",
+    "gold_rationale": "The observed association between high batting averages and superior hitting skill is confounded by the selection mechanism that excludes players who did not complete the season due to injury, demotion, or release. This selective sampling inflates batting averages in the available data. Without accounting for this bias, one cannot claim a causal relationship that high batting average causes superior skill. Instead, the association is a result of conditioning on survivorship, a classic case of selection bias violating the assumptions needed for causal inference. The causal claim is unjustified because the analysis suffers from Survivorship Bias. The selection mechanism (Z) removes weaker players from the observed data (X), making high batting averages appear to imply inherently superior skill (Y), when in fact the data is conditional on players surviving the season.",
     "initial_author": "Matt Wolfman",
     "validator": "Matt Wolfman",
     "final_score": 10.0,
@@ -472,8 +460,7 @@
       "condition_a": "If attendance increases due to improved infrastructure and investment (Z), then higher attendance (X) and better rankings (Y) co-occur without X causing Y directly.",
       "condition_b": "If attendance alone increases without changes in infrastructure or investment, then no significant improvement in national team ranking is expected."
     },
-    "wise_refusal": "This claim falls prey to the Ecological Fallacy by attributing a direct causal effect to attendance based on aggregate country-level data. The confounding factor of infrastructure and investment (Z) drives both attendance and national team quality, so attendance alone is not a justified cause of better team performance.",
-    "gold_rationale": "Countries with strong soccer programs invest heavily in training, facilities, and youth development (Z), which naturally lead to both higher fan turnout (X) and superior national team rankings (Y). Observing only the aggregate correlation between attendance and rankings ignores these underlying factors. Without controlling for Z, the causal claim that increasing attendance directly improves national team performance is unwarranted. This is a classic ecological fallacy where inferences about individuals or causal mechanisms are incorrectly drawn from group-level associations.",
+    "gold_rationale": "Countries with strong soccer programs invest heavily in training, facilities, and youth development (Z), which naturally lead to both higher fan turnout (X) and superior national team rankings (Y). Observing only the aggregate correlation between attendance and rankings ignores these underlying factors. Without controlling for Z, the causal claim that increasing attendance directly improves national team performance is unwarranted. This is a classic ecological fallacy where inferences about individuals or causal mechanisms are incorrectly drawn from group-level associations. This claim falls prey to the Ecological Fallacy by attributing a direct causal effect to attendance based on aggregate country-level data. The confounding factor of infrastructure and investment (Z) drives both attendance and national team quality, so attendance alone is not a justified cause of better team performance.",
     "initial_author": "Matt Wolfman",
     "validator": "Matt Wolfman",
     "final_score": 10.0,
@@ -509,8 +496,7 @@
       "condition_a": "If athletes were already part of elite clubs before starting the high-altitude training, then coaching quality (Z) likely confounds the association between training and sprint performance.",
       "condition_b": "If athletes joined elite clubs because of improved performance after training, then a causal effect of training might be plausible, but this scenario is unsupported by the data."
     },
-    "wise_refusal": "The claim that high-altitude training causes better sprint times is not justified because the observed association is confounded by club affiliation and coaching quality. Without controlling for these factors (Z), we cannot attribute improved performance to the training program alone.",
-    "gold_rationale": "This scenario demonstrates confounding bias typical at Pearl's Level 1 (Association). The observed correlation between high-altitude training participation (X) and sprint times (Y) is influenced by a third variable — club affiliation and coaching quality (Z) — which affects both. Since Z is not accounted for, the causal claim that training directly improves performance is unjustified. The temporal ambiguity highlighted by the hidden timestamp question emphasizes the difficulty of establishing causality without experimental or longitudinal data. Proper causal inference requires recognizing and adjusting for confounders to avoid misleading conclusions based solely on observed associations.",
+    "gold_rationale": "This scenario demonstrates confounding bias typical at Pearl's Level 1 (Association). The observed correlation between high-altitude training participation (X) and sprint times (Y) is influenced by a third variable — club affiliation and coaching quality (Z) — which affects both. Since Z is not accounted for, the causal claim that training directly improves performance is unjustified. The temporal ambiguity highlighted by the hidden timestamp question emphasizes the difficulty of establishing causality without experimental or longitudinal data. Proper causal inference requires recognizing and adjusting for confounders to avoid misleading conclusions based solely on observed associations. The claim that high-altitude training causes better sprint times is not justified because the observed association is confounded by club affiliation and coaching quality. Without controlling for these factors (Z), we cannot attribute improved performance to the training program alone.",
     "initial_author": "Matt Wolfman",
     "validator": "Matt Wolfman",
     "final_score": 10.0,
@@ -546,8 +532,7 @@
       "condition_a": "If swimmers improved their times only after receiving the new swimsuits, this suggests a possible causal effect.",
       "condition_b": "If already faster swimmers were preferentially given the new swimsuits before the competition, the observed correlation is due to confounding."
     },
-    "wise_refusal": "The apparent effect of the new swimsuits on race times is confounded by the fact that elite swimmers (Z) are more likely to receive these suits (X). Without controlling for swimmer ability and selection bias, the causal claim that the suit alone improves performance is not justified.",
-    "gold_rationale": "The observed association between wearing advanced swimsuits and faster race times arises because the confounding variable—elite swimmer status—determines both who receives the suits and who performs well. This selection mechanism (Z) creates a spurious correlation. Without randomized assignment or controlling for swimmer ability, the data (X and Y) cannot establish that the suits cause faster times. Establishing causality requires ruling out such confounders, which is not possible with the available observational data.",
+    "gold_rationale": "The observed association between wearing advanced swimsuits and faster race times arises because the confounding variable—elite swimmer status—determines both who receives the suits and who performs well. This selection mechanism (Z) creates a spurious correlation. Without randomized assignment or controlling for swimmer ability, the data (X and Y) cannot establish that the suits cause faster times. Establishing causality requires ruling out such confounders, which is not possible with the available observational data. The apparent effect of the new swimsuits on race times is confounded by the fact that elite swimmers (Z) are more likely to receive these suits (X). Without controlling for swimmer ability and selection bias, the causal claim that the suit alone improves performance is not justified.",
     "initial_author": "Matt Wolfman",
     "validator": "Matt Wolfman",
     "final_score": 10.0,
@@ -583,8 +568,7 @@
       "condition_a": "If wristband wearing precedes the important points consistently, it might suggest a causal effect of wristbands on performance.",
       "condition_b": "If wristband wearing is triggered by the importance of the point, then the causation is reversed: the context causes both wristband use and improved performance."
     },
-    "wise_refusal": "This claim confuses correlation with causation due to reverse causation. The player’s decision to wear wristbands is a reaction to match context (Z), not the cause of winning points (Y). Hence, wristband usage is a signal of high-pressure moments, not a causal factor improving performance.",
-    "gold_rationale": "The observed correlation between flashy wristbands and winning points is explained by reverse causation: the player chooses to wear wristbands during critical moments (Z) that themselves increase the chance of success (Y). The wristbands are a consequence of situational factors rather than a cause of improved performance. Without controlling for match importance and timing, any causal claim attributing better outcomes to wristband use is unjustified and reflects a Level 1 association mistake.",
+    "gold_rationale": "The observed correlation between flashy wristbands and winning points is explained by reverse causation: the player chooses to wear wristbands during critical moments (Z) that themselves increase the chance of success (Y). The wristbands are a consequence of situational factors rather than a cause of improved performance. Without controlling for match importance and timing, any causal claim attributing better outcomes to wristband use is unjustified and reflects a Level 1 association mistake. This claim confuses correlation with causation due to reverse causation. The player’s decision to wear wristbands is a reaction to match context (Z), not the cause of winning points (Y). Hence, wristband usage is a signal of high-pressure moments, not a causal factor improving performance.",
     "initial_author": "Matt Wolfman",
     "validator": "Matt Wolfman",
     "final_score": 10.0,
@@ -620,8 +604,7 @@
       "condition_a": "Yes, because without randomization, confounding variables could bias the association, invalidating the causal interpretation.",
       "condition_b": "No, because the randomization ensures that any observed difference in speed is attributable solely to helmet type."
     },
-    "wise_refusal": "We refuse to accept the causal claim without acknowledging the randomized assignment mechanism, as observational data alone cannot rule out confounding that would invalidate the causal inference.",
-    "gold_rationale": "Because cyclists were randomly assigned to wear either the aerodynamic or standard helmet (Z), confounding factors such as fitness level, experience, or environmental conditions were evenly distributed across groups. This randomization breaks any backdoor paths between helmet type (X) and cycling speed (Y), ensuring that the association observed in the trial reflects a direct causal effect. Thus, the evidence from this RCT justifies the claim that the aerodynamic helmet causes increased cycling speed.",
+    "gold_rationale": "Because cyclists were randomly assigned to wear either the aerodynamic or standard helmet (Z), confounding factors such as fitness level, experience, or environmental conditions were evenly distributed across groups. This randomization breaks any backdoor paths between helmet type (X) and cycling speed (Y), ensuring that the association observed in the trial reflects a direct causal effect. Thus, the evidence from this RCT justifies the claim that the aerodynamic helmet causes increased cycling speed. We refuse to accept the causal claim without acknowledging the randomized assignment mechanism, as observational data alone cannot rule out confounding that would invalidate the causal inference.",
     "initial_author": "Matt Wolfman",
     "validator": "Matt Wolfman",
     "final_score": 10.0,
@@ -657,8 +640,7 @@
       "condition_a": "Yes, because the random assignment (Z) ensures no confounding factors influence the relationship, validating the causal claim.",
       "condition_b": "No, if assignment was based on team strength, the observed association could be confounded and not imply causation."
     },
-    "wise_refusal": "We refuse to attribute causality if the assignment of football type was influenced by team characteristics, because then the observed effect could be due to confounders rather than the intervention itself.",
-    "gold_rationale": "The natural experiment induced by the league's regulation change (Z) randomly assigned teams to use either a lighter or traditional football (X). This randomization ensures that confounding variables, such as team skill or strategy, are balanced across groups. Therefore, the observed increase in average passing yards (Y) among teams using the lighter football can be causally attributed to the intervention. The temporal order and isolation of X by Z fulfill the criteria for a justified causal claim at the association level.",
+    "gold_rationale": "The natural experiment induced by the league's regulation change (Z) randomly assigned teams to use either a lighter or traditional football (X). This randomization ensures that confounding variables, such as team skill or strategy, are balanced across groups. Therefore, the observed increase in average passing yards (Y) among teams using the lighter football can be causally attributed to the intervention. The temporal order and isolation of X by Z fulfill the criteria for a justified causal claim at the association level. We refuse to attribute causality if the assignment of football type was influenced by team characteristics, because then the observed effect could be due to confounders rather than the intervention itself.",
     "initial_author": "Matt Wolfman",
     "validator": "Matt Wolfman",
     "final_score": 10.0,
@@ -694,8 +676,7 @@
       "condition_a": "Yes, muscle glycogen levels increase in a dose-dependent manner before improvements in finishing times, supporting the causal claim.",
       "condition_b": "No, if glycogen levels do not increase with carbohydrate intake or do not precede performance improvements, the causal link would be questionable."
     },
-    "wise_refusal": "We refuse to accept the causal claim if the evidence lacks randomized assignment or dose-response data, as without these there is no reliable mechanistic or empirical basis to assert causality.",
-    "gold_rationale": "The randomized controlled trial ensures that confounding factors do not bias the association between carbohydrate intake and finishing times. The dose-response relationship strengthens causal inference by showing graded effects. The mechanistic evidence—enhanced glycogen storage improving endurance—provides a biological pathway linking X and Y. Together, these pieces of evidence satisfy criteria for a justified causal claim at Pearl's Level 1 because the observed association is supported by both a natural experiment (randomization) and a plausible mechanism with dose-response, ruling out alternative explanations.",
+    "gold_rationale": "The randomized controlled trial ensures that confounding factors do not bias the association between carbohydrate intake and finishing times. The dose-response relationship strengthens causal inference by showing graded effects. The mechanistic evidence—enhanced glycogen storage improving endurance—provides a biological pathway linking X and Y. Together, these pieces of evidence satisfy criteria for a justified causal claim at Pearl's Level 1 because the observed association is supported by both a natural experiment (randomization) and a plausible mechanism with dose-response, ruling out alternative explanations. We refuse to accept the causal claim if the evidence lacks randomized assignment or dose-response data, as without these there is no reliable mechanistic or empirical basis to assert causality.",
     "initial_author": "Matt Wolfman",
     "validator": "Matt Wolfman",
     "final_score": 10.0,
@@ -718,11 +699,7 @@
       "Y": "Players' golf scores",
       "Z": "Players' experience and training level"
     },
-    "trap": {
-      "type": "Confounding",
-      "subtype": "Confounding",
-      "family": "Confounding"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "Z (experience/training) influences both X (choice of golf ball) and Y (scores), creating confounding between X and Y. Additionally, unobserved course conditions affect Y independently.",
     "key_insight": "The association between golf ball brand (X) and scores (Y) may be confounded by players' experience (Z) and affected by varying course conditions, making causal interpretation ambiguous.",
@@ -731,8 +708,7 @@
       "condition_a": "If data is collected post ball choice but pre-tournament, then the association may reflect confounding from experience (Z), implying the ball brand alone does not cause lower scores.",
       "condition_b": "If data is collected including post-tournament performance without controlling for experience or course conditions, the association could misleadingly suggest causality from ball brand to scores."
     },
-    "wise_refusal": "Without additional information on timing and control for confounding variables such as player experience and course conditions, it is not possible to determine whether the ball brand causally affects scores or is merely associated through confounding.",
-    "gold_rationale": "This case is ambiguous because the observed association between the golf ball brand and scores is entangled with player experience and external factors like course conditions. Without temporal context or control for confounders, the causal claim cannot be confirmed or rejected, illustrating an L1 association case complicated by confounding.",
+    "gold_rationale": "This case is ambiguous because the observed association between the golf ball brand and scores is entangled with player experience and external factors like course conditions. Without temporal context or control for confounders, the causal claim cannot be confirmed or rejected, illustrating an L1 association case complicated by confounding. Without additional information on timing and control for confounding variables such as player experience and course conditions, it is not possible to determine whether the ball brand causally affects scores or is merely associated through confounding.",
     "initial_author": "Matt Wolfman",
     "validator": "Matt Wolfman",
     "final_score": 10.0,
@@ -760,7 +736,7 @@
         "Match-to-match variance (opponents, chances, randomness)"
       ]
     },
-    "gold_rationale": "An extreme performance is partly skill and partly variance. Subsequent performances are expected to be less extreme on average, even with unchanged ability or mindset, so the overconfidence explanation is not needed.",
+    "gold_rationale": "An extreme performance is partly skill and partly variance. Subsequent performances are expected to be less extreme on average, even with unchanged ability or mindset, so the overconfidence explanation is not needed. We cannot definitively conclude that scoring many goals in one match causes worse performance in the next match due to overconfidence because an extreme performance is partly skill and partly variance. Subsequent performances are expected to be less extreme on average, even with unchanged ability or mindset, so the overconfidence explanation is not needed. This suggests a potential REGRESSION issue.",
     "annotation": {
       "author": "Samantha van Rijs",
       "num_annotators": 1,
@@ -770,7 +746,6 @@
     "subdomain": "Sports",
     "initial_author": "Samantha van Rijs",
     "validator": "Manolo Alvarez",
-    "wise_refusal": "We cannot definitively conclude that scoring many goals in one match causes worse performance in the next match due to overconfidence because an extreme performance is partly skill and partly variance. Subsequent performances are expected to be less extreme on average, even with unchanged ability or mindset, so the overconfidence explanation is not needed. This suggests a potential REGRESSION issue.",
     "conditional_answers": {
       "answer_if_condition_1": "If the change in Next-match goal count is sustained over a long period or repeated trials, it may be due to Exceptional single-match goal count.",
       "answer_if_condition_2": "If the change in Next-match goal count is merely a statistical return to the average after an extreme value, Exceptional single-match goal count had no effect."
@@ -803,7 +778,7 @@
         "Bicycle traffic volume"
       ]
     },
-    "gold_rationale": "Bicycle lanes are often installed on routes with heavy cycling demand. Higher cycling volume increases exposure and thus accident counts. Without adjusting for volume (risk per cyclist), accident totals cannot be attributed causally to the lanes.",
+    "gold_rationale": "Bicycle lanes are often installed on routes with heavy cycling demand. Higher cycling volume increases exposure and thus accident counts. Without adjusting for volume (risk per cyclist), accident totals cannot be attributed causally to the lanes. We cannot definitively conclude that building bicycle lanes causes more bicycle accidents because bicycle lanes are often installed on routes with heavy cycling demand. Higher cycling volume increases exposure and thus accident counts. Without adjusting for volume (risk per cyclist), accident totals cannot be attributed causally to the lanes. This suggests a potential CONFOUNDING issue.",
     "annotation": {
       "author": "Samantha van Rijs",
       "num_annotators": 1,
@@ -813,7 +788,6 @@
     "subdomain": "Transportation",
     "initial_author": "Samantha van Rijs",
     "validator": "Manolo Alvarez",
-    "wise_refusal": "We cannot definitively conclude that building bicycle lanes causes more bicycle accidents because bicycle lanes are often installed on routes with heavy cycling demand. Higher cycling volume increases exposure and thus accident counts. Without adjusting for volume (risk per cyclist), accident totals cannot be attributed causally to the lanes. This suggests a potential CONFOUNDING issue.",
     "conditional_answers": {
       "answer_if_condition_1": "If the relationship between Presence of bicycle lanes and Number of bicycle accidents persists even when we control for Bicycle traffic volume, then there may be a causal link.",
       "answer_if_condition_2": "If the observed correlation vanishes when we compare individuals with the same Bicycle traffic volume, then the relationship is spurious."
@@ -835,10 +809,7 @@
     "claim": "Switching to the new racket caused the player to win the tournament.",
     "label": "AMBIGUOUS",
     "is_ambiguous": true,
-    "trap": {
-      "type": "CONFOUNDING",
-      "subtype": "Omitted Variable"
-    },
+    "trap": null,
     "variables": {
       "X": "Using a new racket",
       "Y": "Tournament win",
@@ -846,7 +817,7 @@
         "Training, health, opponents, and match variance"
       ]
     },
-    "gold_rationale": "A tournament win depends on many factors including fitness, preparation, opponents, and randomness. The win occurring after a racket change does not isolate the racket as the cause without controlled comparison or repeated evidence.",
+    "gold_rationale": "A tournament win depends on many factors including fitness, preparation, opponents, and randomness. The win occurring after a racket change does not isolate the racket as the cause without controlled comparison or repeated evidence. We cannot definitively conclude that switching to the new racket caused the player to win the tournament because a tournament win depends on many factors including fitness, preparation, opponents, and randomness. The win occurring after a racket change does not isolate the racket as the cause without controlled comparison or repeated evidence. This suggests a potential CONFOUNDING issue.",
     "annotation": {
       "author": "Samantha van Rijs",
       "num_annotators": 1,
@@ -856,7 +827,6 @@
     "subdomain": "Sports",
     "initial_author": "Samantha van Rijs",
     "validator": "Manolo Alvarez",
-    "wise_refusal": "We cannot definitively conclude that switching to the new racket caused the player to win the tournament because a tournament win depends on many factors including fitness, preparation, opponents, and randomness. The win occurring after a racket change does not isolate the racket as the cause without controlled comparison or repeated evidence. This suggests a potential CONFOUNDING issue.",
     "conditional_answers": {
       "answer_if_condition_1": "If the relationship between Using a new racket and Tournament win persists even when we control for Training, health, opponents, and match variance, then there may be a causal link.",
       "answer_if_condition_2": "If the observed correlation vanishes when we compare individuals with the same Training, health, opponents, and match variance, then the relationship is spurious."
@@ -889,7 +859,7 @@
         "Team performance (wins)"
       ]
     },
-    "gold_rationale": "Team performance is an omitted common cause that increases both highlight posting and ticket interest. The correlation does not identify a causal effect of posting.",
+    "gold_rationale": "Team performance is an omitted common cause that increases both highlight posting and ticket interest. The correlation does not identify a causal effect of posting. We cannot definitively conclude that posting more highlight videos causes greater ticket interest because team performance is an omitted common cause that increases both highlight posting and ticket interest. The correlation does not identify a causal effect of posting. This suggests a potential CONFOUNDING issue.",
     "annotation": {
       "author": "Samantha van Rijs",
       "num_annotators": 1,
@@ -899,7 +869,6 @@
     "subdomain": "Sports",
     "initial_author": "Samantha van Rijs",
     "validator": "Manolo Alvarez",
-    "wise_refusal": "We cannot definitively conclude that posting more highlight videos causes greater ticket interest because team performance is an omitted common cause that increases both highlight posting and ticket interest. The correlation does not identify a causal effect of posting. This suggests a potential CONFOUNDING issue.",
     "conditional_answers": {
       "answer_if_condition_1": "If the relationship between Number of highlight videos posted and Ticket interest persists even when we control for Team performance (wins), then there may be a causal link.",
       "answer_if_condition_2": "If the observed correlation vanishes when we compare individuals with the same Team performance (wins), then the relationship is spurious."
@@ -932,7 +901,7 @@
         "Random performance variation"
       ]
     },
-    "gold_rationale": "The group was selected for extreme low performance, which includes negative noise. Subsequent performance naturally regresses toward true ability even without any causal effect from practice.",
+    "gold_rationale": "The group was selected for extreme low performance, which includes negative noise. Subsequent performance naturally regresses toward true ability even without any causal effect from practice. We cannot definitively conclude that extra practice caused the initially worst players to improve because the group was selected for extreme low performance, which includes negative noise. Subsequent performance naturally regresses toward true ability even without any causal effect from practice. This suggests a potential REGRESSION issue.",
     "annotation": {
       "author": "Samantha van Rijs",
       "num_annotators": 1,
@@ -942,7 +911,6 @@
     "subdomain": "Sports",
     "initial_author": "Samantha van Rijs",
     "validator": "Manolo Alvarez",
-    "wise_refusal": "We cannot definitively conclude that extra practice caused the initially worst players to improve because the group was selected for extreme low performance, which includes negative noise. Subsequent performance naturally regresses toward true ability even without any causal effect from practice. This suggests a potential REGRESSION issue.",
     "conditional_answers": {
       "answer_if_condition_1": "If the change in Second-half performance is sustained over a long period or repeated trials, it may be due to Selection into extra practice (extreme low performers).",
       "answer_if_condition_2": "If the change in Second-half performance is merely a statistical return to the average after an extreme value, Selection into extra practice (extreme low performers) had no effect."
@@ -975,7 +943,7 @@
         "Random performance fluctuation"
       ]
     },
-    "gold_rationale": "Top performers were selected based on extreme results that naturally regress toward the mean.",
+    "gold_rationale": "Top performers were selected based on extreme results that naturally regress toward the mean. We cannot definitively conclude that elite training caused top athletes to perform worse because top performers were selected based on extreme results that naturally regress toward the mean. This suggests a potential REGRESSION issue.",
     "annotation": {
       "author": "Samantha van Rijs",
       "num_annotators": 1,
@@ -985,7 +953,6 @@
     "subdomain": "Sports",
     "initial_author": "Samantha van Rijs",
     "validator": "Manolo Alvarez",
-    "wise_refusal": "We cannot definitively conclude that elite training caused top athletes to perform worse because top performers were selected based on extreme results that naturally regress toward the mean. This suggests a potential REGRESSION issue.",
     "conditional_answers": {
       "answer_if_condition_1": "If the change in Subsequent performance is sustained over a long period or repeated trials, it may be due to Selection into elite group.",
       "answer_if_condition_2": "If the change in Subsequent performance is merely a statistical return to the average after an extreme value, Selection into elite group had no effect."
@@ -1017,13 +984,12 @@
         "Basal metabolic rate"
       ]
     },
-    "gold_rationale": "This is a randomized, placebo-controlled trial. By controlling for the placebo effect and randomly assigning participants, the study isolates the physiological effect of the electrolytes on recovery.",
+    "gold_rationale": "This is a randomized, placebo-controlled trial. By controlling for the placebo effect and randomly assigning participants, the study isolates the physiological effect of the electrolytes on recovery. N/A (Valid Claim)",
     "difficulty": "Easy",
     "initial_author": "Manolo Alvarez",
     "validator": "Manolo Alvarez",
     "final_score": 10.0,
     "hidden_timestamp": "Were they blinded?",
-    "wise_refusal": "N/A (Valid Claim)",
     "conditional_answers": {},
     "causal_structure": "Randomization -> Treatment -> Outcome",
     "key_insight": "Placebo controls isolate the active ingredient's effect.",
@@ -1052,13 +1018,12 @@
         "Field quality"
       ]
     },
-    "gold_rationale": "This is a natural experiment. The policy change was exogenous (supplier contract) and applied to a comparable group (League A) while League B served as a control. The divergence in outcomes supports a causal claim.",
+    "gold_rationale": "This is a natural experiment. The policy change was exogenous (supplier contract) and applied to a comparable group (League A) while League B served as a control. The divergence in outcomes supports a causal claim. N/A (Valid Claim)",
     "difficulty": "Medium",
     "initial_author": "Manolo Alvarez",
     "validator": "Manolo Alvarez",
     "final_score": 10.0,
     "hidden_timestamp": "Did players switch leagues?",
-    "wise_refusal": "N/A (Valid Claim)",
     "conditional_answers": {},
     "causal_structure": "Exogenous Shock -> Treatment -> Outcome",
     "key_insight": "Exogenous shocks create 'as-if' random assignment.",
@@ -1086,13 +1051,12 @@
         "Fandom intensity"
       ]
     },
-    "gold_rationale": "Since the tickets were awarded via a random error (effectively a lottery) among a pool of applicants who all wanted tickets, the two groups were identical in prior fandom. The difference in outcome is causal.",
+    "gold_rationale": "Since the tickets were awarded via a random error (effectively a lottery) among a pool of applicants who all wanted tickets, the two groups were identical in prior fandom. The difference in outcome is causal. N/A (Valid Claim)",
     "difficulty": "Medium",
     "initial_author": "Manolo Alvarez",
     "validator": "Manolo Alvarez",
     "final_score": 10.0,
     "hidden_timestamp": "Was the error truly random?",
-    "wise_refusal": "N/A (Valid Claim)",
     "conditional_answers": {},
     "causal_structure": "Random Lottery -> Access -> Outcome",
     "key_insight": "Lotteries equate desire across groups.",
@@ -1120,13 +1084,12 @@
         "Swing mechanics"
       ]
     },
-    "gold_rationale": "The controlled removal (ablation) and re-introduction of the factor X, while holding other conditions constant, demonstrates a direct causal link. The immediate change in Y confirms X's role.",
+    "gold_rationale": "The controlled removal (ablation) and re-introduction of the factor X, while holding other conditions constant, demonstrates a direct causal link. The immediate change in Y confirms X's role. N/A (Valid Claim)",
     "difficulty": "Easy",
     "initial_author": "Manolo Alvarez",
     "validator": "Manolo Alvarez",
     "final_score": 10.0,
     "hidden_timestamp": "Did the swing change?",
-    "wise_refusal": "N/A (Valid Claim)",
     "conditional_answers": {},
     "causal_structure": "Presence of X -> Y; Absence of X -> Not Y",
     "key_insight": "Reversible effects under controlled conditions imply causality.",
@@ -1154,13 +1117,12 @@
         "Fatigue"
       ]
     },
-    "gold_rationale": "The claim is supported by two strong pillars: a known biological mechanism (blood volume reduction) and a precise linear dose-response relationship observed in the data.",
+    "gold_rationale": "The claim is supported by two strong pillars: a known biological mechanism (blood volume reduction) and a precise linear dose-response relationship observed in the data. N/A (Valid Claim)",
     "difficulty": "Medium",
     "initial_author": "Manolo Alvarez",
     "validator": "Manolo Alvarez",
     "final_score": 10.0,
     "hidden_timestamp": "Is the mechanism theoretical or proven?",
-    "wise_refusal": "N/A (Valid Claim)",
     "conditional_answers": {},
     "causal_structure": "X -> Mechanism -> Y",
     "key_insight": "Mechanism plus dose-response is the gold standard for observational causality.",
@@ -1188,13 +1150,12 @@
         "Crowd noise"
       ]
     },
-    "gold_rationale": "This is an Introduction-Withdrawal design. The effect appeared when X was introduced and disappeared when X was removed, providing strong evidence of causality.",
+    "gold_rationale": "This is an Introduction-Withdrawal design. The effect appeared when X was introduced and disappeared when X was removed, providing strong evidence of causality. N/A (Valid Claim)",
     "difficulty": "Easy",
     "initial_author": "Manolo Alvarez",
     "validator": "Manolo Alvarez",
     "final_score": 10.0,
     "hidden_timestamp": "Did anything else change mid-season?",
-    "wise_refusal": "N/A (Valid Claim)",
     "conditional_answers": {},
     "causal_structure": "X(t) -> Y(t)",
     "key_insight": "Reversibility strengthens causal claims.",
@@ -1223,13 +1184,12 @@
         "Body position"
       ]
     },
-    "gold_rationale": "In a controlled wind-tunnel environment where power and position are fixed, the only variable changing is the helmet. The consistent change in drag establishes causality.",
+    "gold_rationale": "In a controlled wind-tunnel environment where power and position are fixed, the only variable changing is the helmet. The consistent change in drag establishes causality. N/A (Valid Claim)",
     "difficulty": "Easy",
     "initial_author": "Manolo Alvarez",
     "validator": "Manolo Alvarez",
     "final_score": 10.0,
     "hidden_timestamp": "Did the rider move?",
-    "wise_refusal": "N/A (Valid Claim)",
     "conditional_answers": {},
     "causal_structure": "X -> Y (all Z fixed)",
     "key_insight": "Lab control isolates the variable of interest.",
@@ -1269,8 +1229,7 @@
       "answer_if_condition_1": "If the question asks about public perception, X causes it.",
       "answer_if_condition_2": "If asking about reality, Z biases X."
     },
-    "wise_refusal": "The reputation is based on Selection Bias (W1). Algorithms (Z) select and amplify extreme behavior (X), making it feel frequent. The complete data (Y) shows the player is actually calmer than average.",
-    "gold_rationale": "The causal claim is unjustified because the evidence (X) is a non-representative sample selected by social media algorithms (Z). The viral clips represent rare outliers, not the player's typical behavior (Y).",
+    "gold_rationale": "The causal claim is unjustified because the evidence (X) is a non-representative sample selected by social media algorithms (Z). The viral clips represent rare outliers, not the player's typical behavior (Y). The reputation is based on Selection Bias (W1). Algorithms (Z) select and amplify extreme behavior (X), making it feel frequent. The complete data (Y) shows the player is actually calmer than average.",
     "initial_author": "Matt Wolfman",
     "validator": "Yuqiao Zeng",
     "final_score": 8.5,
@@ -1309,8 +1268,7 @@
       "answer_if_condition_1": "If the claim was about recruiting taller players, it might be valid.",
       "answer_if_condition_2": "Applying aggregate trends to individual intervention is fallacious."
     },
-    "wise_refusal": "This is the Ecological Fallacy (W5). The correlation exists at the team level (Aggregate X -> Y). Applying this to an individual player ignores the fact that skill, not just height, drives success, and artificial height increase doesn't confer skill.",
-    "gold_rationale": "The claim commits the Ecological Fallacy. It improperly infers an individual-level causal effect (height -> skill) from a group-level correlation (team height -> wins).",
+    "gold_rationale": "The claim commits the Ecological Fallacy. It improperly infers an individual-level causal effect (height -> skill) from a group-level correlation (team height -> wins). This is the Ecological Fallacy (W5). The correlation exists at the team level (Aggregate X -> Y). Applying this to an individual player ignores the fact that skill, not just height, drives success, and artificial height increase doesn't confer skill.",
     "initial_author": "Matt Wolfman",
     "validator": "Yuqiao Zeng",
     "final_score": 9.0,
@@ -1349,8 +1307,7 @@
       "answer_if_condition_1": "If an injury occurred overnight, it provides a physical explanation for the decline (Y).",
       "answer_if_condition_2": "If no external factor changed, the decline is likely statistical regression."
     },
-    "wise_refusal": "A course record (X) is a statistical outlier. The next round (Y) is overwhelmingly likely to be higher due to Regression to the Mean (W4), regardless of psychological state (Z).",
-    "gold_rationale": "The decline in performance (Y) following an extreme outlier (X) is expected due to Regression to the Mean. Attributing it to 'choking' is a causal fallacy without evidence.",
+    "gold_rationale": "The decline in performance (Y) following an extreme outlier (X) is expected due to Regression to the Mean. Attributing it to 'choking' is a causal fallacy without evidence. A course record (X) is a statistical outlier. The next round (Y) is overwhelmingly likely to be higher due to Regression to the Mean (W4), regardless of psychological state (Z).",
     "initial_author": "Matt Wolfman",
     "validator": "Yuqiao Zeng",
     "final_score": 9.0,
@@ -1389,8 +1346,7 @@
       "answer_if_condition_1": "If the fan reviews a random sample of all regular season games from the 1990s, the perception might change.",
       "answer_if_condition_2": "If only watching highlights, X biases Y."
     },
-    "wise_refusal": "This is Survivorship Bias (W2). We only replay the 'classic' games and remember the legends (X). The mediocre players and boring games from the 1990s (Z) are not re-broadcast, creating a false comparison.",
-    "gold_rationale": "The sample (X) consists only of 'survivors'—the memorable games. The 'failures' (mediocre games Z) are invisible, leading to an unjustified conclusion about the population average (Y).",
+    "gold_rationale": "The sample (X) consists only of 'survivors'—the memorable games. The 'failures' (mediocre games Z) are invisible, leading to an unjustified conclusion about the population average (Y). This is Survivorship Bias (W2). We only replay the 'classic' games and remember the legends (X). The mediocre players and boring games from the 1990s (Z) are not re-broadcast, creating a false comparison.",
     "initial_author": "Matt Wolfman",
     "validator": "Yuqiao Zeng",
     "final_score": 8.5,
@@ -1429,8 +1385,7 @@
       "answer_if_condition_1": "If revenue is immediately reinvested in better players, X could indirectly cause Y.",
       "answer_if_condition_2": "Otherwise, Z causes X."
     },
-    "wise_refusal": "This is Reverse Causality (W9). Fans buy more jerseys (X) because the team is winning (Y). Lowering prices (X) will not causally increase win rate (Y).",
-    "gold_rationale": "The direction of causality is reversed. High performance (Y) drives enthusiasm and sales (X), not the other way around. Intervening on X (sales) will not change Y (wins).",
+    "gold_rationale": "The direction of causality is reversed. High performance (Y) drives enthusiasm and sales (X), not the other way around. Intervening on X (sales) will not change Y (wins). This is Reverse Causality (W9). Fans buy more jerseys (X) because the team is winning (Y). Lowering prices (X) will not causally increase win rate (Y).",
     "initial_author": "Matt Wolfman",
     "validator": "Yuqiao Zeng",
     "final_score": 8.5,
@@ -1470,8 +1425,7 @@
       "answer_if_condition_1": "If the study was a randomized controlled trial, the claim would be valid.",
       "answer_if_condition_2": "In an observational study, Z confounds the relationship."
     },
-    "wise_refusal": "This is Healthy User Bias (W3). Athletes who choose to take supplements (X) are likely more disciplined about sleep and recovery (Z) in general. These lifestyle factors (Z) prevent injuries (Y), not necessarily the supplement itself.",
-    "gold_rationale": "The correlation is confounded by the 'Healthy User' effect. The voluntary choice to use the supplement (X) is a marker for a broader healthy lifestyle (Z) which is the true cause of reduced injuries (Y).",
+    "gold_rationale": "The correlation is confounded by the 'Healthy User' effect. The voluntary choice to use the supplement (X) is a marker for a broader healthy lifestyle (Z) which is the true cause of reduced injuries (Y). This is Healthy User Bias (W3). Athletes who choose to take supplements (X) are likely more disciplined about sleep and recovery (Z) in general. These lifestyle factors (Z) prevent injuries (Y), not necessarily the supplement itself.",
     "initial_author": "Matt Wolfman",
     "validator": "Yuqiao Zeng",
     "final_score": 8.5,
@@ -1510,8 +1464,7 @@
       "answer_if_condition_1": "If the base rate of drug use was 50%, the 99% claim would be closer to truth.",
       "answer_if_condition_2": "With a low base rate, the actual probability is much lower (~9%)."
     },
-    "wise_refusal": "This is Base Rate Neglect (W6). Because the drug is rare (Z, 0.1%), even a 99% accurate test generates more false positives than true positives from a large population. The actual probability of guilt is closer to 9%, not 99%.",
-    "gold_rationale": "The claim ignores the low base rate (Z). In a population of 1000, 1 person is guilty (and tests positive), but 10 innocent people test positive (1% error rate). Thus, a positive test only implies a 1/11 chance of guilt.",
+    "gold_rationale": "The claim ignores the low base rate (Z). In a population of 1000, 1 person is guilty (and tests positive), but 10 innocent people test positive (1% error rate). Thus, a positive test only implies a 1/11 chance of guilt. This is Base Rate Neglect (W6). Because the drug is rare (Z, 0.1%), even a 99% accurate test generates more false positives than true positives from a large population. The actual probability of guilt is closer to 9%, not 99%.",
     "initial_author": "Matt Wolfman",
     "validator": "Yuqiao Zeng",
     "final_score": 9.0,
@@ -1550,8 +1503,7 @@
       "answer_if_condition_1": "If the goalkeeper was out of position, shooting (X) was correct.",
       "answer_if_condition_2": "If the defense was set, the decision was poor outcome bias."
     },
-    "wise_refusal": "Praising the decision based on the goal (Y) is the Post Hoc Fallacy / Outcome Bias (W10). The shot (X) relied on luck (Z). The outcome does not retroactively make the decision rational.",
-    "gold_rationale": "The claim commits the Post Hoc fallacy. The fact that the goal (Y) followed the shot (X) does not justify the decision, especially when the mechanism was luck (Z) rather than skill.",
+    "gold_rationale": "The claim commits the Post Hoc fallacy. The fact that the goal (Y) followed the shot (X) does not justify the decision, especially when the mechanism was luck (Z) rather than skill. Praising the decision based on the goal (Y) is the Post Hoc Fallacy / Outcome Bias (W10). The shot (X) relied on luck (Z). The outcome does not retroactively make the decision rational.",
     "initial_author": "Matt Wolfman",
     "validator": "Yuqiao Zeng",
     "final_score": 8.5,
@@ -1590,8 +1542,7 @@
       "answer_if_condition_1": "If the shoes were randomized in a trial, the claim might be valid.",
       "answer_if_condition_2": "In observational data, Z confounds the link."
     },
-    "wise_refusal": "This is Confounding (W7). Faster runners (Z) are more dedicated and willing to spend money on expensive gear (X). The dedication and training (Z) cause the speed (Y), not just the shoes.",
-    "gold_rationale": "The relationship is Confounded. Serious runners (Z) both run faster (Y) and buy expensive equipment (X). Without controlling for runner ability, the correlation is spurious.",
+    "gold_rationale": "The relationship is Confounded. Serious runners (Z) both run faster (Y) and buy expensive equipment (X). Without controlling for runner ability, the correlation is spurious. This is Confounding (W7). Faster runners (Z) are more dedicated and willing to spend money on expensive gear (X). The dedication and training (Z) cause the speed (Y), not just the shoes.",
     "initial_author": "Matt Wolfman",
     "validator": "Yuqiao Zeng",
     "final_score": 8.25,
@@ -1630,8 +1581,7 @@
       "answer_if_condition_1": "If you don't know who is pitching, A has a better raw probability.",
       "answer_if_condition_2": "If you know the pitcher, B is always the better choice."
     },
-    "wise_refusal": "This is Simpson's Paradox (W8). Batter A's higher overall average (X) is an artifact of the mix of opponents. Since Batter B is better against both lefties and righties (Z), B is actually the superior hitter.",
-    "gold_rationale": "The claim falls for Simpson's Paradox. The aggregate data (X) reverses the true relationship found in the subgroups (Z). Batter B is superior in every specific scenario.",
+    "gold_rationale": "The claim falls for Simpson's Paradox. The aggregate data (X) reverses the true relationship found in the subgroups (Z). Batter B is superior in every specific scenario. This is Simpson's Paradox (W8). Batter A's higher overall average (X) is an artifact of the mix of opponents. Since Batter B is better against both lefties and righties (Z), B is actually the superior hitter.",
     "initial_author": "Matt Wolfman",
     "validator": "Yuqiao Zeng",
     "final_score": 9.0,
@@ -1671,8 +1621,7 @@
       "answer_if_condition_1": "If randomization was broken, validity is compromised.",
       "answer_if_condition_2": "If randomization held, the effect is causal."
     },
-    "wise_refusal": "The claim is justified. The study uses Random Assignment (S1), which ensures that potential confounders (Z) like genetics or diet are equally distributed between groups. The observed difference can be attributed to the drink (X).",
-    "gold_rationale": "Valid Causal Inference (S1). Random assignment ensures exchangeability between the treatment and control groups, isolating the treatment effect.",
+    "gold_rationale": "Valid Causal Inference (S1). Random assignment ensures exchangeability between the treatment and control groups, isolating the treatment effect. The claim is justified. The study uses Random Assignment (S1), which ensures that potential confounders (Z) like genetics or diet are equally distributed between groups. The observed difference can be attributed to the drink (X).",
     "initial_author": "Yuqiao Zeng",
     "validator": "Yuqiao Zeng",
     "final_score": 9.0,
@@ -1712,8 +1661,7 @@
       "answer_if_condition_1": "If State A had other simultaneous pro-sports policies, confounding is possible.",
       "answer_if_condition_2": "If only the equipment law changed, the inference is valid."
     },
-    "wise_refusal": "The claim is justified. This is a Natural Experiment (S2). The policy change in State A serves as an exogenous intervention, and State B provides a valid counterfactual control group, assuming parallel trends existed beforehand.",
-    "gold_rationale": "Valid Causal Inference (S2). The external policy change creates 'as-if' random variation, allowing for a causal comparison between the affected and unaffected regions.",
+    "gold_rationale": "Valid Causal Inference (S2). The external policy change creates 'as-if' random variation, allowing for a causal comparison between the affected and unaffected regions. The claim is justified. This is a Natural Experiment (S2). The policy change in State A serves as an exogenous intervention, and State B provides a valid counterfactual control group, assuming parallel trends existed beforehand.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Yuqiao Zeng",
     "final_score": 9.0,
@@ -1752,8 +1700,7 @@
       "answer_if_condition_1": "If winners could sell their tickets to others, the effect is diluted.",
       "answer_if_condition_2": "If the lottery was truly random, the groups are comparable."
     },
-    "wise_refusal": "The claim is justified. This uses a Lottery Design (S3). Since all participants wanted tickets (controlling for initial enthusiasm Z), the random lottery ensures that the only systematic difference between Winners and Losers is the tickets themselves (X).",
-    "gold_rationale": "Valid Causal Inference (S3). The lottery acts as a randomized instrument, eliminating selection bias among the pool of interested applicants.",
+    "gold_rationale": "Valid Causal Inference (S3). The lottery acts as a randomized instrument, eliminating selection bias among the pool of interested applicants. The claim is justified. This uses a Lottery Design (S3). Since all participants wanted tickets (controlling for initial enthusiasm Z), the random lottery ensures that the only systematic difference between Winners and Losers is the tickets themselves (X).",
     "initial_author": "Yuqiao Zeng",
     "validator": "Yuqiao Zeng",
     "final_score": 8.5,
@@ -1793,8 +1740,7 @@
       "answer_if_condition_1": "If the removal of the fin altered airflow to other parts (interaction), the effect is complex.",
       "answer_if_condition_2": "If the effect is localized, X is the direct cause."
     },
-    "wise_refusal": "The claim is justified. This is Controlled Ablation (S4). By removing X while holding all other variables (Z) constant in a controlled environment, the change in Y can be directly attributed to X.",
-    "gold_rationale": "Valid Causal Inference (S4). The controlled removal of a single variable allows for the isolation of its causal effect on the system output.",
+    "gold_rationale": "Valid Causal Inference (S4). The controlled removal of a single variable allows for the isolation of its causal effect on the system output. The claim is justified. This is Controlled Ablation (S4). By removing X while holding all other variables (Z) constant in a controlled environment, the change in Y can be directly attributed to X.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Yuqiao Zeng",
     "final_score": 8.5,
@@ -1833,8 +1779,7 @@
       "answer_if_condition_1": "If the effect plateaus, the linear claim is valid only up to a point.",
       "answer_if_condition_2": "The combination of biological plausibility and gradient supports causation."
     },
-    "wise_refusal": "The claim is justified. It combines a known biological Mechanism (S5) regarding ATP energy with an observed Dose-Response relationship. This triangulation provides strong evidence for causation.",
-    "gold_rationale": "Valid Causal Inference (S5). The presence of a known mechanism and a consistent dose-response gradient strongly supports a causal interpretation.",
+    "gold_rationale": "Valid Causal Inference (S5). The presence of a known mechanism and a consistent dose-response gradient strongly supports a causal interpretation. The claim is justified. It combines a known biological Mechanism (S5) regarding ATP energy with an observed Dose-Response relationship. This triangulation provides strong evidence for causation.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Yuqiao Zeng",
     "final_score": 9.0,
@@ -1874,8 +1819,7 @@
       "answer_if_condition_1": "If rain depresses player mood (direct path to Y), the instrument is invalid.",
       "answer_if_condition_2": "If rain only affects X, the inference is valid."
     },
-    "wise_refusal": "The claim is justified. The study uses an Instrumental Variable (S6). Rainfall affects attendance (X) but is uncorrelated with team quality (Z) and doesn't affect indoor gameplay (Y) directly. Thus, the link between attendance and wins is causal.",
-    "gold_rationale": "Valid Causal Inference (S6). The instrument (Rainfall) isolates the variation in X (Attendance) that is independent of the confounder (Team Quality), allowing estimation of the causal effect.",
+    "gold_rationale": "Valid Causal Inference (S6). The instrument (Rainfall) isolates the variation in X (Attendance) that is independent of the confounder (Team Quality), allowing estimation of the causal effect. The claim is justified. The study uses an Instrumental Variable (S6). Rainfall affects attendance (X) but is uncorrelated with team quality (Z) and doesn't affect indoor gameplay (Y) directly. Thus, the link between attendance and wins is causal.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Yuqiao Zeng",
     "final_score": 8.5,
@@ -1914,8 +1858,7 @@
       "answer_if_condition_1": "If another unique shock hit the West in 2020, validity is threatened.",
       "answer_if_condition_2": "Given parallel pre-trends, the cap is the likely cause."
     },
-    "wise_refusal": "The claim is justified. This is a Difference-in-Differences design (S7). The parallel trends before the policy suggest that without the cap, the Western League would have continued tracking the Eastern League. The divergence is attributable to the policy.",
-    "gold_rationale": "Valid Causal Inference (S7). DiD controls for time-invariant differences and common time trends. The parallel pre-trends validation supports the assumption that the Eastern League is a valid counterfactual.",
+    "gold_rationale": "Valid Causal Inference (S7). DiD controls for time-invariant differences and common time trends. The parallel pre-trends validation supports the assumption that the Eastern League is a valid counterfactual. The claim is justified. This is a Difference-in-Differences design (S7). The parallel trends before the policy suggest that without the cap, the Western League would have continued tracking the Eastern League. The divergence is attributable to the policy.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Yuqiao Zeng",
     "final_score": 9.0,
@@ -1954,8 +1897,7 @@
       "answer_if_condition_1": "If players could manipulate their score to cross the threshold, the design fails.",
       "answer_if_condition_2": "Assuming no manipulation, 79s and 80s are effectively random."
     },
-    "wise_refusal": "The claim is justified. This is a Regression Discontinuity Design (S8). Players scoring 79 and 80 are virtually identical in innate talent (Z). The sharp jump in earnings at the cutoff can be causally attributed to the academy admission (X).",
-    "gold_rationale": "Valid Causal Inference (S8). Near the cutoff, treatment assignment is 'as-if' random. Any discontinuity in the outcome is caused by the treatment.",
+    "gold_rationale": "Valid Causal Inference (S8). Near the cutoff, treatment assignment is 'as-if' random. Any discontinuity in the outcome is caused by the treatment. The claim is justified. This is a Regression Discontinuity Design (S8). Players scoring 79 and 80 are virtually identical in innate talent (Z). The sharp jump in earnings at the cutoff can be causally attributed to the academy admission (X).",
     "initial_author": "Yuqiao Zeng",
     "validator": "Yuqiao Zeng",
     "final_score": 8.5,
@@ -1995,8 +1937,7 @@
       "answer_if_condition_1": "If the app crashed more for Group B, that is a confounder.",
       "answer_if_condition_2": "If technical performance was equal, the design is valid."
     },
-    "wise_refusal": "The claim is justified. This is an A/B Test (S1/RCT). Random assignment ensures that user types (Z) are balanced. The difference in behavior is causally linked to the interface change (X).",
-    "gold_rationale": "Valid Causal Inference (S1). Large-scale randomization in A/B testing provides a robust causal estimate by balancing all observable and unobservable user characteristics.",
+    "gold_rationale": "Valid Causal Inference (S1). Large-scale randomization in A/B testing provides a robust causal estimate by balancing all observable and unobservable user characteristics. The claim is justified. This is an A/B Test (S1/RCT). Random assignment ensures that user types (Z) are balanced. The difference in behavior is causally linked to the interface change (X).",
     "initial_author": "Yuqiao Zeng",
     "validator": "Yuqiao Zeng",
     "final_score": 9.0,
@@ -2010,12 +1951,7 @@
     "pearl_level": "L1",
     "domain": "D9",
     "subdomain": "Esports",
-    "trap": {
-      "type": "A",
-      "type_name": "Ambiguous",
-      "subtype": "Unclear Mechanism",
-      "subtype_name": "Correlation Direction"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "scenario": "A study finds a strong correlation between an esports player's reaction time (X) and their win rate (Y). However, no temporal data is available, and some theories suggest that winning more leads to better confidence and faster reactions.",
     "claim": "Faster reaction time causes higher win rates.",
@@ -2036,8 +1972,7 @@
       "answer_if_condition_1": "If reaction time is purely genetic, X likely causes Y.",
       "answer_if_condition_2": "If reaction time improves with winning momentum, Y causes X."
     },
-    "wise_refusal": "The claim is ambiguous. While correlated, we cannot determine if fast reactions (X) cause wins (Y), or if the confidence/practice from winning (Y) sharpens reactions (X). The data is cross-sectional.",
-    "gold_rationale": "The relationship is Ambiguous. Without temporal precedence or an instrument, we cannot distinguish between X causing Y, Y causing X, or a common cause Z (like practice volume).",
+    "gold_rationale": "The relationship is Ambiguous. Without temporal precedence or an instrument, we cannot distinguish between X causing Y, Y causing X, or a common cause Z (like practice volume). The claim is ambiguous. While correlated, we cannot determine if fast reactions (X) cause wins (Y), or if the confidence/practice from winning (Y) sharpens reactions (X). The data is cross-sectional.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Yuqiao Zeng",
     "final_score": 8.5,
@@ -2051,12 +1986,7 @@
     "pearl_level": "L1",
     "domain": "D9",
     "subdomain": "Fitness Tech",
-    "trap": {
-      "type": "A",
-      "type_name": "Ambiguous",
-      "subtype": "Conditional Validity",
-      "subtype_name": "Missing Context"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "scenario": "A study shows that users of a new fitness watch (X) lose more weight (Y) than non-users. However, the study does not mention if the watch users were also enrolled in a diet program included with the purchase.",
     "claim": "The fitness watch hardware causes weight loss.",
@@ -2076,8 +2006,7 @@
       "answer_if_condition_1": "If the diet program was mandatory for watch users, the effect is confounded (Z causes Y).",
       "answer_if_condition_2": "If no diet program existed, the watch may be causal."
     },
-    "wise_refusal": "The claim is ambiguous. It is unclear if the weight loss (Y) is caused by the watch hardware (X) or a bundled diet program (Z) that might have been included. The scenario lacks this critical detail.",
-    "gold_rationale": "The relationship is Ambiguous. We cannot isolate the effect of the hardware (X) without knowing if it was bundled with a confounding intervention like a diet plan (Z).",
+    "gold_rationale": "The relationship is Ambiguous. We cannot isolate the effect of the hardware (X) without knowing if it was bundled with a confounding intervention like a diet plan (Z). The claim is ambiguous. It is unclear if the weight loss (Y) is caused by the watch hardware (X) or a bundled diet program (Z) that might have been included. The scenario lacks this critical detail.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Yuqiao Zeng",
     "final_score": 8.5,
@@ -2091,12 +2020,7 @@
     "pearl_level": "L1",
     "domain": "D9",
     "subdomain": "Sports Nutrition",
-    "trap": {
-      "type": "A",
-      "type_name": "Ambiguous",
-      "subtype": "Conflicting Evidence",
-      "subtype_name": "Study Disagreement"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "scenario": "Study A (observational) finds a positive link between protein powder X and kidney health Y. Study B (small RCT) finds a negative link. A meta-analysis is inconclusive due to high heterogeneity.",
     "claim": "Protein powder X improves kidney health.",
@@ -2116,8 +2040,7 @@
       "answer_if_condition_1": "If Study B is methodologically superior, the claim is likely false.",
       "answer_if_condition_2": "If Study B was underpowered, Study A might hold weight."
     },
-    "wise_refusal": "The claim is ambiguous. The available evidence is contradictory, with observational data suggesting benefit and experimental data suggesting harm. No definitive causal conclusion can be drawn without further research.",
-    "gold_rationale": "The relationship is Ambiguous. Scientific consensus does not exist, and the conflicting nature of the evidence (Observational vs RCT) prevents a clear causal judgment.",
+    "gold_rationale": "The relationship is Ambiguous. Scientific consensus does not exist, and the conflicting nature of the evidence (Observational vs RCT) prevents a clear causal judgment. The claim is ambiguous. The available evidence is contradictory, with observational data suggesting benefit and experimental data suggesting harm. No definitive causal conclusion can be drawn without further research.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Yuqiao Zeng",
     "final_score": 8.5,
@@ -2162,8 +2085,7 @@
       "answer_if_condition_1": "If we only observe the selected/surviving sample, the pattern appears valid.",
       "answer_if_condition_2": "If we account for the missing data, the causal claim is not justified."
     },
-    "wise_refusal": "This inference commits the Availability Bias. Diving catches (X) are visually spectacular and memorable, leading observers to overestimate the player's skill (Y). However, the full data (Z) reveals that he dives because he lacks the speed to reach balls while standing up. He is actually a poor defender who turns routine plays into difficult highlights, while missing many other balls entirely.",
-    "gold_rationale": "This inference commits the Availability Bias. Diving catches (X) are visually spectacular and memorable, leading observers to overestimate the player's skill (Y). However, the full data (Z) reveals that he dives because he lacks the speed to reach balls while standing up. He is actually a poor defender who turns routine plays into difficult highlights, while missing many other balls entirely.",
+    "gold_rationale": "This inference commits the Availability Bias. Diving catches (X) are visually spectacular and memorable, leading observers to overestimate the player's skill (Y). However, the full data (Z) reveals that he dives because he lacks the speed to reach balls while standing up. He is actually a poor defender who turns routine plays into difficult highlights, while missing many other balls entirely. This inference commits the Availability Bias. Diving catches (X) are visually spectacular and memorable, leading observers to overestimate the player's skill (Y). However, the full data (Z) reveals that he dives because he lacks the speed to reach balls while standing up. He is actually a poor defender who turns routine plays into difficult highlights, while missing many other balls entirely.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Samantha van Rijs",
     "final_score": 9.5,
@@ -2208,8 +2130,7 @@
       "answer_if_condition_1": "If the subject was selected for extreme values, regression to the mean predicts reversion regardless of intervention.",
       "answer_if_condition_2": "If the values were not extreme, other explanations may be valid."
     },
-    "wise_refusal": "The 'Cover Curse' is a classic example of Regression to the Mean. Players are selected for the cover (X) specifically because they are performing at an unsustainable peak (an outlier event driven by skill plus a 'hot streak'). It is statistically inevitable that their performance will regress toward their career average (Y) in the following months. The magazine didn't cause the decline; it simply captured the peak before the natural fall.",
-    "gold_rationale": "The 'Cover Curse' is a classic example of Regression to the Mean. Players are selected for the cover (X) specifically because they are performing at an unsustainable peak (an outlier event driven by skill plus a 'hot streak'). It is statistically inevitable that their performance will regress toward their career average (Y) in the following months. The magazine didn't cause the decline; it simply captured the peak before the natural fall.",
+    "gold_rationale": "The 'Cover Curse' is a classic example of Regression to the Mean. Players are selected for the cover (X) specifically because they are performing at an unsustainable peak (an outlier event driven by skill plus a 'hot streak'). It is statistically inevitable that their performance will regress toward their career average (Y) in the following months. The magazine didn't cause the decline; it simply captured the peak before the natural fall. The 'Cover Curse' is a classic example of Regression to the Mean. Players are selected for the cover (X) specifically because they are performing at an unsustainable peak (an outlier event driven by skill plus a 'hot streak'). It is statistically inevitable that their performance will regress toward their career average (Y) in the following months. The magazine didn't cause the decline; it simply captured the peak before the natural fall.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Samantha van Rijs",
     "final_score": 8.5,
@@ -2254,8 +2175,7 @@
       "answer_if_condition_1": "If the subject was selected for extreme values, regression to the mean predicts reversion regardless of intervention.",
       "answer_if_condition_2": "If the values were not extreme, other explanations may be valid."
     },
-    "wise_refusal": "The belief in 'God Mode' (Z) commits the Hot Hand Fallacy. While tennis involves psychological momentum, individual points are statistically independent events governed by the player's base skill level. A streak of 15 points (X) is a rare but expected cluster in a long match. It does not causally alter the physics or probability of the next serve. The subsequent loss (Y) demonstrates that the 'invincible state' was likely an illusion of variance.",
-    "gold_rationale": "The belief in 'God Mode' (Z) commits the Hot Hand Fallacy. While tennis involves psychological momentum, individual points are statistically independent events governed by the player's base skill level. A streak of 15 points (X) is a rare but expected cluster in a long match. It does not causally alter the physics or probability of the next serve. The subsequent loss (Y) demonstrates that the 'invincible state' was likely an illusion of variance.",
+    "gold_rationale": "The belief in 'God Mode' (Z) commits the Hot Hand Fallacy. While tennis involves psychological momentum, individual points are statistically independent events governed by the player's base skill level. A streak of 15 points (X) is a rare but expected cluster in a long match. It does not causally alter the physics or probability of the next serve. The subsequent loss (Y) demonstrates that the 'invincible state' was likely an illusion of variance. The belief in 'God Mode' (Z) commits the Hot Hand Fallacy. While tennis involves psychological momentum, individual points are statistically independent events governed by the player's base skill level. A streak of 15 points (X) is a rare but expected cluster in a long match. It does not causally alter the physics or probability of the next serve. The subsequent loss (Y) demonstrates that the 'invincible state' was likely an illusion of variance.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Samantha van Rijs",
     "final_score": 8.0,
@@ -2300,8 +2220,7 @@
       "answer_if_condition_1": "Under one interpretation of the evidence, the claim might hold.",
       "answer_if_condition_2": "Under a more careful analysis accounting for biases, the claim fails."
     },
-    "wise_refusal": "The historical streak (X) has no causal influence on the physics of the next coin toss (Y). Assuming the coin is fair, the events are independent (Z). Believing that a streak changes the underlying probability of a random binary event is a fallacy. The odds remain 50/50 regardless of the past outcomes.",
-    "gold_rationale": "The historical streak (X) has no causal influence on the physics of the next coin toss (Y). Assuming the coin is fair, the events are independent (Z). Believing that a streak changes the underlying probability of a random binary event is a fallacy. The odds remain 50/50 regardless of the past outcomes.",
+    "gold_rationale": "The historical streak (X) has no causal influence on the physics of the next coin toss (Y). Assuming the coin is fair, the events are independent (Z). Believing that a streak changes the underlying probability of a random binary event is a fallacy. The odds remain 50/50 regardless of the past outcomes. The historical streak (X) has no causal influence on the physics of the next coin toss (Y). Assuming the coin is fair, the events are independent (Z). Believing that a streak changes the underlying probability of a random binary event is a fallacy. The odds remain 50/50 regardless of the past outcomes.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Samantha van Rijs",
     "final_score": 8.0,
@@ -2346,8 +2265,7 @@
       "answer_if_condition_1": "If we only observe the selected/surviving sample, the pattern appears valid.",
       "answer_if_condition_2": "If we account for the missing data, the causal claim is not justified."
     },
-    "wise_refusal": "The identification of 'Sweet Spots' here is likely a Clustering Illusion. Random spatial data naturally forms clumps or clusters (X) that the human eye interprets as meaningful patterns. Since the data is indistinguishable from random scatter (Z), these clusters do not represent a stable skill advantage (Y). Attributing special significance to these random coordinates ignores the nature of stochastic processes.",
-    "gold_rationale": "The identification of 'Sweet Spots' here is likely a Clustering Illusion. Random spatial data naturally forms clumps or clusters (X) that the human eye interprets as meaningful patterns. Since the data is indistinguishable from random scatter (Z), these clusters do not represent a stable skill advantage (Y). Attributing special significance to these random coordinates ignores the nature of stochastic processes.",
+    "gold_rationale": "The identification of 'Sweet Spots' here is likely a Clustering Illusion. Random spatial data naturally forms clumps or clusters (X) that the human eye interprets as meaningful patterns. Since the data is indistinguishable from random scatter (Z), these clusters do not represent a stable skill advantage (Y). Attributing special significance to these random coordinates ignores the nature of stochastic processes. The identification of 'Sweet Spots' here is likely a Clustering Illusion. Random spatial data naturally forms clumps or clusters (X) that the human eye interprets as meaningful patterns. Since the data is indistinguishable from random scatter (Z), these clusters do not represent a stable skill advantage (Y). Attributing special significance to these random coordinates ignores the nature of stochastic processes.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Samantha van Rijs",
     "final_score": 9.5,
@@ -2392,8 +2310,7 @@
       "answer_if_condition_1": "If the subject was selected for extreme values, regression to the mean predicts reversion regardless of intervention.",
       "answer_if_condition_2": "If the values were not extreme, other explanations may be valid."
     },
-    "wise_refusal": "Attributing the win solely to the new manager (X) ignores Regression to the Mean. A 10-game losing streak (Z) is a statistical anomaly involving bad luck and negative variance. It is highly probable that the streak would end (Y) in the next game simply due to probability normalizing, regardless of who was sitting on the bench. The 'New Coach Bounce' is often just the natural regression of results.",
-    "gold_rationale": "Attributing the win solely to the new manager (X) ignores Regression to the Mean. A 10-game losing streak (Z) is a statistical anomaly involving bad luck and negative variance. It is highly probable that the streak would end (Y) in the next game simply due to probability normalizing, regardless of who was sitting on the bench. The 'New Coach Bounce' is often just the natural regression of results.",
+    "gold_rationale": "Attributing the win solely to the new manager (X) ignores Regression to the Mean. A 10-game losing streak (Z) is a statistical anomaly involving bad luck and negative variance. It is highly probable that the streak would end (Y) in the next game simply due to probability normalizing, regardless of who was sitting on the bench. The 'New Coach Bounce' is often just the natural regression of results. Attributing the win solely to the new manager (X) ignores Regression to the Mean. A 10-game losing streak (Z) is a statistical anomaly involving bad luck and negative variance. It is highly probable that the streak would end (Y) in the next game simply due to probability normalizing, regardless of who was sitting on the bench. The 'New Coach Bounce' is often just the natural regression of results.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Samantha van Rijs",
     "final_score": 8.5,
@@ -2438,8 +2355,7 @@
       "answer_if_condition_1": "If the subject was selected for extreme values, regression to the mean predicts reversion regardless of intervention.",
       "answer_if_condition_2": "If the values were not extreme, other explanations may be valid."
     },
-    "wise_refusal": "The coach's claim ignores Regression to the Mean. The player was benched specifically because he was at a statistical nadir (X). In a random process like shooting, an extreme slump is almost always followed by improvement (Y) as variance normalizes. The recovery likely would have occurred even if he had played through the slump, making the 'mental reset' (Z) a superfluous explanation.",
-    "gold_rationale": "The coach's claim ignores Regression to the Mean. The player was benched specifically because he was at a statistical nadir (X). In a random process like shooting, an extreme slump is almost always followed by improvement (Y) as variance normalizes. The recovery likely would have occurred even if he had played through the slump, making the 'mental reset' (Z) a superfluous explanation.",
+    "gold_rationale": "The coach's claim ignores Regression to the Mean. The player was benched specifically because he was at a statistical nadir (X). In a random process like shooting, an extreme slump is almost always followed by improvement (Y) as variance normalizes. The recovery likely would have occurred even if he had played through the slump, making the 'mental reset' (Z) a superfluous explanation. The coach's claim ignores Regression to the Mean. The player was benched specifically because he was at a statistical nadir (X). In a random process like shooting, an extreme slump is almost always followed by improvement (Y) as variance normalizes. The recovery likely would have occurred even if he had played through the slump, making the 'mental reset' (Z) a superfluous explanation.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Samantha van Rijs",
     "final_score": 8.5,
@@ -2484,8 +2400,7 @@
       "answer_if_condition_1": "If randomization was properly implemented and baseline characteristics were balanced, the causal claim is strongly supported.",
       "answer_if_condition_2": "If randomization failed or groups differed at baseline, confounding could explain the difference."
     },
-    "wise_refusal": "This is a well-designed RCT with random assignment, control group, and statistically significant results. The study design provides strong causal evidence because randomization eliminates systematic differences between groups at baseline, ensuring that observed differences in bone density can be attributed to the strength training intervention rather than confounding factors.",
-    "gold_rationale": "YES. This is an S1 (RCT) case with strong evidence. Random assignment to treatment (X) vs control eliminates confounding by distributing all baseline characteristics equally across groups. The 15% increase in Y with p<0.001 in the treatment group vs control provides compelling causal evidence. RCTs are the gold standard for establishing causation.",
+    "gold_rationale": "YES. This is an S1 (RCT) case with strong evidence. Random assignment to treatment (X) vs control eliminates confounding by distributing all baseline characteristics equally across groups. The 15% increase in Y with p<0.001 in the treatment group vs control provides compelling causal evidence. RCTs are the gold standard for establishing causation. This is a well-designed RCT with random assignment, control group, and statistically significant results. The study design provides strong causal evidence because randomization eliminates systematic differences between groups at baseline, ensuring that observed differences in bone density can be attributed to the strength training intervention rather than confounding factors.",
     "initial_author": "Samantha van Rijs",
     "validator": "Samantha van Rijs",
     "final_score": 9.5,
@@ -2530,8 +2445,7 @@
       "answer_if_condition_1": "If the lightning strike truly randomized lane assignments independent of athlete ability, the causal claim is supported by natural experiment logic.",
       "answer_if_condition_2": "If lane assignments were influenced by seeding or coach negotiations after the cancellation, confounding could explain the result."
     },
-    "wise_refusal": "This natural experiment provides strong causal evidence because the exogenous shock (lightning strike) created random lane assignments independent of athlete characteristics. Inside lanes offer tactical advantages in the 400m (tighter turns, better positioning), and the quasi-random allocation allows us to isolate this causal effect from athlete ability differences.",
-    "gold_rationale": "YES. This is an S2 (Natural Experiment) case. The lightning strike created exogenous variation in lane assignment, mimicking randomization. Athletes didn't self-select into inside vs outside lanes based on ability, eliminating selection bias. The observed speed difference can be attributed to lane position rather than pre-existing athlete differences.",
+    "gold_rationale": "YES. This is an S2 (Natural Experiment) case. The lightning strike created exogenous variation in lane assignment, mimicking randomization. Athletes didn't self-select into inside vs outside lanes based on ability, eliminating selection bias. The observed speed difference can be attributed to lane position rather than pre-existing athlete differences. This natural experiment provides strong causal evidence because the exogenous shock (lightning strike) created random lane assignments independent of athlete characteristics. Inside lanes offer tactical advantages in the 400m (tighter turns, better positioning), and the quasi-random allocation allows us to isolate this causal effect from athlete ability differences.",
     "initial_author": "Samantha van Rijs",
     "validator": "Samantha van Rijs",
     "final_score": 9.0,
@@ -2576,8 +2490,7 @@
       "answer_if_condition_1": "If the lottery truly randomized camp access among applicants, the 25% higher contract rate can be attributed to camp attendance.",
       "answer_if_condition_2": "If the lottery was rigged or if applicants differed systematically, selection bias could explain the outcome difference."
     },
-    "wise_refusal": "This lottery-based quasi-experiment provides strong causal evidence. The oversubscribed camp with random selection ensures that lottery winners and losers are statistically identical in terms of basketball ability, motivation, and career prospects at baseline. The observed 25% difference in NBA contract rates can therefore be attributed to the causal effect of camp attendance rather than pre-existing player differences.",
-    "gold_rationale": "YES. This is an S3 (Lottery/Quasi-Random) case. The oversubscribed lottery randomizes access to treatment (camp) among applicants. Since all 300 applicants wanted to attend, winners and losers are comparable except for random chance. The 25% higher contract rate among winners provides strong causal evidence that camp attendance improves NBA prospects.",
+    "gold_rationale": "YES. This is an S3 (Lottery/Quasi-Random) case. The oversubscribed lottery randomizes access to treatment (camp) among applicants. Since all 300 applicants wanted to attend, winners and losers are comparable except for random chance. The 25% higher contract rate among winners provides strong causal evidence that camp attendance improves NBA prospects. This lottery-based quasi-experiment provides strong causal evidence. The oversubscribed camp with random selection ensures that lottery winners and losers are statistically identical in terms of basketball ability, motivation, and career prospects at baseline. The observed 25% difference in NBA contract rates can therefore be attributed to the causal effect of camp attendance rather than pre-existing player differences.",
     "initial_author": "Samantha van Rijs",
     "validator": "Samantha van Rijs",
     "final_score": 9.5,
@@ -2624,8 +2537,7 @@
       "answer_if_condition_1": "If all other factors were truly held constant and only VAR was removed, the 40% increase in controversial penalties can be causally attributed to VAR absence.",
       "answer_if_condition_2": "If other factors differed between VAR and non-VAR matches (e.g., referee quality, team matchups), confounding could explain the result."
     },
-    "wise_refusal": "This controlled ablation study provides strong causal evidence. By systematically removing only VAR while keeping all other officiating elements constant (same referee pool, same protocols, same league), the study isolates VAR's specific causal contribution. The 40% increase in controversial penalties when VAR is absent, while other foul calls remain unchanged, indicates that VAR specifically prevents controversial penalty decisions rather than affecting all officiating decisions.",
-    "gold_rationale": "YES. This is an S4 (Controlled Ablation) case. The experimental design removes only X (VAR) while holding all other factors constant (Z). The selective increase in controversial penalties (Y) but not other calls provides strong evidence that VAR causally prevents these specific errors. Ablation studies are powerful because they isolate the causal contribution of a single component.",
+    "gold_rationale": "YES. This is an S4 (Controlled Ablation) case. The experimental design removes only X (VAR) while holding all other factors constant (Z). The selective increase in controversial penalties (Y) but not other calls provides strong evidence that VAR causally prevents these specific errors. Ablation studies are powerful because they isolate the causal contribution of a single component. This controlled ablation study provides strong causal evidence. By systematically removing only VAR while keeping all other officiating elements constant (same referee pool, same protocols, same league), the study isolates VAR's specific causal contribution. The 40% increase in controversial penalties when VAR is absent, while other foul calls remain unchanged, indicates that VAR specifically prevents controversial penalty decisions rather than affecting all officiating decisions.",
     "initial_author": "Samantha van Rijs",
     "validator": "Samantha van Rijs",
     "final_score": 9.0,
@@ -2672,8 +2584,7 @@
       "answer_if_condition_1": "If the dose-response gradient is monotonic up to biological saturation and the mechanism is well-established, the causal claim is strongly supported.",
       "answer_if_condition_2": "If the dose pattern is irregular or inconsistent with the proposed mechanism, alternative explanations (e.g., placebo effects, confounding) would need to be considered."
     },
-    "wise_refusal": "This study provides exceptionally strong causal evidence through convergence of two lines of reasoning: (1) a well-established biological mechanism (phosphocreatine-ATP pathway), and (2) a clear dose-response relationship showing monotonic increases up to a saturation point. The plateau at 20g/day is consistent with biological saturation of muscle phosphocreatine stores, ruling out placebo effects or confounding. The mechanistic understanding explains why and how creatine causes muscle gains.",
-    "gold_rationale": "YES. This is an S5 (Mechanism + Dose-Response) case. The study provides two complementary forms of causal evidence: (1) documented biological mechanism showing how X causes Y through intermediate steps, and (2) dose-response gradient with plausible saturation. The convergence of mechanistic understanding and dose patterns provides strong causal support that goes beyond simple correlation.",
+    "gold_rationale": "YES. This is an S5 (Mechanism + Dose-Response) case. The study provides two complementary forms of causal evidence: (1) documented biological mechanism showing how X causes Y through intermediate steps, and (2) dose-response gradient with plausible saturation. The convergence of mechanistic understanding and dose patterns provides strong causal support that goes beyond simple correlation. This study provides exceptionally strong causal evidence through convergence of two lines of reasoning: (1) a well-established biological mechanism (phosphocreatine-ATP pathway), and (2) a clear dose-response relationship showing monotonic increases up to a saturation point. The plateau at 20g/day is consistent with biological saturation of muscle phosphocreatine stores, ruling out placebo effects or confounding. The mechanistic understanding explains why and how creatine causes muscle gains.",
     "initial_author": "Samantha van Rijs",
     "validator": "Samantha van Rijs",
     "final_score": 10.0,
@@ -2720,8 +2631,7 @@
       "answer_if_condition_1": "If league affiliation only affects run scoring through the DH rule (exclusion restriction holds), the IV estimate provides valid causal inference.",
       "answer_if_condition_2": "If league affiliation affects scoring through other channels (e.g., different umpiring culture, park factors), the exclusion restriction is violated and the causal estimate is biased."
     },
-    "wise_refusal": "This instrumental variable analysis provides strong causal evidence if the exclusion restriction holds. League affiliation creates exogenous variation in DH adoption (American League requires it, National League doesn't) and plausibly affects run scoring only through this rule rather than through other systematic differences between leagues. The IV method isolates the causal effect of the DH by using only the variation in DH usage that comes from league affiliation, filtering out endogenous decisions and confounding.",
-    "gold_rationale": "YES. This is an S6 (Instrumental Variable) case. League affiliation serves as a valid instrument if: (1) it strongly predicts DH usage (relevance), (2) it's exogenous to run scoring ability (exogeneity), and (3) it affects scoring only through DH rule (exclusion restriction). IV analysis uses exogenous variation to identify causal effects when randomization isn't feasible. The 0.3 runs per game estimate is the causal effect if the instrument is valid.",
+    "gold_rationale": "YES. This is an S6 (Instrumental Variable) case. League affiliation serves as a valid instrument if: (1) it strongly predicts DH usage (relevance), (2) it's exogenous to run scoring ability (exogeneity), and (3) it affects scoring only through DH rule (exclusion restriction). IV analysis uses exogenous variation to identify causal effects when randomization isn't feasible. The 0.3 runs per game estimate is the causal effect if the instrument is valid. This instrumental variable analysis provides strong causal evidence if the exclusion restriction holds. League affiliation creates exogenous variation in DH adoption (American League requires it, National League doesn't) and plausibly affects run scoring only through this rule rather than through other systematic differences between leagues. The IV method isolates the causal effect of the DH by using only the variation in DH usage that comes from league affiliation, filtering out endogenous decisions and confounding.",
     "initial_author": "Samantha van Rijs",
     "validator": "Samantha van Rijs",
     "final_score": 8.5,
@@ -2768,8 +2678,7 @@
       "answer_if_condition_1": "If parallel pre-trends hold and players are their own controls, the 18% injury reduction can be causally attributed to clay surface's impact-absorbing properties.",
       "answer_if_condition_2": "If pre-trends were not parallel or if other factors (e.g., tournament intensity differences between clay and hard seasons) varied systematically, the causal interpretation is threatened."
     },
-    "wise_refusal": "This difference-in-differences analysis provides strong causal evidence by comparing the same players across different court surfaces over time. By using players as their own controls, the design eliminates confounding from time-invariant player characteristics (e.g., inherent injury susceptibility). The parallel trends assumption is crucial: if injury rates were trending similarly on both surfaces before the comparison period, the 18% reduction on clay can be attributed to the surface's causal effect rather than pre-existing differences.",
-    "gold_rationale": "YES. This is an S7 (Difference-in-Differences) case. Diff-in-diff compares within-player changes across surfaces and time, controlling for player fixed effects and time trends. The method identifies causal effects if parallel trends hold pre-treatment. The 18% injury reduction, after accounting for seasonal and aging effects, provides strong evidence that clay surface's physical properties (softer, more impact-absorbing) causally reduce injury risk.",
+    "gold_rationale": "YES. This is an S7 (Difference-in-Differences) case. Diff-in-diff compares within-player changes across surfaces and time, controlling for player fixed effects and time trends. The method identifies causal effects if parallel trends hold pre-treatment. The 18% injury reduction, after accounting for seasonal and aging effects, provides strong evidence that clay surface's physical properties (softer, more impact-absorbing) causally reduce injury risk. This difference-in-differences analysis provides strong causal evidence by comparing the same players across different court surfaces over time. By using players as their own controls, the design eliminates confounding from time-invariant player characteristics (e.g., inherent injury susceptibility). The parallel trends assumption is crucial: if injury rates were trending similarly on both surfaces before the comparison period, the 18% reduction on clay can be attributed to the surface's causal effect rather than pre-existing differences.",
     "initial_author": "Samantha van Rijs",
     "validator": "Samantha van Rijs",
     "final_score": 9.0,
@@ -2815,8 +2724,7 @@
       "answer_if_condition_1": "If athletes near the cutoff are otherwise identical and the cutoff was strictly enforced, the 22% earnings difference can be causally attributed to program acceptance.",
       "answer_if_condition_2": "If athletes could manipulate their SAT scores or if the cutoff was not strictly enforced, selection bias could explain the earnings difference."
     },
-    "wise_refusal": "This regression discontinuity design provides strong causal evidence by comparing athletes who are nearly identical in ability (SAT scores differ by only 20-40 points) but differ in program acceptance due to an arbitrary cutoff. Athletes just above 1400 (accepted) and just below (rejected) are essentially comparable except for treatment assignment, creating a local quasi-experiment. The 22% earnings premium for the just-above group suggests the program's training, exposure, and networking causally improve professional outcomes.",
-    "gold_rationale": "YES. This is an S8 (Regression Discontinuity) case. RD designs exploit discontinuous treatment assignment at arbitrary thresholds to identify causal effects. Athletes near the cutoff (1380-1420 SAT range) are comparable except for program acceptance. The sharp earnings discontinuity at the 1400 cutoff, combined with minimal ability differences in this narrow band, provides strong evidence that program acceptance causally increases earnings.",
+    "gold_rationale": "YES. This is an S8 (Regression Discontinuity) case. RD designs exploit discontinuous treatment assignment at arbitrary thresholds to identify causal effects. Athletes near the cutoff (1380-1420 SAT range) are comparable except for program acceptance. The sharp earnings discontinuity at the 1400 cutoff, combined with minimal ability differences in this narrow band, provides strong evidence that program acceptance causally increases earnings. This regression discontinuity design provides strong causal evidence by comparing athletes who are nearly identical in ability (SAT scores differ by only 20-40 points) but differ in program acceptance due to an arbitrary cutoff. Athletes just above 1400 (accepted) and just below (rejected) are essentially comparable except for treatment assignment, creating a local quasi-experiment. The 22% earnings premium for the just-above group suggests the program's training, exposure, and networking causally improve professional outcomes.",
     "initial_author": "Samantha van Rijs",
     "validator": "Samantha van Rijs",
     "final_score": 9.5,
@@ -2851,12 +2759,7 @@
         "Natural progression"
       ]
     },
-    "trap": {
-      "type": "A",
-      "type_name": "Ambiguous",
-      "subtype": "Insufficient_Information",
-      "subtype_name": "Missing Critical Design Details"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "Unclear whether X → Y or whether selection bias (coaches send best athletes to camps) and unmeasured confounders (Z) explain the association. The study design is incompletely described, making causal interpretation impossible without additional information.",
     "key_insight": "Claims are ambiguous when critical methodological details are missing, preventing determination of whether evidence supports causation, confounding, or selection bias.",
@@ -2865,8 +2768,7 @@
       "answer_if_condition_1": "If the study used within-athlete comparisons (each runner compared to their own baseline) and controlled for training volume and natural progression, the causal claim could be supported.",
       "answer_if_condition_2": "If the study simply compared camp attendees to non-attendees without controlling for selection bias (coaches sending top athletes) and confounding factors, the claim is unjustified due to confounding and selection bias."
     },
-    "wise_refusal": "This claim is AMBIGUOUS because the study design is insufficiently described. We cannot determine whether the 3% improvement reflects a true causal effect of altitude training or merely reflects selection bias (better athletes attend camps) and confounding (camp attendees may have more training volume, better coaching, or were already on an upward performance trajectory). The critical missing information includes: (1) whether comparisons were within-athlete or between-athlete, (2) whether baseline performance was controlled, and (3) whether other training factors were held constant. Without these methodological details, we cannot distinguish causation from correlation.",
-    "gold_rationale": "AMBIGUOUS. This case lacks sufficient methodological information to determine causality. The scenario describes an association (X correlates with Y) but doesn't provide enough detail about study design, comparison groups, or control variables. Unlike a clear W7 confounding case (where confounders are identified but not controlled), this case is ambiguous because we don't know if it's a within-athlete study (potentially valid) or between-athlete comparison (potentially confounded). The claim could be valid under proper study design or invalid under poor design—we cannot tell from the information provided. More details about the research methodology are needed to make a determination.",
+    "gold_rationale": "AMBIGUOUS. This case lacks sufficient methodological information to determine causality. The scenario describes an association (X correlates with Y) but doesn't provide enough detail about study design, comparison groups, or control variables. Unlike a clear W7 confounding case (where confounders are identified but not controlled), this case is ambiguous because we don't know if it's a within-athlete study (potentially valid) or between-athlete comparison (potentially confounded). The claim could be valid under proper study design or invalid under poor design—we cannot tell from the information provided. More details about the research methodology are needed to make a determination. This claim is AMBIGUOUS because the study design is insufficiently described. We cannot determine whether the 3% improvement reflects a true causal effect of altitude training or merely reflects selection bias (better athletes attend camps) and confounding (camp attendees may have more training volume, better coaching, or were already on an upward performance trajectory). The critical missing information includes: (1) whether comparisons were within-athlete or between-athlete, (2) whether baseline performance was controlled, and (3) whether other training factors were held constant. Without these methodological details, we cannot distinguish causation from correlation.",
     "initial_author": "Samantha van Rijs",
     "validator": "Samantha van Rijs",
     "final_score": 9.0,

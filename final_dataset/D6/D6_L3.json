@@ -8,7 +8,7 @@
     "subdomain": "Hydrology",
     "scenario": "A physical climate storyline describes a compound event in the Netherlands. Rainfall of 20–30 mm per day persisted for several days due to a synoptic pressure system. At the same time, strong northwesterly winds produced a surge that blocked the discharge of inland water to the North Sea. Authorities ordered evacuations due to rising inland water levels.",
     "counterfactual_claim": "If the same compound rain-and-wind event had occurred under increased sea-level conditions, then the hydrological impacts and associated vulnerability would have been more severe.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Background sea-level condition during the compound event",
@@ -20,11 +20,7 @@
         "Emergency response protocols"
       ]
     },
-    "trap": {
-      "type": "F6",
-      "subtype": "epistemic underdetermination",
-      "subtype_name": "unstated physical invariants"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "Rainfall increases inland water levels. Wind-induced surge blocks discharge to the sea. Sluicing capacity limits outflow. Sea level acts as a background boundary condition that may or may not worsen blockage under the same surge.",
     "key_insight": "Counterfactual severity depends on how sea level interacts with fixed surge and discharge constraints.",
@@ -42,7 +38,7 @@
     "subdomain": "Ecology",
     "scenario": "The paper analyzes pinyon pine growth using ring width index (RWI) data in a two-way fixed effects panel model with temperature, precipitation, and their interaction. It constructs an observed temperature trajectory and an estimated counterfactual temperature trajectory intended to represent temperatures in the absence of anthropogenic forcing, and predicts growth under each scenario for the period 2003–2013. The reported climate-change effect is defined as the difference between predicted growth under the observed versus counterfactual temperature trajectories.",
     "claim": "If temperatures had followed the estimated counterfactual (absence of anthropogenic forcing) trajectory instead of the observed trajectory, then pinyon pine growth over 2003–2013 would have been higher.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Temperature trajectory (observed versus estimated counterfactual without anthropogenic forcing)",
@@ -55,11 +51,7 @@
       ]
     },
     "final_score": 9.75,
-    "trap": {
-      "type": "F7",
-      "subtype": "Attribution counterfactual",
-      "subtype_name": "But-for climate attribution"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "Growth is modeled as a function of temperature, precipitation, and their interaction, with fixed effects absorbing time-invariant site characteristics and common year shocks. The counterfactual replaces the observed temperature input with an estimated no-forcing temperature trajectory while holding the remaining structure fixed.",
     "key_insight": "Attribution hinges on whether the constructed temperature counterfactual uniquely defines the relevant alternative world.",
@@ -67,8 +59,7 @@
       "answer_if_condition_1": "If all non-temperature drivers and ecological responses are invariant across worlds, the higher counterfactual growth prediction supports the claim.",
       "answer_if_condition_2": "If removing anthropogenic forcing would also alter other drivers or system responses not fixed in the scenario, the claim cannot be resolved."
     },
-    "wise_refusal": "The counterfactual outcome cannot be determined without knowing which additional factors besides temperature are held fixed when anthropogenic forcing is removed.",
-    "gold_rationale": "The paper explicitly constructs and compares observed and counterfactual temperature scenarios but does not fully specify what else changes or remains invariant when anthropogenic forcing is removed. Because the truth of the claim depends on these unstated invariants, the correct label is CONDITIONAL.",
+    "gold_rationale": "The paper explicitly constructs and compares observed and counterfactual temperature scenarios but does not fully specify what else changes or remains invariant when anthropogenic forcing is removed. Because the truth of the claim depends on these unstated invariants, the correct label is CONDITIONAL. The counterfactual outcome cannot be determined without knowing which additional factors besides temperature are held fixed when anthropogenic forcing is removed.",
     "hidden_timestamp": "Whether non-temperature drivers linked to anthropogenic forcing are invariant across observed and counterfactual worlds",
     "validator_2": "Longling Geng",
     "final_score_2": 9.75
@@ -82,7 +73,7 @@
     "subdomain": "Forcing Component Attribution",
     "scenario": "The paper includes a counterfactual scenario intended to represent a world without the offsetting cooling effect of anthropogenic aerosol forcing. In this scenario, other background conditions such as ENSO and volcanic aerosols are held fixed, and the likelihood of a 2015-level GMST anomaly is compared to that under present-day conditions that include aerosol effects.",
     "claim": "If there had been no offsetting cooling from anthropogenic aerosol forcing, then the 2015-threshold GMST anomaly would have been more likely to occur.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Presence versus absence of offsetting anthropogenic aerosol forcing",
@@ -94,11 +85,7 @@
         "Statistical model translating forcing components into GMST distributions"
       ]
     },
-    "trap": {
-      "type": "F7",
-      "subtype": "component attribution",
-      "subtype_name": "Offsetting forcing removal"
-    },
+    "trap": null,
     "final_score": 9.75,
     "difficulty": "Hard",
     "causal_structure": "The counterfactual contrasts worlds that differ only in the inclusion of aerosol forcing while holding other forcing components and background conditions fixed, assessing the effect on extreme temperature likelihood.",
@@ -107,8 +94,7 @@
       "answer_if_condition_1": "If greenhouse gas forcing and statistical relationships are invariant, removing aerosol cooling increases the likelihood of the extreme GMST event.",
       "answer_if_condition_2": "If removing aerosol forcing also alters other forcing components or statistical relationships, the effect on event likelihood cannot be determined."
     },
-    "wise_refusal": "The paper does not specify whether other forcing components or model parameters remain unchanged when aerosol forcing is removed, preventing a definitive counterfactual conclusion.",
-    "gold_rationale": "Because the counterfactual depends on unstated invariants about forcing components and model behavior, the claim is conditionally supported rather than definitive.",
+    "gold_rationale": "Because the counterfactual depends on unstated invariants about forcing components and model behavior, the claim is conditionally supported rather than definitive. The paper does not specify whether other forcing components or model parameters remain unchanged when aerosol forcing is removed, preventing a definitive counterfactual conclusion.",
     "hidden_timestamp": "Whether greenhouse gas forcing and model coefficients are invariant when aerosol forcing is removed",
     "validator_2": "Longling Geng",
     "final_score_2": 9.75
@@ -122,7 +108,7 @@
     "subdomain": "Hydrology",
     "scenario": "A physical climate storyline describes a compound event in the Netherlands in which 20–30 mm/day of rainfall fell for several consecutive days due to a synoptic pressure system, while strong northwesterly winds produced a wind-induced surge that prevented sluicing of inland waters to the North Sea. The narrative reports that this situation led authorities to order evacuations and is used to highlight vulnerability to compound events.",
     "claim": "If the same compound rain-and-wind event had occurred under increased sea-level conditions, then the hydrological impacts and associated vulnerability would have been more severe.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "final_score": 9.0,
     "is_ambiguous": true,
     "variables": {
@@ -135,11 +121,7 @@
         "Local authority decisions to order evacuation"
       ]
     },
-    "trap": {
-      "type": "F5",
-      "subtype": "boundary-condition intervention",
-      "subtype_name": "Changing background boundary conditions without fixing dynamics"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "The counterfactual compares two worlds that share the same rainfall and wind-driven surge event but differ in background sea-level conditions. The outcome depends on how increased sea level interacts with fixed sluicing capacity and wind-induced surge to affect inland water discharge and impacts.",
     "key_insight": "Counterfactual impact attribution hinges on which parts of the compound-event causal chain are held fixed when altering sea level.",
@@ -147,8 +129,7 @@
       "answer_if_condition_1": "If synoptic conditions, wind strength, and response actions are held fixed, higher sea level could plausibly exacerbate blocked sluicing and increase impacts.",
       "answer_if_condition_2": "If higher sea level alters wind effects, hydrodynamics, or response decisions, the magnitude or even direction of impact change is not determined."
     },
-    "wise_refusal": "The paper motivates this counterfactual but does not specify which dynamical and response elements remain invariant under sea-level change, so a definitive answer cannot be given.",
-    "gold_rationale": "Because key invariants about dynamics and management responses are not fixed in the paper, the truth of the counterfactual depends on unstated assumptions, requiring a conditional label.",
+    "gold_rationale": "Because key invariants about dynamics and management responses are not fixed in the paper, the truth of the counterfactual depends on unstated assumptions, requiring a conditional label. The paper motivates this counterfactual but does not specify which dynamical and response elements remain invariant under sea-level change, so a definitive answer cannot be given.",
     "hidden_timestamp": "Whether synoptic dynamics, wind intensity, and response rules are invariant when sea level is changed",
     "validator_2": "Longling Geng",
     "final_score_2": 9.0
@@ -162,7 +143,7 @@
     "subdomain": "Extreme Precipitation",
     "scenario": "The paper summarizes physical climate storylines for the September 2013 Colorado heavy-precipitation event, presenting one storyline under observed climatic conditions and another under a counterfactual condition described as 'without global warming'. These storylines analyze contributions from atmospheric dynamics and thermodynamics to the extreme precipitation.",
     "claim": "If the September 2013 Colorado heavy-precipitation event had occurred without global warming, then the flood-producing precipitation extreme would not have occurred as observed.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "final_score": 9.75,
     "variables": {
@@ -174,11 +155,7 @@
         "Counterfactual storyline explicitly described as 'without global warming'"
       ]
     },
-    "trap": {
-      "type": "F7",
-      "subtype": "thermodynamic attribution",
-      "subtype_name": "Removing one causal component without fixing others"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "The counterfactual removes the thermodynamic component of anthropogenic forcing while comparing outcomes to the observed event, with atmospheric dynamics potentially held fixed or allowed to vary depending on unstated assumptions.",
     "key_insight": "Attribution-style counterfactuals depend critically on what is assumed invariant when a single causal component is removed.",
@@ -186,8 +163,7 @@
       "answer_if_condition_1": "If atmospheric dynamics are held fixed and only thermodynamics change, the precipitation extreme could plausibly differ from the observed event.",
       "answer_if_condition_2": "If removing global warming also alters the dynamical setup, the counterfactual outcome cannot be inferred from the information given."
     },
-    "wise_refusal": "The review does not specify how 'without global warming' is operationalized in terms of invariant dynamics, so a definitive counterfactual judgment is not possible.",
-    "gold_rationale": "Because the outcome depends on unstated invariants about atmospheric dynamics versus thermodynamics, the correct classification is conditional.",
+    "gold_rationale": "Because the outcome depends on unstated invariants about atmospheric dynamics versus thermodynamics, the correct classification is conditional. The review does not specify how 'without global warming' is operationalized in terms of invariant dynamics, so a definitive counterfactual judgment is not possible.",
     "hidden_timestamp": "Whether the atmospheric dynamical setup of the event is invariant across the factual and counterfactual worlds",
     "validator_2": "Longling Geng",
     "final_score_2": 9.75
@@ -201,7 +177,7 @@
     "subdomain": "Convective Precipitation",
     "scenario": "The paper describes two physical climate storylines for the 2012 Krymsk extreme precipitation event: one corresponding to the observed event, and another describing the same event with lower sea surface temperature (SST), resulting in a lower-intensity precipitation outcome. The storylines are connected by a proposed physical mechanism linking gradual SST increase to sudden amplification of coastal convective precipitation.",
     "claim": "If sea surface temperature had been lower during the 2012 Krymsk event setup, then the precipitation intensity would have been lower.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Sea surface temperature level during the event (lower SST versus the SST associated with the observed storyline)",
@@ -213,11 +189,7 @@
       ]
     },
     "final_score": 8.75,
-    "trap": {
-      "type": "F1",
-      "subtype": "partial mechanism specification",
-      "subtype_name": "Outcome sensitivity to incompletely fixed conditions"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "The counterfactual compares two worlds differing in SST while implicitly holding other aspects of the event setup constant, attributing intensity differences to SST-mediated amplification.",
     "key_insight": "An explicit alternative storyline does not eliminate the need to specify which background conditions are invariant.",
@@ -225,8 +197,7 @@
       "answer_if_condition_1": "If synoptic and dynamical conditions are invariant, lower SST could coherently imply a lower-intensity event as described.",
       "answer_if_condition_2": "If changing SST also alters event dynamics, the intensity difference cannot be attributed solely to SST."
     },
-    "wise_refusal": "Although paired storylines are presented, the review does not fully specify invariant conditions, preventing a definitive counterfactual conclusion.",
-    "gold_rationale": "The counterfactual outcome depends on how completely other event conditions are fixed when SST is changed, which the paper leaves underspecified.",
+    "gold_rationale": "The counterfactual outcome depends on how completely other event conditions are fixed when SST is changed, which the paper leaves underspecified. Although paired storylines are presented, the review does not fully specify invariant conditions, preventing a definitive counterfactual conclusion.",
     "hidden_timestamp": "Whether broader synoptic and dynamical conditions are held fixed when SST is altered",
     "validator_2": "Longling Geng",
     "final_score_2": 9.5
@@ -240,7 +211,7 @@
     "subdomain": "Climate impacts on biodiversity",
     "scenario": "The paper models annual bird population growth rates as a function of exposure to extreme heat and other covariates, then constructs counterfactual abundance trajectories by removing the externally forced (human-driven) component of heat-extreme intensification. These counterfactual growth rates are accumulated from 1950 to 2020, with density dependence applied, to estimate what tropical bird abundance would have been in the absence of anthropogenic climate change.",
     "claim": "If externally forced heat-extreme intensification had not occurred, then tropical terrestrial bird abundance from 1950 to 2020 would have been higher than observed.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Externally forced (human-driven) intensification of heat extremes",
@@ -252,11 +223,7 @@
         "Controls for direct human pressure (land use and population density index)"
       ]
     },
-    "trap": {
-      "type": "DomainExt",
-      "subtype": "Attribution counterfactual",
-      "subtype_name": "Climate change attribution"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "Observed abundance is generated by accumulating annual growth rates influenced by heat extremes and other covariates. The counterfactual world removes the externally forced component of heat-extreme exposure while holding the estimated growth-rate relationships and accumulation procedure fixed.",
     "key_insight": "Long-run abundance differences hinge on cumulative growth-rate effects once a climate driver is counterfactually removed.",
@@ -264,8 +231,7 @@
       "answer_if_condition_1": "If all non-climate drivers and species responses remain invariant, abundance would be higher without externally forced heat extremes.",
       "answer_if_condition_2": "If species responses or other drivers would differ under the counterfactual climate trajectory, the direction or magnitude of abundance change is not determined."
     },
-    "wise_refusal": "The paper does not fix all non-climate drivers or biological responses under the no-climate-change world, so the counterfactual outcome cannot be asserted unconditionally.",
-    "gold_rationale": "The paper explicitly constructs a no-climate-change counterfactual but leaves key invariants implicit, requiring a conditional judgment rather than a definitive causal claim.",
+    "gold_rationale": "The paper explicitly constructs a no-climate-change counterfactual but leaves key invariants implicit, requiring a conditional judgment rather than a definitive causal claim. The paper does not fix all non-climate drivers or biological responses under the no-climate-change world, so the counterfactual outcome cannot be asserted unconditionally.",
     "hidden_timestamp": "Whether demographic response coefficients and non-climate drivers remain invariant under the no-climate-change trajectory",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -279,7 +245,7 @@
     "subdomain": "Human land-use pressure",
     "scenario": "The paper estimates the effect of a human pressure index (combining land use and population density) on bird abundance growth rates. It constructs a counterfactual in which human pressure is held fixed at the average level observed during the first 20 years of data, then accumulates counterfactual growth rates to infer how abundance would have evolved under constant early-period pressure.",
     "claim": "If human pressure had remained at its early-period baseline level, then bird abundance levels would have been higher than observed.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Human pressure trajectory (observed increase versus fixed early-period baseline)",
@@ -291,11 +257,7 @@
         "Reported heterogeneity by latitude and timing"
       ]
     },
-    "trap": {
-      "type": "DomainExt",
-      "subtype": "Baseline hold-fixed counterfactual",
-      "subtype_name": "Human pressure attribution"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "Observed abundance trajectories reflect growth rates influenced by changing human pressure. The counterfactual world freezes human pressure at an early baseline while applying the same estimated growth-rate relationship.",
     "key_insight": "Counterfactual outcomes depend on what is held fixed when a human driver is frozen at baseline.",
@@ -303,8 +265,7 @@
       "answer_if_condition_1": "If climate and other drivers remain as observed, holding human pressure at baseline yields higher abundance.",
       "answer_if_condition_2": "If changes in human pressure would also alter other drivers or interactions, the counterfactual effect is not determined."
     },
-    "wise_refusal": "The paper does not specify whether other drivers change when human pressure is fixed, preventing an unconditional conclusion.",
-    "gold_rationale": "Although the paper computes a baseline counterfactual, missing invariants about other drivers require a conditional label.",
+    "gold_rationale": "Although the paper computes a baseline counterfactual, missing invariants about other drivers require a conditional label. The paper does not specify whether other drivers change when human pressure is fixed, preventing an unconditional conclusion.",
     "hidden_timestamp": "Whether climate variables and other drivers are held at observed values when human pressure is fixed",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -318,7 +279,7 @@
     "subdomain": "Population dynamics modeling",
     "scenario": "The study estimates climate-attributable abundance change by first computing counterfactual growth rates with the climate signal removed. These growth rates are then accumulated over time to produce abundance trajectories. When density dependence is included, higher population size reduces subsequent growth, which dampens long-run abundance change. The authors note that if density dependence were omitted during this accumulation step, the resulting climate-attributable abundance reduction would be much larger.",
     "counterfactual_claim": "If density dependence had not been included when accumulating counterfactual growth rates, the estimated climate-change-attributable abundance reduction would have been larger.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Inclusion versus omission of density dependence during abundance accumulation",
@@ -329,11 +290,7 @@
         "Counterfactual growth rates with the climate signal removed"
       ]
     },
-    "trap": {
-      "type": "F6",
-      "subtype": "Model-based counterfactual",
-      "subtype_name": "Dynamic invariance sensitivity"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "Abundance change is produced by iteratively applying growth rates. When density dependence is active, higher abundance suppresses future growth. The counterfactual compares two accumulation rules applied to the same growth-rate inputs.",
     "key_insight": "The size of the counterfactual effect depends on whether density dependence is treated as an invariant ecological constraint or as a removable modeling component.",
@@ -355,7 +312,7 @@
     "subdomain": "Climate & Innovation",
     "scenario": "The paper analyzes Canadian annual data (1990–2023) using a Dynamic ARDL framework and reports that clean energy patents (CEP) are negatively associated with carbon emissions (CO2) in the long run. It presents counterfactual simulation plots in which positive shocks (+1% and +5%) to CEP are associated with a steady decline in CO2 over a 30-year simulated horizon, while other modeled variables are included in the estimation framework.",
     "claim": "If clean energy patents (CEP) had not received a positive shock in the simulated counterfactual setting, then carbon emissions (CO2) would not have followed the simulated steady decline over time.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Positive shock to clean energy patents (CEP)",
@@ -367,11 +324,7 @@
         "Cointegration and stability assumptions reported in the paper"
       ]
     },
-    "trap": {
-      "type": "F5",
-      "subtype": "dynamic_invariance",
-      "subtype_name": "Dynamic path dependence"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "The claim compares the observed simulated world with a counterfactual world in which the CEP shock is absent, holding the estimated dynamic structure fixed. The causal conclusion depends on whether all other modeled relationships and parameters remain invariant across the two worlds.",
     "key_insight": "Counterfactual time-path claims hinge on strong invariance assumptions about the underlying dynamic model.",
@@ -379,8 +332,7 @@
       "answer_if_condition_1": "If all other modeled variables and parameters are invariant under the counterfactual, the simulated decline in CO2 would not occur without the CEP shock.",
       "answer_if_condition_2": "If other variables or parameters change endogenously when CEP is altered, the CO2 trajectory cannot be determined from the paper."
     },
-    "wise_refusal": "The paper does not fix whether other modeled variables or parameters remain invariant under the counterfactual, so a definitive counterfactual answer cannot be given.",
-    "gold_rationale": "The paper presents simulated declines in CO2 under positive CEP shocks but does not specify the full set of invariants required to assert that removing the shock would reverse the outcome, making the claim conditional.",
+    "gold_rationale": "The paper presents simulated declines in CO2 under positive CEP shocks but does not specify the full set of invariants required to assert that removing the shock would reverse the outcome, making the claim conditional. The paper does not fix whether other modeled variables or parameters remain invariant under the counterfactual, so a definitive counterfactual answer cannot be given.",
     "hidden_timestamp": "Whether other regressors and model parameters are invariant when CEP is shocked",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -394,7 +346,7 @@
     "subdomain": "Urban Heat Mitigation",
     "scenario": "Albedo modification through cool roofs or pavements is listed as an intervention type in the dataset. For each intervention, observed street- or block-level microclimate measurements are paired with simulated counterfactual outputs representing the same location and nominal time window under a no-intervention scenario. The simulations aim to isolate the thermal effect of surface reflectivity changes while holding broader meteorological forcing constant.",
     "claim": "If the albedo change intervention had not occurred on a block, then the street-level air temperature during the same period would have been higher.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Albedo modification intervention (cool roofs or pavements) versus no intervention",
@@ -407,11 +359,7 @@
         "Simulation assumptions used to generate the no-intervention counterfactual"
       ]
     },
-    "trap": {
-      "type": "F5",
-      "subtype": "temporal-thermodynamic coupling",
-      "subtype_name": "Timing and feedback-dependent counterfactual"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "The counterfactual removes a surface albedo change while attempting to hold meteorological forcing fixed. Whether air temperature would be higher depends not only on timing alignment but also on how surface radiative changes propagate through heat storage and boundary-layer processes linking surfaces to near-surface air temperature.",
     "key_insight": "Removing a surface intervention does not define a unique counterfactual unless the timing and the surface–atmosphere coupling mechanisms are explicitly held invariant.",
@@ -419,8 +367,7 @@
       "answer_if_condition_1": "If incoming radiation, boundary-layer response, and surface–air coupling are invariant and the intervention is removed at the same time and scale, then near-surface air temperature would plausibly be higher without the albedo change.",
       "answer_if_condition_2": "If removing the intervention alters boundary-layer dynamics, heat storage, or effective radiative forcing, then the direction and magnitude of the air-temperature difference cannot be inferred."
     },
-    "wise_refusal": "The paper does not specify whether surface–atmosphere coupling and boundary-layer responses are invariant in the no-intervention world, so the counterfactual air-temperature outcome cannot be determined.",
-    "gold_rationale": "Although the counterfactual comparison is framed as removing an albedo intervention while holding weather constant, the effect on air temperature depends on unstated invariants linking surface radiative changes to boundary-layer dynamics. Because these mechanisms are not fixed by the scenario, the claim is conditionally valid rather than definitive.",
+    "gold_rationale": "Although the counterfactual comparison is framed as removing an albedo intervention while holding weather constant, the effect on air temperature depends on unstated invariants linking surface radiative changes to boundary-layer dynamics. Because these mechanisms are not fixed by the scenario, the claim is conditionally valid rather than definitive. The paper does not specify whether surface–atmosphere coupling and boundary-layer responses are invariant in the no-intervention world, so the counterfactual air-temperature outcome cannot be determined.",
     "hidden_timestamp": "Whether radiative forcing, boundary-layer response, and surface heat storage dynamics are invariant when the albedo intervention is removed.",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -434,7 +381,7 @@
     "subdomain": "Urban growth and biodiversity",
     "scenario": "The paper describes a study in which observed urban growth followed a polycentric structure. A counterfactual scenario was constructed in which urban growth followed a monocentric structure instead. The authors enforced equal quantities of each land-use type at the end of calibration so that the factual and counterfactual scenarios had the same overall urban size and land-use intensities, and then compared consequences for wildlife habitat and landscape connectivity.",
     "claim": "If urban growth had followed a monocentric structure rather than the observed polycentric structure, then landscape connectivity and wildlife habitat outcomes would have been different.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Urban growth structure (monocentric vs polycentric)",
@@ -446,11 +393,7 @@
         "Species-specific space use differences"
       ]
     },
-    "trap": {
-      "type": "F1",
-      "subtype": "Structural counterfactual with partial invariants",
-      "subtype_name": "Form-holding-total-constant"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "Urban growth structure influences the spatial arrangement of land uses, which in turn affects habitat fragmentation and connectivity, conditional on total urban area and land-use intensities being held constant across worlds.",
     "key_insight": "Holding totals fixed does not fully determine outcomes when spatial structure itself is causal.",
@@ -458,8 +401,7 @@
       "answer_if_condition_1": "If all non-structural determinants of habitat connectivity are invariant and only urban form differs, then differences in connectivity can be attributed to the change in structure.",
       "answer_if_condition_2": "If other determinants (e.g., transition rules or unmodeled spatial drivers) differ across the two worlds, then the observed differences cannot be cleanly attributed to urban structure alone."
     },
-    "wise_refusal": "The counterfactual cannot be resolved without knowing whether factors beyond urban structure were held fixed across scenarios.",
-    "gold_rationale": "The paper explicitly constructs the counterfactual but leaves key invariants underspecified, making the but-for claim depend on assumptions not fixed in the scenario.",
+    "gold_rationale": "The paper explicitly constructs the counterfactual but leaves key invariants underspecified, making the but-for claim depend on assumptions not fixed in the scenario. The counterfactual cannot be resolved without knowing whether factors beyond urban structure were held fixed across scenarios.",
     "hidden_timestamp": "Whether all other determinants of habitat connectivity besides urban structure are invariant across the monocentric and polycentric worlds",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -473,7 +415,7 @@
     "subdomain": "Infrastructure and land-use change",
     "scenario": "The paper summarizes work arguing that before-and-after comparisons of infrastructure projects are biased because they ignore how land use might have evolved without the intervention. In the Hangzhou case, a counterfactual world without construction of an international airport was modeled to capture indirect spillover effects through employment, income, traffic patterns, and investment that influence land-use and land-cover change beyond the airport footprint.",
     "claim": "If the Hangzhou international airport had not been constructed, then land-use and land-cover change in the surrounding area would have been different from what was observed.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Construction of the Hangzhou international airport",
@@ -486,11 +428,7 @@
         "Indirect spillover effects"
       ]
     },
-    "trap": {
-      "type": "F4",
-      "subtype": "Indirect effects and spillovers",
-      "subtype_name": "Infrastructure spillover attribution"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "Airport construction affects socioeconomic variables, which in turn influence land-use dynamics; the counterfactual hinges on how these intermediate factors evolve in the absence of the airport.",
     "key_insight": "Ignoring indirect pathways makes infrastructure counterfactuals fragile.",
@@ -498,8 +436,7 @@
       "answer_if_condition_1": "If employment, income, and investment trends are held fixed except for airport-related changes, then differences in land-use can be attributed to the airport.",
       "answer_if_condition_2": "If these trends would have evolved differently even without the airport, attribution to the airport alone is not justified."
     },
-    "wise_refusal": "The counterfactual cannot be answered without specifying how socioeconomic drivers behave in the absence of the airport.",
-    "gold_rationale": "The paper motivates the counterfactual but does not fix key background trajectories, so the but-for claim remains conditional.",
+    "gold_rationale": "The paper motivates the counterfactual but does not fix key background trajectories, so the but-for claim remains conditional. The counterfactual cannot be answered without specifying how socioeconomic drivers behave in the absence of the airport.",
     "hidden_timestamp": "Whether broader socioeconomic trends are assumed unchanged in the no-airport world",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -513,7 +450,7 @@
     "subdomain": "Land conservation and housing",
     "scenario": "The paper reviews a study testing the hypothesis that open space conservation policies constrained housing supply and created housing scarcity. A counterfactual scenario without land conservation policies was simulated, and results indicated minimal differences because protected land was largely on steep slopes and poorly drained areas where substantial housing development was unlikely regardless of policy.",
     "claim": "If land conservation policies had not been implemented, then housing supply via residential development patterns would have been substantially different.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Land conservation / open space protection policies",
@@ -524,11 +461,7 @@
         "Residential development suitability constraints"
       ]
     },
-    "trap": {
-      "type": "F4",
-      "subtype": "Policy attribution with structural constraints",
-      "subtype_name": "Suitability-dominated counterfactual"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "Land conservation policies restrict certain parcels, but housing outcomes depend on whether those parcels were suitable for development in the first place.",
     "key_insight": "A policy cannot be the but-for cause of scarcity if constrained land was unsuitable anyway.",
@@ -536,8 +469,7 @@
       "answer_if_condition_1": "If housing demand and other constraints are fixed and protected land was unsuitable regardless, removing the policy would not change housing supply.",
       "answer_if_condition_2": "If demand or regulatory conditions differ across worlds, conservation policy effects on housing supply could change."
     },
-    "wise_refusal": "The counterfactual cannot be resolved without specifying demand and regulatory conditions in the no-policy world.",
-    "gold_rationale": "The paper suggests minimal impact but does not fully fix background conditions, making the claim dependent on unstated invariants.",
+    "gold_rationale": "The paper suggests minimal impact but does not fully fix background conditions, making the claim dependent on unstated invariants. The counterfactual cannot be resolved without specifying demand and regulatory conditions in the no-policy world.",
     "hidden_timestamp": "Whether housing demand and other regulatory constraints are invariant across the policy and no-policy worlds",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -551,7 +483,7 @@
     "subdomain": "Urban Microclimate Modeling",
     "scenario": "The paper describes a dataset where physics-based simulations (ENVI-met/WRF-Urban) are used to generate counterfactual microclimate outputs under a no-intervention scenario. These simulations are only used after a three-stage calibration and validation process achieves a mean RMSE for air temperature below 0.5°C in a control (no-intervention) area over at least seven consecutive clear-sky summer days. The validated model outputs are then treated as counterfactual labels for causal learning tasks.",
     "claim": "If the simulations had not been validated to meet the RMSE < 0.5°C threshold before generating counterfactuals, then the resulting counterfactual microclimate labels would still be reliable for downstream causal learning tasks.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Simulation validation status (validated to RMSE < 0.5°C vs not validated)",
@@ -563,11 +495,7 @@
         "Use of ENVI-met/WRF-Urban simulations to generate no-intervention counterfactuals"
       ]
     },
-    "trap": {
-      "type": "F6",
-      "subtype": "epistemic validity threshold",
-      "subtype_name": "Validation-Dependent Counterfactuals"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "The counterfactual hinges on whether meeting a specified validation invariant is necessary for counterfactual accuracy; removing or relaxing that invariant creates an alternative world where the epistemic status of the simulated labels is unclear.",
     "key_insight": "Counterfactual reliability is explicitly conditioned on a validation threshold that is not guaranteed outside the stated protocol.",
@@ -575,8 +503,7 @@
       "answer_if_condition_1": "If simulations that fail to meet the RMSE threshold are still accurate enough for causal comparisons, the counterfactual labels could remain usable.",
       "answer_if_condition_2": "If the RMSE threshold is necessary for accuracy, then unvalidated simulations would yield unreliable counterfactual labels."
     },
-    "wise_refusal": "The paper does not specify how counterfactual reliability degrades when validation fails, so the claim cannot be resolved without additional assumptions.",
-    "gold_rationale": "Because the paper explicitly conditions counterfactual generation on meeting a validation threshold but does not define outcomes when that condition is violated, the counterfactual remains underdetermined.",
+    "gold_rationale": "Because the paper explicitly conditions counterfactual generation on meeting a validation threshold but does not define outcomes when that condition is violated, the counterfactual remains underdetermined. The paper does not specify how counterfactual reliability degrades when validation fails, so the claim cannot be resolved without additional assumptions.",
     "hidden_timestamp": "Whether counterfactual outputs remain trustworthy when the RMSE validation criterion is not satisfied.",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -590,7 +517,7 @@
     "subdomain": "Drought",
     "scenario": "During the 1975–1976 Thames River Basin drought, the jet stream shifted north and remained there through much of 1975 and into 1976, alongside positive surface pressure anomalies over western Europe and positive sea surface temperature anomalies in the eastern North Atlantic. Rainfall deficits accumulated unevenly across regions, and forecasts at the end of August 1976 predicted continued dry conditions into September. In reality, circulation changed and September–October rainfall was high.",
     "claim": "If the northerly-positioned jet stream had persisted longer during 1975–1976, then London would have come close to or crossed its drought vulnerability threshold.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Persistence duration of the northerly-positioned jet stream",
@@ -602,11 +529,7 @@
         "Medium-term weather forecast at the end of August 1976 predicting continued dryness"
       ]
     },
-    "trap": {
-      "type": "F5",
-      "subtype": "path_dependence",
-      "subtype_name": "Timing and persistence dependence"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "The counterfactual alters the duration of a key atmospheric configuration while holding the broader meteorological context fixed, asking whether extended persistence would push cumulative drought deficit beyond a vulnerability threshold.",
     "key_insight": "Small changes in the duration of an atmospheric regime may move a system across a vulnerability threshold.",
@@ -614,8 +537,7 @@
       "answer_if_condition_1": "If the vulnerability threshold is defined solely by cumulative deficit and system operations remain unchanged, extended jet-stream persistence could plausibly bring London close to the threshold.",
       "answer_if_condition_2": "If adaptive responses or threshold definitions differ under extended persistence, London may not cross the vulnerability threshold despite a longer drought."
     },
-    "wise_refusal": "The paper does not fully specify the vulnerability threshold or invariant system responses needed to determine the counterfactual outcome.",
-    "gold_rationale": "Because the paper explicitly notes that a longer persistence might have increased the deficit but does not fix the threshold definition or system response, the counterfactual cannot be resolved without additional invariants.",
+    "gold_rationale": "Because the paper explicitly notes that a longer persistence might have increased the deficit but does not fix the threshold definition or system response, the counterfactual cannot be resolved without additional invariants. The paper does not fully specify the vulnerability threshold or invariant system responses needed to determine the counterfactual outcome.",
     "hidden_timestamp": "Operational definition of the drought vulnerability threshold and how water system responses are held fixed",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -629,7 +551,7 @@
     "subdomain": "Hurricanes and Flooding",
     "scenario": "In July 2019, Hurricane Barry approached the Gulf Coast while the Mississippi River was already in flood stage. Forecasts predicted 10–20 inches of rain over southeast Louisiana and southwest Mississippi, which would have fallen on already high river levels. In actuality, vertical wind shear displaced precipitation, most areas received 2–6 inches, river stages rose modestly, and levees were not overtopped.",
     "claim": "If Hurricane Barry’s forecast rainfall amounts had fallen over the already high Mississippi River levels, then levees would have been overtopped and flooding would have been much more dangerous.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Rainfall realization matching forecast amounts over threatened areas",
@@ -641,11 +563,7 @@
         "Forecast rainfall range and hypothesized effect on crest level"
       ]
     },
-    "trap": {
-      "type": "F5",
-      "subtype": "compound_event_near_miss",
-      "subtype_name": "Compound flood sensitivity"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "The counterfactual replaces the realized rainfall pattern with the forecast one while holding river stage and storm context fixed, asking whether this change would cross levee overtopping thresholds.",
     "key_insight": "Compound flood risk depends on how alternative realizations of the same storm interact with existing system states.",
@@ -653,8 +571,7 @@
       "answer_if_condition_1": "If rainfall-to-crest translation follows the paper’s implied relationship and controls are unchanged, overtopping could occur.",
       "answer_if_condition_2": "If routing or control responses differ under higher rainfall, levees may not be overtopped."
     },
-    "wise_refusal": "The paper does not fully specify how forecast rainfall would translate into river crests and levee response.",
-    "gold_rationale": "Because the translation from rainfall to overtopping depends on unstated hydrologic and operational invariants, the counterfactual cannot be conclusively resolved.",
+    "gold_rationale": "Because the translation from rainfall to overtopping depends on unstated hydrologic and operational invariants, the counterfactual cannot be conclusively resolved. The paper does not fully specify how forecast rainfall would translate into river crests and levee response.",
     "hidden_timestamp": "Hydrologic routing and flood control responses translating rainfall into river crest levels",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -668,7 +585,7 @@
     "subdomain": "Flooding and Dams",
     "scenario": "In February 2017, heavy rainfall increased inflows to Lake Oroville, damaging the main spillway and forcing water over the emergency spillway for about 37 hours. The resulting evacuations indicate a near miss, but peak flood discharge during the event was lower than historic recorded floods in the Feather Basin. A cited downward counterfactual analysis considers continued erosion-driven disintegration of the dam over a 72-hour cycle under more extreme rainfall, producing widespread downstream flooding.",
     "claim": "If rainfall during the February 2017 Oroville event had been at record level, then the incident would have resulted in catastrophic damage and widespread downstream flooding.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Rainfall intensity at record levels during the February 2017 event",
@@ -680,11 +597,7 @@
         "Local flood control measures downstream"
       ]
     },
-    "trap": {
-      "type": "F4",
-      "subtype": "near_miss_infrastructure",
-      "subtype_name": "Infrastructure tipping point"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "The counterfactual increases rainfall while holding the dam state and response trajectory fixed, asking whether higher inflows would overwhelm control measures and produce catastrophic flooding.",
     "key_insight": "Near-miss infrastructure failures reveal sensitivity to alternative realizations of the same event.",
@@ -692,8 +605,7 @@
       "answer_if_condition_1": "If dam operations and erosion-driven failure progress as described under higher rainfall, widespread flooding would result.",
       "answer_if_condition_2": "If operational responses or failure modes differ under record rainfall, catastrophic flooding may not occur."
     },
-    "wise_refusal": "The paper does not fix dam operational responses or failure modes under record-level rainfall sufficiently to resolve the outcome.",
-    "gold_rationale": "Although a specific downward counterfactual is cited, missing invariants about operations and failure dynamics prevent a determinate conclusion.",
+    "gold_rationale": "Although a specific downward counterfactual is cited, missing invariants about operations and failure dynamics prevent a determinate conclusion. The paper does not fix dam operational responses or failure modes under record-level rainfall sufficiently to resolve the outcome.",
     "hidden_timestamp": "Whether dam operations and the mode of failure are held fixed under record-level rainfall",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -707,7 +619,7 @@
     "subdomain": "Avalanche hazard modeling",
     "scenario": "The paper evaluates avalanche hazard using both deterministic simulations with most-probable input values and probabilistic probability maps derived from many simulations. It reports that the 95th percentile non-exceedance isoline (P95) can extend runout distances and indicate road impact in cases where the deterministic simulation does not reach the road.",
     "claim": "If the hazard assessment had used only deterministic most-probable input values instead of the P95 probabilistic benchmark, then the road segment would not have been impacted by peak avalanche pressure.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Using deterministic most-probable input values instead of the P95 probabilistic benchmark",
@@ -719,11 +631,7 @@
         "Release volume distribution used as probabilistic input"
       ]
     },
-    "trap": {
-      "type": "F7",
-      "subtype": "quantile_choice",
-      "subtype_name": "Benchmark selection dependence"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "The causal pathway links modeling choice (probabilistic benchmark versus deterministic input) to inferred runout extent, which in turn determines whether the road is impacted. The counterfactual compares two alternative modeling worlds differing only in how uncertainty is summarized.",
     "key_insight": "Hazard conclusions can hinge on which uncertainty benchmark is treated as decision-relevant.",
@@ -731,8 +639,7 @@
       "answer_if_condition_1": "If all other model components and decision thresholds are identical and only the benchmark changes, the deterministic world may show no road impact.",
       "answer_if_condition_2": "If the benchmark choice also alters how hazard zoning decisions are defined, the road impact conclusion may not change even under deterministic inputs."
     },
-    "wise_refusal": "The paper does not fully specify which decision rule is invariant across benchmark choices, so a definitive counterfactual answer cannot be given.",
-    "gold_rationale": "The paper documents differing outcomes between deterministic and P95 benchmarks but does not fix the invariants needed to conclude what would have happened under a purely deterministic assessment.",
+    "gold_rationale": "The paper documents differing outcomes between deterministic and P95 benchmarks but does not fix the invariants needed to conclude what would have happened under a purely deterministic assessment. The paper does not fully specify which decision rule is invariant across benchmark choices, so a definitive counterfactual answer cannot be given.",
     "hidden_timestamp": "Whether all other modeling choices and decision rules are held fixed across deterministic and probabilistic worlds",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -746,7 +653,7 @@
     "subdomain": "Avalanche hazard modeling",
     "scenario": "The paper constructs a probability density function for avalanche initial conditions and explicitly excludes outliers by restricting simulations to the P5–P95 confidence interval. Release-volume values outside this range are not included when generating probability maps of peak pressure exceedance.",
     "claim": "If the release-volume outliers outside the P5–P95 range had been included in the simulations, then the resulting probability maps of peak pressure exceedance would have been different.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Including release-volume values outside the P5–P95 confidence interval",
@@ -757,11 +664,7 @@
         "Return period scenarios used for evaluation"
       ]
     },
-    "trap": {
-      "type": "F6",
-      "subtype": "input_distribution_truncation",
-      "subtype_name": "Outlier exclusion in probabilistic modeling"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "The modeling pipeline maps an assumed input distribution of release volumes to simulated runout behavior and then to probability maps; the counterfactual alters the support of the input distribution.",
     "key_insight": "Downstream hazard estimates depend on which parts of the input distribution are treated as admissible.",
@@ -769,8 +672,7 @@
       "answer_if_condition_1": "If excluded outliers are extreme but physically relevant, including them could materially alter exceedance probabilities.",
       "answer_if_condition_2": "If excluded outliers are negligible or unrealistic, including them may not change the probability maps in a meaningful way."
     },
-    "wise_refusal": "Without knowing the nature and plausibility of the excluded outliers, the counterfactual effect cannot be determined.",
-    "gold_rationale": "The paper states that outliers are excluded but does not characterize them, leaving the counterfactual underdetermined.",
+    "gold_rationale": "The paper states that outliers are excluded but does not characterize them, leaving the counterfactual underdetermined. Without knowing the nature and plausibility of the excluded outliers, the counterfactual effect cannot be determined.",
     "hidden_timestamp": "The physical plausibility and magnitude of the excluded outliers are not fixed by the paper",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -784,7 +686,7 @@
     "subdomain": "Avalanche hazard modeling",
     "scenario": "The study holds internal friction and drag parameters constant across simulations while varying release volumes linked to different return periods. The discussion notes this assumption is debatable and may bias runout estimates for frequent versus rare avalanches.",
     "claim": "If internal friction and drag parameters had varied with avalanche volume or return period instead of being held constant, then the estimated runout probability and hazard maps would have been different.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Allowing model parameters (friction/drag) to vary with avalanche volume or return period",
@@ -795,11 +697,7 @@
         "Best-fit parameterization used in the reported simulations"
       ]
     },
-    "trap": {
-      "type": "F6",
-      "subtype": "parameter_invariance",
-      "subtype_name": "Hidden parameter dependence"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "Model parameters influence flow dynamics, which affect runout distances and hazard probabilities; the counterfactual relaxes the assumption that parameters are invariant across avalanche sizes.",
     "key_insight": "Counterfactual conclusions depend on whether model parameters are truly invariant or implicitly size-dependent.",
@@ -807,8 +705,7 @@
       "answer_if_condition_1": "If parameters systematically vary with volume, hazard estimates could shift relative to the constant-parameter world.",
       "answer_if_condition_2": "If parameters are effectively invariant across sizes, allowing variation would not materially change the results."
     },
-    "wise_refusal": "The paper does not define how parameters would vary with avalanche size, preventing a definitive counterfactual judgment.",
-    "gold_rationale": "Because the alternative parameterization is unspecified, the counterfactual outcome remains conditional on missing invariants.",
+    "gold_rationale": "Because the alternative parameterization is unspecified, the counterfactual outcome remains conditional on missing invariants. The paper does not define how parameters would vary with avalanche size, preventing a definitive counterfactual judgment.",
     "hidden_timestamp": "No functional relationship between parameters and avalanche size is specified in the paper",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -822,7 +719,7 @@
     "subdomain": "Climate litigation / evidentiary modeling choices",
     "scenario": "In the paper’s fictitious Poland vs. Australia case, both parties present FAR estimates about whether Australia’s solar geoengineering increased the probability of Poland’s 2060 drought (40 consecutive dry days). Poland uses simulations from one climate model (MPI-ESM) and reports FAR = 0.83. Australia uses a different climate model (HadGEM) and reports FAR = 0.18. Each party provides a methodological brief describing its modeling choices, including how the drought was characterized and which statistical techniques were used for the FAR estimation. The court faces diverging scientific evidence and must assess whether there is a causal link between Australia’s SG and Poland’s harm.",
     "claim": "If Poland had used the HadGEM-based simulations instead of the MPI-ESM-based simulations, then Poland’s reported FAR would have been low (closer to 0.18 than 0.83).",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Choice of climate model for the FAR estimation (MPI-ESM vs HadGEM)",
@@ -834,11 +731,7 @@
         "The drought is framed in terms of 40 consecutive dry days (Consecutive Dry Days index) with spatial/definition choices"
       ]
     },
-    "trap": {
-      "type": "F6",
-      "subtype": "Model-degree-of-freedom confound",
-      "subtype_name": "Counterfactual depends on whether non-model choices are held fixed"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "World A: Poland uses MPI-ESM-based simulations and reports FAR = 0.83. The counterfactual World B changes X to HadGEM-based simulations and asks whether Y (the FAR Poland would report) becomes low. But the paper treats FAR as the product of many modeling choices; changing the model may also entail changes in setup, bias correction, SG implementation, and statistical techniques unless those are explicitly held invariant.",
     "key_insight": "A counterfactual about ‘what FAR would be’ under a different model is only well-posed if other modeling choices are held fixed.",
@@ -846,8 +739,7 @@
       "answer_if_condition_1": "If switching to HadGEM is defined as swapping only the climate model while keeping the event framing and all other methodological/statistical choices fixed, then the case suggests Poland’s FAR could differ substantially and might align with a low value (like Australia’s 0.18) under that completion.",
       "answer_if_condition_2": "If switching models also changes other modeling components (setup, SG representation, statistical techniques, framing details), then the counterfactual ‘Poland’s FAR under HadGEM’ is not uniquely determined by the paper, and the claim may fail or vary under those completions."
     },
-    "wise_refusal": "The paper states that FAR estimates depend on multiple modeling choices (methodology and framing) and that parties control these choices. It does not uniquely specify what stays fixed when Poland hypothetically switches from MPI-ESM to HadGEM. Without fixing those invariants, the counterfactual FAR Poland would report under HadGEM is underdetermined.",
-    "gold_rationale": "The paper provides two different FAR values tied to two different model choices in an adversarial setting, but it also emphasizes degrees of freedom in modeling choices. Because the counterfactual depends on whether only the model changes or many choices change with it, the claim is CONDITIONAL.",
+    "gold_rationale": "The paper provides two different FAR values tied to two different model choices in an adversarial setting, but it also emphasizes degrees of freedom in modeling choices. Because the counterfactual depends on whether only the model changes or many choices change with it, the claim is CONDITIONAL. The paper states that FAR estimates depend on multiple modeling choices (methodology and framing) and that parties control these choices. It does not uniquely specify what stays fixed when Poland hypothetically switches from MPI-ESM to HadGEM. Without fixing those invariants, the counterfactual FAR Poland would report under HadGEM is underdetermined.",
     "hidden_timestamp": "Missing invariant: whether event framing, SG implementation choices, and statistical techniques remain identical when swapping MPI-ESM for HadGEM.",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -861,7 +753,7 @@
     "subdomain": "Extreme Events",
     "scenario": "The paper revisits the 2003 European heatwave. The event Y is defined as mean summer temperature anomaly Z over Europe exceeding u=1.6°C in 2003. Using illustrative values p0=0.0008 and p1=0.008 derived from model ensembles, the paper argues that anthropogenic CO2 emissions are very likely a necessary cause but not a sufficient cause of this event.",
     "claim": "If anthropogenic CO2 emissions had been absent, then the 2003 European heatwave would not have occurred.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Presence versus absence of anthropogenic CO2 emissions",
@@ -873,11 +765,7 @@
         "Internal climate variability"
       ]
     },
-    "trap": {
-      "type": "F7",
-      "subtype": "Necessary vs sufficient causation",
-      "subtype_name": "Conflation of causal senses"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "A single-event counterfactual where CO2 emissions influence the probability of exceeding a temperature threshold in a specific year.",
     "key_insight": "Whether CO2 is judged causal depends on the causal standard (necessary vs sufficient) and fixed numerical assumptions.",
@@ -885,8 +773,7 @@
       "answer_if_condition_1": "If 2003 is a fixed event feature and other forcings are unchanged, the event may not occur without CO2.",
       "answer_if_condition_2": "If year-of-occurrence is not invariant or other forcings vary, the event could still occur without CO2."
     },
-    "wise_refusal": "The paper’s probabilities are illustrative and rely on fixed event definitions; without fixing these invariants, the counterfactual cannot be resolved.",
-    "gold_rationale": "The paper itself highlights that causal conclusions depend on how the event and causal standard are defined, necessitating a CONDITIONAL label.",
+    "gold_rationale": "The paper itself highlights that causal conclusions depend on how the event and causal standard are defined, necessitating a CONDITIONAL label. The paper’s probabilities are illustrative and rely on fixed event definitions; without fixing these invariants, the counterfactual cannot be resolved.",
     "hidden_timestamp": "Whether the year 2003 is treated as a fixed defining feature of the event and whether other forcings are held fixed.",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -900,7 +787,7 @@
     "subdomain": "Event Definition",
     "scenario": "The paper redefines the heatwave event from occurring in the single year 2003 to occurring at least once during a time window of length τ ending in 2003. The new event Y* occurs if at least one heatwave happens in that interval. Under a stationarity assumption, the paper shows that causal conclusions shift as τ increases.",
     "claim": "If anthropogenic CO2 emissions had been absent, then a 2003-like heatwave would not have occurred at least once during the specified τ-year window.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": true,
     "variables": {
       "X": "Presence versus absence of anthropogenic CO2 emissions",
@@ -911,11 +798,7 @@
         "Return-period interpretation of heatwave occurrence"
       ]
     },
-    "trap": {
-      "type": "F5",
-      "subtype": "Path and framing dependence",
-      "subtype_name": "Event redefinition over time"
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "A counterfactual world comparison where the outcome depends on aggregating yearly events over a longer temporal window.",
     "key_insight": "Changing which temporal features are held fixed can reverse causal interpretations.",
@@ -923,8 +806,7 @@
       "answer_if_condition_1": "If stationarity holds, the event becomes nearly certain over long τ even without CO2.",
       "answer_if_condition_2": "If nonstationarity is allowed, the absence of CO2 could substantially reduce the chance of any occurrence."
     },
-    "wise_refusal": "The paper notes that stationarity is unrealistic and does not fully specify a nonstationary alternative, preventing a definitive answer.",
-    "gold_rationale": "Because the causal conclusion depends on how time and stationarity are fixed, the counterfactual must be labeled CONDITIONAL.",
+    "gold_rationale": "Because the causal conclusion depends on how time and stationarity are fixed, the counterfactual must be labeled CONDITIONAL. The paper notes that stationarity is unrealistic and does not fully specify a nonstationary alternative, preventing a definitive answer.",
     "hidden_timestamp": "Whether stationarity holds and whether probabilities are allowed to vary over time.",
     "validator_2": "Longling Geng",
     "final_score_2": 0.75
@@ -940,7 +822,7 @@
     "subtype": "Threshold Effects",
     "scenario": "A coral reef experiences bleaching when water temperature exceeds 30°C for sustained periods. This year, three factors contributed to reaching 30.5°C: El Niño added 0.3°C, climate change added 0.4°C, and a local heat wave added 0.2°C. The baseline temperature was 29.6°C. An environmentalist claims: 'Climate change caused the bleaching—without it, we'd be under the threshold.'",
     "counterfactual_claim": "If climate change had not warmed waters by 0.4°C, coral bleaching would not have occurred.",
-    "label": "CONDITIONAL",
+    "label": "AMBIGUOUS",
     "is_ambiguous": false,
     "variables": {
       "X1": "El Niño contribution (+0.3°C)",
@@ -953,12 +835,7 @@
         "Threshold effect at 30°C"
       ]
     },
-    "trap": {
-      "type": "F3",
-      "type_name": "Overdetermination",
-      "subtype": "Threshold Effects",
-      "subtype_name": "Multiple Factors Jointly Exceed Threshold"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "Baseline(29.6°C) + X1(+0.3) + X2(+0.4) + X3(+0.2) = 30.5°C > 30°C threshold → bleaching(Y). Multiple combinations of two factors sufficient to exceed threshold. Answer depends on which factors are held fixed in counterfactual.",
     "key_insight": "When multiple factors jointly push a system past a threshold, removing one factor may or may not prevent the outcome depending on which other factors remain active.",
@@ -967,8 +844,7 @@
       "answer_if_condition_1": "If only X2 is removed and X1+X3 remain: 29.6 + 0.3 + 0.2 = 30.1°C, still exceeds 30°C threshold → bleaching occurs → claim INVALID.",
       "answer_if_condition_2": "If the counterfactual world has neither El Niño nor heat wave (unnatural interpretation): 29.6 + 0 = 29.6°C, under threshold → no bleaching → claim VALID."
     },
-    "wise_refusal": "The counterfactual is CONDITIONAL on which factors remain active. If we remove only climate change (0.4°C) but El Niño and the heat wave remain, temperature is 29.6 + 0.3 + 0.2 = 30.1°C, still exceeding the 30°C threshold—bleaching would still occur. However, if the counterfactual world also lacks El Niño or the heat wave (perhaps interpreting 'without climate change' as a cooler baseline world), bleaching might not occur. The scenario doesn't specify these invariants, making the answer underdetermined.",
-    "gold_rationale": "CONDITIONAL on invariants. Most natural interpretation: remove X2, keep X1 and X3 (natural variation) → 30.1°C → still bleaches → INVALID. Alternative interpretation: counterfactual world has cooler baseline or no El Niño → under 30°C → VALID. Need explicit specification: Are X1 and X3 natural variations that occur independent of X2? If yes, claim INVALID. If climate change somehow enabled the heat wave, claim might be VALID.",
+    "gold_rationale": "CONDITIONAL on invariants. Most natural interpretation: remove X2, keep X1 and X3 (natural variation) → 30.1°C → still bleaches → INVALID. Alternative interpretation: counterfactual world has cooler baseline or no El Niño → under 30°C → VALID. Need explicit specification: Are X1 and X3 natural variations that occur independent of X2? If yes, claim INVALID. If climate change somehow enabled the heat wave, claim might be VALID. The counterfactual is CONDITIONAL on which factors remain active. If we remove only climate change (0.4°C) but El Niño and the heat wave remain, temperature is 29.6 + 0.3 + 0.2 = 30.1°C, still exceeding the 30°C threshold—bleaching would still occur. However, if the counterfactual world also lacks El Niño or the heat wave (perhaps interpreting 'without climate change' as a cooler baseline world), bleaching might not occur. The scenario doesn't specify these invariants, making the answer underdetermined.",
     "invariants": [
       "Bleaching threshold: 30°C (sustained)",
       "Actual temperature: 30.5°C (29.6 + 0.3 + 0.4 + 0.2)",
@@ -994,7 +870,7 @@
     "subtype": "Threshold Effects",
     "scenario": "A wetland ecosystem collapses when pollution levels exceed 50 ppm. This year, three pollutants contributed: agricultural runoff added 30 ppm, industrial discharge added 15 ppm, and urban stormwater added 10 ppm. Total: 55 ppm. Environmental regulators target the agricultural sector: 'If farms reduce runoff by 10 ppm, we stay under threshold and prevent collapse.'",
     "counterfactual_claim": "If agricultural runoff were reduced by 10 ppm (bringing it to 20 ppm), the wetland ecosystem would not collapse.",
-    "label": "VALID",
+    "label": "YES",
     "is_ambiguous": false,
     "variables": {
       "X1": "Agricultural runoff (30 ppm)",
@@ -1007,12 +883,7 @@
         "Collapse threshold: 50 ppm"
       ]
     },
-    "trap": {
-      "type": "F3",
-      "type_name": "Overdetermination",
-      "subtype": "Threshold Effects",
-      "subtype_name": "Multiple Contributors to Threshold Exceedance"
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "X1(30) + X2(15) + X3(10) = 55 ppm > 50 ppm threshold → collapse(Y). Reducing X1 by 10: 20 + 15 + 10 = 45 ppm < 50 ppm → no collapse. Unlike the coral case, this has deterministic arithmetic: any reduction bringing total below 50 prevents collapse.",
     "key_insight": "For threshold effects with additive contributions, reducing any single contributor below the threshold prevents the outcome if other contributors remain constant.",
@@ -1021,8 +892,7 @@
       "answer_if_condition_1": "If reducing agricultural runoff by 10 ppm brings total below 50 ppm threshold (20+15+10=45), collapse is prevented—claim VALID.",
       "answer_if_condition_2": "If other sources increase when agriculture reduces (substitution effect), total might still exceed threshold—claim CONDITIONAL."
     },
-    "wise_refusal": "The counterfactual is VALID under stated invariants. Agricultural runoff currently contributes 30 ppm. Reducing it by 10 ppm to 20 ppm, while holding industrial (15 ppm) and urban (10 ppm) constant, yields total pollution of 45 ppm—below the 50 ppm collapse threshold. The ecosystem would not collapse. This is straightforward threshold arithmetic: 20 + 15 + 10 = 45 < 50. Unlike cases with multiple sufficient causes, here contributors are additive, and reducing one below the threshold prevents the outcome as long as others remain fixed.",
-    "gold_rationale": "VALID. Threshold effect with additive contributions. Current: 30+15+10=55>50 → collapse. Counterfactual: reduce X1 to 20 → 20+15+10=45<50 → no collapse. This differs from overdetermination cases because contributors are additive and threshold is deterministic. Reducing any single contributor sufficiently (while holding others fixed) brings total below threshold and prevents outcome. Simple arithmetic with clear threshold mechanics.",
+    "gold_rationale": "VALID. Threshold effect with additive contributions. Current: 30+15+10=55>50 → collapse. Counterfactual: reduce X1 to 20 → 20+15+10=45<50 → no collapse. This differs from overdetermination cases because contributors are additive and threshold is deterministic. Reducing any single contributor sufficiently (while holding others fixed) brings total below threshold and prevents outcome. Simple arithmetic with clear threshold mechanics. The counterfactual is VALID under stated invariants. Agricultural runoff currently contributes 30 ppm. Reducing it by 10 ppm to 20 ppm, while holding industrial (15 ppm) and urban (10 ppm) constant, yields total pollution of 45 ppm—below the 50 ppm collapse threshold. The ecosystem would not collapse. This is straightforward threshold arithmetic: 20 + 15 + 10 = 45 < 50. Unlike cases with multiple sufficient causes, here contributors are additive, and reducing one below the threshold prevents the outcome as long as others remain fixed.",
     "invariants": [
       "Collapse threshold: 50 ppm (deterministic)",
       "Industrial discharge remains 15 ppm in counterfactual",

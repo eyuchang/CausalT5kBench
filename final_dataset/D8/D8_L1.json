@@ -40,8 +40,7 @@
       "condition_A": "If user extrapolates linearly: Reject the inference - correlation does not imply zero hallucinations.",
       "condition_B": "If hallucination rate measured directly: Even if truthfulness rises, nonzero hallucination rate can remain."
     },
-    "wise_refusal": "Parameter count correlates with benchmark scores, but that does not imply perfection. Larger models can still hallucinate; assuming the trend reaches zero defects is an extrapolation error.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Correlation != total elimination of defects. Larger models can still hallucinate, sometimes more persuasively.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Correlation != total elimination of defects. Larger models can still hallucinate, sometimes more persuasively. Parameter count correlates with benchmark scores, but that does not imply perfection. Larger models can still hallucinate; assuming the trend reaches zero defects is an extrapolation error.",
     "initial_author": "Arya Marwaha",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -89,8 +88,7 @@
       "condition_A": "If creativity test requires risky outputs: Lower diversity can be a direct consequence of filtering, not reduced capability.",
       "condition_B": "If creativity measured on safe tasks: The trade-off may shrink; test dependence matters."
     },
-    "wise_refusal": "The negative association reflects distribution truncation from safety filtering. It doesn't prove safety training destroys underlying reasoning; it may restrict outputs that contribute to measured creativity.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Safety filters truncate the output distribution tail. Association is driven by truncation, not necessarily loss of reasoning ability.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Safety filters truncate the output distribution tail. Association is driven by truncation, not necessarily loss of reasoning ability. The negative association reflects distribution truncation from safety filtering. It doesn't prove safety training destroys underlying reasoning; it may restrict outputs that contribute to measured creativity.",
     "initial_author": "Arya Marwaha",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -138,8 +136,7 @@
       "condition_A": "If question matches common misconception: High probability can amplify wrong answers.",
       "condition_B": "If question is rare/technical: Low probability might reflect uncertainty; error depends on knowledge coverage."
     },
-    "wise_refusal": "High token probability indicates confidence, not truth. Models can assign high probability to common misconceptions; the confidence-truth link is weak under distribution shift or adversarial prompts.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Models can be highly confident in common misconceptions. Confidence != correctness, especially in adversarial or misconception-heavy settings.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Models can be highly confident in common misconceptions. Confidence != correctness, especially in adversarial or misconception-heavy settings. High token probability indicates confidence, not truth. Models can assign high probability to common misconceptions; the confidence-truth link is weak under distribution shift or adversarial prompts.",
     "initial_author": "Arya Marwaha",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -187,8 +184,7 @@
       "condition_A": "If neuron is polysemantic: Deleting it may harm other functions without reliably removing hate speech.",
       "condition_B": "If neuron is specialized (rare): Ablation might reduce a behavior but still risks side effects."
     },
-    "wise_refusal": "Neuron 55 correlates with 'hate' output, but neurons are often polysemantic. Deleting it based on association alone can degrade other capabilities and may not eliminate hate speech robustly.",
-    "gold_rationale": "The correct reasoning for this case involves understanding One neuron can encode multiple unrelated concepts. Correlation does not imply 1:1 functional mapping; ablation can damage unrelated capabilities.",
+    "gold_rationale": "The correct reasoning for this case involves understanding One neuron can encode multiple unrelated concepts. Correlation does not imply 1:1 functional mapping; ablation can damage unrelated capabilities. Neuron 55 correlates with 'hate' output, but neurons are often polysemantic. Deleting it based on association alone can degrade other capabilities and may not eliminate hate speech robustly.",
     "initial_author": "Arya Marwaha",
     "validator": "Alessandro Balzi",
     "final_score": 9.5,
@@ -236,8 +232,7 @@
       "condition_A": "If training overrepresents aggressive attacks: Model learns aggression->danger cue; politeness can slip through.",
       "condition_B": "If training balanced across tones: Tone effect should reduce; measure jailbreak success directly."
     },
-    "wise_refusal": "This likely reflects safety training bias: aggressive prompts were seen as attacks. Polite harmful queries may bypass filters because they don't trigger the learned attack cues.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Safety training focused on aggressive attacks. Tone can act as a spurious cue; polite harmful queries may bypass classifiers.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Safety training focused on aggressive attacks. Tone can act as a spurious cue; polite harmful queries may bypass classifiers. This likely reflects safety training bias: aggressive prompts were seen as attacks. Polite harmful queries may bypass filters because they don't trigger the learned attack cues.",
     "initial_author": "Arya Marwaha",
     "validator": "Alessandro Balzi",
     "final_score": 9.5,
@@ -285,8 +280,7 @@
       "condition_A": "If only successful startups surveyed: Survivorship bias inflates apparent effect of transformers.",
       "condition_B": "If failed startups included: True effect size would likely be much smaller."
     },
-    "wise_refusal": "This analysis only examines successful startups. Many failed ventures also used transformers. Without including failures, we cannot conclude transformers cause success.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Only survivors observed; failures not counted. Many failed startups also used transformers but are not in the sample.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Only survivors observed; failures not counted. Many failed startups also used transformers but are not in the sample. This analysis only examines successful startups. Many failed ventures also used transformers. Without including failures, we cannot conclude transformers cause success.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -334,8 +328,7 @@
       "condition_A": "If resources correlated with GPU choice: Hardware is marker of capability, not cause.",
       "condition_B": "If hardware randomly assigned: Could test causal effect, but this is not the case."
     },
-    "wise_refusal": "Companies investing in premium GPUs are typically well-resourced with strong talent. The hardware investment is a marker of organizational capability, not necessarily the cause of model performance.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Well-resourced companies self-select into premium hardware. Companies buying premium GPUs also have better talent, data, and processes.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Well-resourced companies self-select into premium hardware. Companies buying premium GPUs also have better talent, data, and processes. Companies investing in premium GPUs are typically well-resourced with strong talent. The hardware investment is a marker of organizational capability, not necessarily the cause of model performance.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -383,8 +376,7 @@
       "condition_A": "If selected on extreme v1 performance: Regression to mean expected; v2 may not be harder.",
       "condition_B": "If random sample of models: Drop in scores could indicate genuine difficulty increase."
     },
-    "wise_refusal": "Selecting models based on exceptional v1 performance introduces regression to the mean. Some of that performance was noise. The v2 drop may reflect statistical artifact, not benchmark difficulty.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Selection on extreme values leads to regression. Exceptionally high scores include measurement noise that won't repeat.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Selection on extreme values leads to regression. Exceptionally high scores include measurement noise that won't repeat. Selecting models based on exceptional v1 performance introduces regression to the mean. Some of that performance was noise. The v2 drop may reflect statistical artifact, not benchmark difficulty.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -432,8 +424,7 @@
       "condition_A": "If relationship is aggregate only: Individual companies may show different patterns.",
       "condition_B": "If relationship holds at company level: Then individual inference is more justified."
     },
-    "wise_refusal": "This is an ecological fallacy. Country-level correlations between funding and patents do not imply the same relationship holds for individual companies. Within-country variation may show different patterns.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Aggregate correlation does not imply individual-level causation. Country-level patterns may not hold for individual companies.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Aggregate correlation does not imply individual-level causation. Country-level patterns may not hold for individual companies. This is an ecological fallacy. Country-level correlations between funding and patents do not imply the same relationship holds for individual companies. Within-country variation may show different patterns.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -481,8 +472,7 @@
       "condition_A": "If adversarial inputs are rare (0.1%): Most flagged inputs are false positives despite high sensitivity.",
       "condition_B": "If adversarial inputs are common (10%+): Then most flagged inputs are likely true positives."
     },
-    "wise_refusal": "The conclusion ignores base rates. If adversarial inputs are rare in deployment, even a 95% sensitive test will flag mostly false positives. The positive predictive value depends critically on the prior probability.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Without base rate, PPV calculation is incomplete. If adversarial inputs are rare, most positives may be false positives.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Without base rate, PPV calculation is incomplete. If adversarial inputs are rare, most positives may be false positives. The conclusion ignores base rates. If adversarial inputs are rare in deployment, even a 95% sensitive test will flag mostly false positives. The positive predictive value depends critically on the prior probability.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -530,8 +520,7 @@
       "condition_A": "If controls maintained: RLHF causally reduced harmful outputs.",
       "condition_B": "If other factors varied: Effect may be confounded."
     },
-    "wise_refusal": "This controlled ablation study provides valid causal evidence. By holding all factors constant except RLHF, the 40% reduction in harmful outputs can be attributed to RLHF training.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Controlled ablation isolates RLHF effect. With proper controls, causal attribution is justified.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Controlled ablation isolates RLHF effect. With proper controls, causal attribution is justified. This controlled ablation study provides valid causal evidence. By holding all factors constant except RLHF, the 40% reduction in harmful outputs can be attributed to RLHF training.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -579,8 +568,7 @@
       "condition_A": "If randomization proper: Compute causally improves benchmark scores.",
       "condition_B": "If assignment biased: Confounding may explain the difference."
     },
-    "wise_refusal": "This randomized experiment provides causal evidence. Random assignment ensures the compute groups are comparable on all other factors, supporting the conclusion that compute causes performance gains.",
-    "gold_rationale": "The correct reasoning for this case involves understanding RCT design supports causal inference. Random assignment eliminates confounding.",
+    "gold_rationale": "The correct reasoning for this case involves understanding RCT design supports causal inference. Random assignment eliminates confounding. This randomized experiment provides causal evidence. Random assignment ensures the compute groups are comparable on all other factors, supporting the conclusion that compute causes performance gains.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -628,8 +616,7 @@
       "condition_A": "If bug was random: Rate limits causally reduced timeouts.",
       "condition_B": "If bug correlated with user type: Selection bias possible."
     },
-    "wise_refusal": "This natural experiment provides causal evidence. The bug created quasi-random assignment to rate limits, allowing causal inference about the effect on timeout errors.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Natural experiment via exogenous shock. Accidental assignment mimics randomization.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Natural experiment via exogenous shock. Accidental assignment mimics randomization. This natural experiment provides causal evidence. The bug created quasi-random assignment to rate limits, allowing causal inference about the effect on timeout errors.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -677,8 +664,7 @@
       "condition_A": "If mechanism understood and dose-response present: Causal claim justified.",
       "condition_B": "If dose-response inconsistent: Other factors may be involved."
     },
-    "wise_refusal": "The combination of a known mechanistic pathway (random neuron zeroing prevents co-adaptation) and a clear dose-response relationship supports the causal claim that dropout prevents overfitting.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Known mechanism + dose-response gradient. Mechanistic understanding plus dose-response supports causation.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Known mechanism + dose-response gradient. Mechanistic understanding plus dose-response supports causation. The combination of a known mechanistic pathway (random neuron zeroing prevents co-adaptation) and a clear dose-response relationship supports the causal claim that dropout prevents overfitting.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -726,8 +712,7 @@
       "condition_A": "If participants equally qualified: GPU access causally increased publications.",
       "condition_B": "If qualification differences existed: Selection bias possible."
     },
-    "wise_refusal": "The lottery design provides causal evidence. Among equally qualified applicants, random assignment to GPU access allows attributing the publication difference to the resource access.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Lottery creates random assignment. Among equally qualified applicants, lottery mimics RCT.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Lottery creates random assignment. Among equally qualified applicants, lottery mimics RCT. The lottery design provides causal evidence. Among equally qualified applicants, random assignment to GPU access allows attributing the publication difference to the resource access.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -775,8 +760,7 @@
       "condition_A": "If task distributions differ: Simpson's paradox; Model B may actually be better.",
       "condition_B": "If same task distribution: Overall comparison would be valid."
     },
-    "wise_refusal": "This is Simpson's paradox. Model A's higher overall accuracy may reflect being tested on easier task categories. Within each category, Model B is superior. The aggregate comparison is misleading.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Aggregate reverses subgroup pattern. Model A may just be tested more on easier tasks.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Aggregate reverses subgroup pattern. Model A may just be tested more on easier tasks. This is Simpson's paradox. Model A's higher overall accuracy may reflect being tested on easier task categories. Within each category, Model B is superior. The aggregate comparison is misleading.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -824,8 +808,7 @@
       "condition_A": "If no mechanism established: Temporal sequence doesn't prove causation.",
       "condition_B": "If config change directly affects crash-related code: Causation more plausible."
     },
-    "wise_refusal": "This commits the post hoc fallacy. The crash occurred after the config change, but temporal sequence alone doesn't establish causation. Other factors (hardware, memory, other code) could be responsible.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Temporal sequence without mechanism. Post hoc ergo propter hoc fallacy.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Temporal sequence without mechanism. Post hoc ergo propter hoc fallacy. This commits the post hoc fallacy. The crash occurred after the config change, but temporal sequence alone doesn't establish causation. Other factors (hardware, memory, other code) could be responsible.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -873,8 +856,7 @@
       "condition_A": "If satisfaction precedes usage: Reverse causation; satisfaction drives feature adoption.",
       "condition_B": "If usage precedes satisfaction change: Forward causation more plausible."
     },
-    "wise_refusal": "This may be reverse causation. Users who are already satisfied with the product may be more likely to explore and use AI features. The features may not be causing the satisfaction.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Direction may be reversed. Satisfied users may seek out AI features, not vice versa.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Direction may be reversed. Satisfied users may seek out AI features, not vice versa. This may be reverse causation. Users who are already satisfied with the product may be more likely to explore and use AI features. The features may not be causing the satisfaction.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -908,12 +890,7 @@
         }
       ]
     },
-    "trap": {
-      "type": "AMBIGUOUS",
-      "type_name": "Ambiguous",
-      "subtype": "",
-      "subtype_name": ""
-    },
+    "trap": null,
     "difficulty": "Medium",
     "causal_structure": "Causal direction unclear",
     "key_insight": "Longer context may correlate with other improvements; direct effect unclear.",
@@ -922,8 +899,7 @@
       "condition_A": "If context is only difference: Causal claim may be valid.",
       "condition_B": "If other factors differ: Cannot isolate context effect."
     },
-    "wise_refusal": "The causal relationship is ambiguous. Longer context windows often come with larger models and more training. Without controlled comparison, we cannot determine if context length itself causes better understanding or if it's a proxy for other improvements.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Causal direction unclear. Longer context may correlate with other improvements; direct effect unclear.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Causal direction unclear. Longer context may correlate with other improvements; direct effect unclear. The causal relationship is ambiguous. Longer context windows often come with larger models and more training. Without controlled comparison, we cannot determine if context length itself causes better understanding or if it's a proxy for other improvements.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -957,12 +933,7 @@
         }
       ]
     },
-    "trap": {
-      "type": "AMBIGUOUS",
-      "type_name": "Ambiguous",
-      "subtype": "",
-      "subtype_name": ""
-    },
+    "trap": null,
     "difficulty": "Hard",
     "causal_structure": "Multiple possible mechanisms",
     "key_insight": "Fine-tuning may improve domain tasks while degrading others.",
@@ -971,8 +942,7 @@
       "condition_A": "If general capabilities preserved: Fine-tuning genuinely adds knowledge.",
       "condition_B": "If general capabilities degrade: Improvement may be trade-off, not net gain."
     },
-    "wise_refusal": "The causal mechanism is ambiguous. Fine-tuning improves domain performance, but it's unclear whether this represents genuine knowledge acquisition or a reallocation of capacity that may harm other capabilities. The causal story is incomplete.",
-    "gold_rationale": "The correct reasoning for this case involves understanding Multiple possible mechanisms. Fine-tuning may improve domain tasks while degrading others.",
+    "gold_rationale": "The correct reasoning for this case involves understanding Multiple possible mechanisms. Fine-tuning may improve domain tasks while degrading others. The causal mechanism is ambiguous. Fine-tuning improves domain performance, but it's unclear whether this represents genuine knowledge acquisition or a reallocation of capacity that may harm other capabilities. The causal story is incomplete.",
     "initial_author": "Alessandro Balzi",
     "validator": "Alessandro Balzi",
     "final_score": 10.0,
@@ -1005,12 +975,12 @@
       "answer_if_A": "If aggregate trend doesn't match individual, invalid (WOLF).",
       "answer_if_B": "If consistent, valid."
     },
-    "wise_refusal": "This is a WOLF case (W5). It infers individual causation from aggregate (national) data, ignoring that individuals within those nations might differ.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W5). It infers individual causation from aggregate (national) data, ignoring that individuals within those nations might differ."
   },
   {
     "id": "T3-BucketI-L1-002",
@@ -1038,12 +1008,12 @@
       "answer_if_A": "If dropouts ignored (Z), invalid (WOLF).",
       "answer_if_B": "If included, valid."
     },
-    "wise_refusal": "This is a WOLF case (W2). The sample excludes employees who hated remote work and already quit (Z), creating survivorship bias.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W2). The sample excludes employees who hated remote work and already quit (Z), creating survivorship bias."
   },
   {
     "id": "T3-BucketI-L1-003",
@@ -1071,12 +1041,12 @@
       "answer_if_A": "If unbalanced (Z), invalid (WOLF).",
       "answer_if_B": "If balanced, valid."
     },
-    "wise_refusal": "This is a WOLF case (W8). Simpson's Paradox reverses the trend because Model B was tested primarily on easy tasks (Z).",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.5,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.5
+    "final_score_2": 9.5,
+    "gold_rationale": "This is a WOLF case (W8). Simpson's Paradox reverses the trend because Model B was tested primarily on easy tasks (Z)."
   },
   {
     "id": "T3-BucketI-L1-004",
@@ -1104,12 +1074,12 @@
       "answer_if_A": "If random, the result is causal (SHEEP).",
       "answer_if_B": "If broken, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S1). Randomization eliminates confounding variables.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 10.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 10.0
+    "final_score_2": 10.0,
+    "gold_rationale": "This is a SHEEP case (S1). Randomization eliminates confounding variables."
   },
   {
     "id": "T3-BucketI-L1-005",
@@ -1137,12 +1107,12 @@
       "answer_if_A": "If motivated (Z) chose X, it's biased.",
       "answer_if_B": "If random, valid."
     },
-    "wise_refusal": "This is a WOLF case (W1). Motivated employees (Z) self-selected into remote work (X).",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W1). Motivated employees (Z) self-selected into remote work (X)."
   },
   {
     "id": "T3-BucketI-L1-006",
@@ -1170,12 +1140,12 @@
       "answer_if_A": "If random, valid (SHEEP).",
       "answer_if_B": "If assigned by role, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S2). ID digits act as a random assignment mechanism.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.5,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.5
+    "final_score_2": 9.5,
+    "gold_rationale": "This is a SHEEP case (S2). ID digits act as a random assignment mechanism."
   },
   {
     "id": "T3-BucketI-L1-007",
@@ -1203,12 +1173,12 @@
       "answer_if_A": "If uncalibrated, X is noise.",
       "answer_if_B": "If calibrated, X is signal."
     },
-    "wise_refusal": "This is a WOLF case (W6). High confidence (X) is a poor measure of accuracy (Y) in uncalibrated models.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W6). High confidence (X) is a poor measure of accuracy (Y) in uncalibrated models."
   },
   {
     "id": "T3-BucketI-L1-008",
@@ -1236,12 +1206,12 @@
       "answer_if_A": "If consistent, valid (SHEEP).",
       "answer_if_B": "If noisy, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S8). A monotonic dose-response curve suggests causal predictive power.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.5,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.5
+    "final_score_2": 9.5,
+    "gold_rationale": "This is a SHEEP case (S8). A monotonic dose-response curve suggests causal predictive power."
   },
   {
     "id": "T3-BucketI-L1-009",
@@ -1269,12 +1239,12 @@
       "answer_if_A": "If memorization (Z), invalid.",
       "answer_if_B": "If reasoning, valid."
     },
-    "wise_refusal": "This is a WOLF case (W6). The score (X) measures ability to exploit leakage (Z), not reasoning (Y).",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W6). The score (X) measures ability to exploit leakage (Z), not reasoning (Y)."
   },
   {
     "id": "T3-BucketI-L1-010",
@@ -1302,12 +1272,12 @@
       "answer_if_A": "If verified, valid (SHEEP).",
       "answer_if_B": "If ambiguous, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S6). Identifying the mechanism (Z) confirms the causal link.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.5,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.5
+    "final_score_2": 9.5,
+    "gold_rationale": "This is a SHEEP case (S6). Identifying the mechanism (Z) confirms the causal link."
   },
   {
     "id": "T3-BucketI-L1-011",
@@ -1335,12 +1305,12 @@
       "answer_if_A": "If rare (Z), most positives are false.",
       "answer_if_B": "If common, valid."
     },
-    "wise_refusal": "This is a WOLF case (W6). Base rate neglect (Z) leads to false conclusions.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W6). Base rate neglect (Z) leads to false conclusions."
   },
   {
     "id": "T3-BucketI-L1-W4-Fix",
@@ -1368,12 +1338,12 @@
       "answer_if_A": "If variation is random (Z), invalid (WOLF).",
       "answer_if_B": "If errors are systematic, valid."
     },
-    "wise_refusal": "This is a WOLF case (W4). By selecting the most extreme outliers (X), natural statistical regression ensures they will improve (Y) in the next measurement, even without the patch.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W4). By selecting the most extreme outliers (X), natural statistical regression ensures they will improve (Y) in the next measurement, even without the patch."
   },
   {
     "id": "T3-BucketI-L1-013",
@@ -1401,12 +1371,12 @@
       "answer_if_A": "If hallucinations persist (Z), invalid.",
       "answer_if_B": "If linear, valid."
     },
-    "wise_refusal": "This is a WOLF case (W10). Extrapolating the trend (X) ignores persistent hallucinations (Z).",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W10). Extrapolating the trend (X) ignores persistent hallucinations (Z)."
   },
   {
     "id": "T3-BucketI-L1-014",
@@ -1434,12 +1404,12 @@
       "answer_if_A": "If invariant, causal (SHEEP).",
       "answer_if_B": "If fragile, spurious."
     },
-    "wise_refusal": "This is a SHEEP case (S7). Invariance implies causation.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a SHEEP case (S7). Invariance implies causation."
   },
   {
     "id": "T3-BucketI-L1-015",
@@ -1467,12 +1437,12 @@
       "answer_if_A": "If refusal (Z), invalid.",
       "answer_if_B": "If skill loss, valid."
     },
-    "wise_refusal": "This is a WOLF case (W3). The filter (Z) rejects prompts, mimicking stupidity.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W3). The filter (Z) rejects prompts, mimicking stupidity."
   },
   {
     "id": "T3-BucketI-L1-016",
@@ -1500,12 +1470,12 @@
       "answer_if_A": "If myths (Z) present, invalid.",
       "answer_if_B": "If clean, valid."
     },
-    "wise_refusal": "This is a WOLF case (W7). High prob (X) often means 'common in training' (Z), not true (Y).",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W7). High prob (X) often means 'common in training' (Z), not true (Y)."
   },
   {
     "id": "T3-BucketI-L1-017",
@@ -1533,12 +1503,12 @@
       "answer_if_A": "If missing (Z), invalid.",
       "answer_if_B": "If present, valid."
     },
-    "wise_refusal": "This is a WOLF case (W1). Training (Z) focused on aggression, creating a blind spot.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W1). Training (Z) focused on aggression, creating a blind spot."
   },
   {
     "id": "T3-BucketI-L1-018",
@@ -1566,12 +1536,12 @@
       "answer_if_A": "If Z hidden, invalid.",
       "answer_if_B": "If counted, valid."
     },
-    "wise_refusal": "This is a WOLF case (W6). The score (Y) ignores Z, making X misleading.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W6). The score (Y) ignores Z, making X misleading."
   },
   {
     "id": "T3-BucketI-L1-019",
@@ -1599,12 +1569,12 @@
       "answer_if_A": "If reaction (Z), invalid.",
       "answer_if_B": "If secret, valid."
     },
-    "wise_refusal": "This is a WOLF case (W9). The prediction (X) changes the outcome (Y) via driver reaction (Z).",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W9). The prediction (X) changes the outcome (Y) via driver reaction (Z)."
   },
   {
     "id": "T3-BucketI-L1-020",
@@ -1632,12 +1602,12 @@
       "answer_if_A": "If flattery (Z), invalid.",
       "answer_if_B": "If helpful, valid."
     },
-    "wise_refusal": "This is a WOLF case (W6). Flattery (Z) inflates the score (X) without value (Y).",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W6). Flattery (Z) inflates the score (X) without value (Y)."
   },
   {
     "id": "T3-BucketI-L1-021",
@@ -1665,12 +1635,12 @@
       "answer_if_A": "If yes, invalid.",
       "answer_if_B": "If no, valid."
     },
-    "wise_refusal": "This is a WOLF case (W6). Score (X) measures padding (Z), not help (Y).",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W6). Score (X) measures padding (Z), not help (Y)."
   },
   {
     "id": "T3-BucketI-L1-022",
@@ -1698,12 +1668,12 @@
       "answer_if_A": "If yes, causal (SHEEP).",
       "answer_if_B": "If no, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S6). The mechanism (Z) forces the outcome (Y).",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.5,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.5
+    "final_score_2": 9.5,
+    "gold_rationale": "This is a SHEEP case (S6). The mechanism (Z) forces the outcome (Y)."
   },
   {
     "id": "T3-BucketI-L1-023",
@@ -1731,12 +1701,12 @@
       "answer_if_A": "If no, invalid.",
       "answer_if_B": "If yes, valid."
     },
-    "wise_refusal": "This is a WOLF case (W6). Confidence (X) measures fluency on unknown data (Z).",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W6). Confidence (X) measures fluency on unknown data (Z)."
   },
   {
     "id": "T3-BucketI-L1-024",
@@ -1764,12 +1734,12 @@
       "answer_if_A": "If no, invalid.",
       "answer_if_B": "If yes, valid."
     },
-    "wise_refusal": "This is a WOLF case (W1). Training (X) selected on aggression (Z), ignoring politeness.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W1). Training (X) selected on aggression (Z), ignoring politeness."
   },
   {
     "id": "T3-BucketI-L1-025",
@@ -1797,12 +1767,12 @@
       "answer_if_A": "If glitch, invalid.",
       "answer_if_B": "If legit, valid."
     },
-    "wise_refusal": "This is a WOLF case (W6). Points (X) come from glitch (Z), not skill (Y).",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W6). Points (X) come from glitch (Z), not skill (Y)."
   },
   {
     "id": "T3-BucketI-L1-026",
@@ -1830,12 +1800,12 @@
       "answer_if_A": "If suppressed, invalid.",
       "answer_if_B": "If solved, valid."
     },
-    "wise_refusal": "This is a WOLF case (W7). X is caused by Z (suppression), not Y.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W7). X is caused by Z (suppression), not Y."
   },
   {
     "id": "T3-BucketI-L1-027",
@@ -1863,12 +1833,12 @@
       "answer_if_A": "If no, invalid.",
       "answer_if_B": "If yes, valid."
     },
-    "wise_refusal": "This is a WOLF case (W1). Training (X) selected on Z, creating bias.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W1). Training (X) selected on Z, creating bias."
   },
   {
     "id": "T3-BucketI-L1-028",
@@ -1896,12 +1866,12 @@
       "answer_if_A": "If yes, invalid.",
       "answer_if_B": "If no, valid."
     },
-    "wise_refusal": "This is a WOLF case (W3). Cautious users (Z) confound the effect of X.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a WOLF case (W3). Cautious users (Z) confound the effect of X."
   },
   {
     "id": "T3-BucketI-L1-029",
@@ -1929,12 +1899,12 @@
       "answer_if_A": "If yes, valid (SHEEP).",
       "answer_if_B": "If no, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S1). Randomization eliminates confounding.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 10.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 10.0
+    "final_score_2": 10.0,
+    "gold_rationale": "This is a SHEEP case (S1). Randomization eliminates confounding."
   },
   {
     "id": "T3-BucketI-L1-030",
@@ -1962,12 +1932,12 @@
       "answer_if_A": "If balanced, valid (SHEEP).",
       "answer_if_B": "If imbalanced, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S1). Randomization ensures validity.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 10.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 10.0
+    "final_score_2": 10.0,
+    "gold_rationale": "This is a SHEEP case (S1). Randomization ensures validity."
   },
   {
     "id": "T3-BucketI-L1-031",
@@ -1995,12 +1965,12 @@
       "answer_if_A": "If yes, valid (SHEEP).",
       "answer_if_B": "If no, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S2). Exogenous shock (Z) acts as intervention.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.5,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.5
+    "final_score_2": 9.5,
+    "gold_rationale": "This is a SHEEP case (S2). Exogenous shock (Z) acts as intervention."
   },
   {
     "id": "T3-BucketI-L1-032",
@@ -2028,12 +1998,12 @@
       "answer_if_A": "If yes, valid (SHEEP).",
       "answer_if_B": "If no, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S2). Arbitrary cutoff mimics randomization.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.5,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.5
+    "final_score_2": 9.5,
+    "gold_rationale": "This is a SHEEP case (S2). Arbitrary cutoff mimics randomization."
   },
   {
     "id": "T3-BucketI-L1-033",
@@ -2061,12 +2031,12 @@
       "answer_if_A": "If holds, valid (SHEEP).",
       "answer_if_B": "If fails, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S3). Lottery is a valid IV.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 10.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 10.0
+    "final_score_2": 10.0,
+    "gold_rationale": "This is a SHEEP case (S3). Lottery is a valid IV."
   },
   {
     "id": "T3-BucketI-L1-034",
@@ -2094,12 +2064,12 @@
       "answer_if_A": "If yes, valid (SHEEP).",
       "answer_if_B": "If no, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S3). Distance acts as a natural instrument.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.5,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.5
+    "final_score_2": 9.5,
+    "gold_rationale": "This is a SHEEP case (S3). Distance acts as a natural instrument."
   },
   {
     "id": "T3-BucketI-L1-035",
@@ -2127,12 +2097,12 @@
       "answer_if_A": "If holds, valid (SHEEP).",
       "answer_if_B": "If fails, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S4). RDD isolates the treatment effect.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 10.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 10.0
+    "final_score_2": 10.0,
+    "gold_rationale": "This is a SHEEP case (S4). RDD isolates the treatment effect."
   },
   {
     "id": "T3-BucketI-L1-036",
@@ -2160,12 +2130,12 @@
       "answer_if_A": "If yes, valid (SHEEP).",
       "answer_if_B": "If no, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S5). DiD removes invariant confounders.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.5,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.5
+    "final_score_2": 9.5,
+    "gold_rationale": "This is a SHEEP case (S5). DiD removes invariant confounders."
   },
   {
     "id": "T3-BucketI-L1-037",
@@ -2193,12 +2163,12 @@
       "answer_if_A": "If yes, valid (SHEEP).",
       "answer_if_B": "If no, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S6). Mechanism trace confirms causality.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.5,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.5
+    "final_score_2": 9.5,
+    "gold_rationale": "This is a SHEEP case (S6). Mechanism trace confirms causality."
   },
   {
     "id": "T3-BucketI-L1-038",
@@ -2226,12 +2196,12 @@
       "answer_if_A": "If yes, valid (SHEEP).",
       "answer_if_B": "If no, invalid."
     },
-    "wise_refusal": "This is a SHEEP case (S7). Universal success implies robustness.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is a SHEEP case (S7). Universal success implies robustness."
   },
   {
     "id": "T3-BucketI-L1-039",
@@ -2249,22 +2219,18 @@
         "Polysemanticity"
       ]
     },
-    "trap": {
-      "type": "A1",
-      "type_name": "Ambiguous",
-      "subtype": "Side Effects"
-    },
+    "trap": null,
     "hidden_question": "Polysemantic?",
     "conditional_answers": {
       "answer_if_A": "If yes, ambiguous.",
       "answer_if_B": "If no, valid."
     },
-    "wise_refusal": "This is AMBIGUOUS (A1). Side effects (Z) make the intervention unclear.",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is AMBIGUOUS (A1). Side effects (Z) make the intervention unclear."
   },
   {
     "id": "T3-BucketI-L1-040",
@@ -2282,22 +2248,18 @@
         "Background"
       ]
     },
-    "trap": {
-      "type": "A2",
-      "type_name": "Ambiguous",
-      "subtype": "Clever Hans"
-    },
+    "trap": null,
     "hidden_question": "Feature used?",
     "conditional_answers": {
       "answer_if_A": "If background (Z), invalid.",
       "answer_if_B": "If shape, valid."
     },
-    "wise_refusal": "This is AMBIGUOUS (A2). The model may rely on spurious correlations (Z).",
     "initial_author": "Fernando Torres",
     "validator": "Alanood",
     "final_score": 9.0,
     "validator_2": "Longling Geng",
-    "final_score_2": 9.0
+    "final_score_2": 9.0,
+    "gold_rationale": "This is AMBIGUOUS (A2). The model may rely on spurious correlations (Z)."
   },
   {
     "id": "T3-BucketD-0018",
@@ -2337,8 +2299,7 @@
       "answer_if_condition_1": "If the subject was selected for extreme values, regression to the mean predicts reversion regardless of intervention.",
       "answer_if_condition_2": "If the values were not extreme, other explanations may be valid."
     },
-    "wise_refusal": "The son's career trajectory is an example of Galton's Regression to the Mean. Winning a Nobel Prize (X) requires not just high IQ (genetics) but also exceptional luck and timing (variance). While the son inherits the genetics, he likely did not inherit the extreme positive variance. It is statistically expected for the children of outliers to regress toward the population mean (Y), regardless of the education system (Z).",
-    "gold_rationale": "The son's career trajectory is an example of Galton's Regression to the Mean. Winning a Nobel Prize (X) requires not just high IQ (genetics) but also exceptional luck and timing (variance). While the son inherits the genetics, he likely did not inherit the extreme positive variance. It is statistically expected for the children of outliers to regress toward the population mean (Y), regardless of the education system (Z).",
+    "gold_rationale": "The son's career trajectory is an example of Galton's Regression to the Mean. Winning a Nobel Prize (X) requires not just high IQ (genetics) but also exceptional luck and timing (variance). While the son inherits the genetics, he likely did not inherit the extreme positive variance. It is statistically expected for the children of outliers to regress toward the population mean (Y), regardless of the education system (Z). The son's career trajectory is an example of Galton's Regression to the Mean. Winning a Nobel Prize (X) requires not just high IQ (genetics) but also exceptional luck and timing (variance). While the son inherits the genetics, he likely did not inherit the extreme positive variance. It is statistically expected for the children of outliers to regress toward the population mean (Y), regardless of the education system (Z).",
     "initial_author": "Yuqiao Zeng",
     "validator": "Samantha van Rijs",
     "final_score": 8.0,
@@ -2383,8 +2344,7 @@
       "answer_if_condition_1": "If the subject was selected for extreme values, regression to the mean predicts reversion regardless of intervention.",
       "answer_if_condition_2": "If the values were not extreme, other explanations may be valid."
     },
-    "wise_refusal": "The drop in CPU usage is likely Regression to the Mean. The administrator intervened exactly when the load was at a peak (X). Server loads often exhibit 'bursty' behavior where spikes are transient. It is statistically probable that the load would have dropped (Y) as the traffic burst ended, regardless of the log clearing script (Z). Without evidence that logs were actually consuming CPU, the correlation is likely spurious.",
-    "gold_rationale": "The drop in CPU usage is likely Regression to the Mean. The administrator intervened exactly when the load was at a peak (X). Server loads often exhibit 'bursty' behavior where spikes are transient. It is statistically probable that the load would have dropped (Y) as the traffic burst ended, regardless of the log clearing script (Z). Without evidence that logs were actually consuming CPU, the correlation is likely spurious.",
+    "gold_rationale": "The drop in CPU usage is likely Regression to the Mean. The administrator intervened exactly when the load was at a peak (X). Server loads often exhibit 'bursty' behavior where spikes are transient. It is statistically probable that the load would have dropped (Y) as the traffic burst ended, regardless of the log clearing script (Z). Without evidence that logs were actually consuming CPU, the correlation is likely spurious. The drop in CPU usage is likely Regression to the Mean. The administrator intervened exactly when the load was at a peak (X). Server loads often exhibit 'bursty' behavior where spikes are transient. It is statistically probable that the load would have dropped (Y) as the traffic burst ended, regardless of the log clearing script (Z). Without evidence that logs were actually consuming CPU, the correlation is likely spurious.",
     "initial_author": "Yuqiao Zeng",
     "validator": "Samantha van Rijs",
     "final_score": 8.0,
