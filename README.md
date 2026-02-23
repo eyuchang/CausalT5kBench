@@ -55,6 +55,20 @@ The dataset is organized into 10 main domains (D1-D10) with the following Pearl 
 - **L2 (Intervention)**: Causal effects under interventions
 - **L3 (Counterfactual)**: Counterfactual reasoning about what would have happened
 
+### Label Definitions
+The dataset uses three label types across all Pearl levels (L1, L2, L3):
+
+- **YES**: Cases where the claim matches the scenario, and no trap is identified (only L1 has a sheep type).
+- **NO**: Cases where the claim does not support the scenario, and there must be one and only one trap type.
+- **AMBIGUOUS**: Cases where the claim can support a scenario, or the claim cannot support a scenario, or there are multiple trap types.
+
+### Trap Type Rules
+Trap types are only present for:
+- **NO cases** at all Pearl levels (L1, L2, L3): Each NO case must have exactly one trap type.
+- **L1 YES cases**: L1 YES cases may have a trap type (sheep type).
+
+All other cases (L2 YES, L3 YES, and all AMBIGUOUS cases at any level) should have `trap` set to `null` or an empty object.
+
 ### Causal Traps
 The dataset includes various causal reasoning pitfalls:
 - **Confounding** (C): Omitted variables, common causes
@@ -90,11 +104,11 @@ Each case in the dataset includes:
     "type_name": "Trap Name",
     "subtype": "subtype_code",
     "subtype_name": "Subtype Name"
-  },
+  },  // null for L2/L3 YES and all AMBIGUOUS cases; required for NO cases and optional for L1 YES cases
   "difficulty": "Easy|Medium|Hard",
   "scenario": "Description of the causal scenario",
   "claim": "Causal claim to evaluate",
-  "label": "YES|NO",
+  "label": "YES|NO|AMBIGUOUS",
   "is_ambiguous": false,
   "variables": {
     "X": "Variable X description",
@@ -108,8 +122,7 @@ Each case in the dataset includes:
     "answer_if_condition_1": "...",
     "answer_if_condition_2": "..."
   },
-  "wise_refusal": "Appropriate refusal response",
-  "gold_rationale": "Correct explanation",
+  "gold_rationale": "Correct explanation (includes wise refusal content when applicable)",
   "initial_author": "Author name",
   "validator": "Validator name",
   "final_score": 8.5
