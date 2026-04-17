@@ -7,14 +7,14 @@ How to test LLM for what they know and what they don't know?
 ```
 <p align="center">
   ⬇️ <a href="https://github.com/genglongling/CausalT5kBench">Github</a>  
-  📃 <a href="https://arxiv.org/abs/2502.18836">Paper</a>  
+  📃 <a href="https://arxiv.org/pdf/2602.08939">Paper</a>  
   🌐 <a href="https://example.com/project">Project Page</a>
 </p>
 
 ### Newest Update
-3. [2026/2/8] Benchmark: How to test LLM for what they know and what they don't know? 📃 <a href="https://arxiv.org/abs/2502.18836">CausalT5KBench Paper</a> 
-2. [2026/1/28] Benchmark: 📃 <a href="https://arxiv.org/abs/2502.18836">T3Bench Paper</a> 
-1. [2026/1/28] Post-training: How to teach LLM to specify what they know and what they don't know? 📃 <a href="https://arxiv.org/abs/2601.23133">RAudit Paper</a>  
+3. [2026/2/8] Benchmark: How to test LLM for what they know and what they don't know? 📃 <a href="https://arxiv.org/pdf/2602.08939">CausalT5KBench Paper</a> 
+2. [2026/1/28] Benchmark: 📃 <a href="[https://arxiv.org/abs/2502.18836](https://arxiv.org/pdf/2601.08258)">T3Bench Paper (ACL 2026)</a> 
+1. [2026/1/28] Post-training: How to teach LLM to specify what they know and what they don't know? 📃 <a href="https://arxiv.org/abs/2601.23133">RAudit Paper (in review)</a>  
 
 ## Overview
 
