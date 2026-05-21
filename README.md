@@ -7,13 +7,13 @@ How to test LLM for what they know and what they don't know?
 ```
 <p align="center">
   ⬇️ <a href="https://github.com/genglongling/CausalT5kBench">Github</a>  
-  📃 <a href="https://arxiv.org/pdf/2602.08939">Paper</a>  
+  📃 <a href="https://arxiv.org/abs/2502.18836">Paper</a>  
   🌐 <a href="https://example.com/project">Project Page</a>
 </p>
 
 ### Newest Update
-3. [2026/2/8] Benchmark: How to test LLM for what they know and what they don't know? 📃 <a href="https://arxiv.org/pdf/2602.08939">CausalT5KBench Paper</a> 
-2. [2026/1/28] Benchmark: 📃 <a href="https://arxiv.org/pdf/2601.08258">T3Bench Paper (ACL 2026)</a> 
+3. [2026/2/8] Benchmark: How to test LLM for what they know and what they don't know? 📃 <a href="https://arxiv.org/abs/2602.08939">CausalT5KBench Paper</a> 
+2. [2026/1/28] Benchmark: 📃 <a href="https://arxiv.org/abs/2601.08258">T3Bench Paper (ACL 2026)</a> 
 1. [2026/1/28] Post-training: How to teach LLM to specify what they know and what they don't know? 📃 <a href="https://arxiv.org/abs/2601.23133">RAudit Paper (in review)</a>  
 
 ## Overview
@@ -82,7 +82,7 @@ The dataset includes various causal reasoning pitfalls:
 
 - **`validated_dataset(round=1)/`**: Contains validated datasets from the first validation round
 - **`validated_dataset(round=2)/`**: Contains datasets from the second validation round with additional revisions and second validator scores
-- **`final_dataset/`**: Contains the final curated dataset organized by domain (D1-D10), with separate JSON files for each Pearl level (L1, L2, L3)
+- **`final_dataset/`**: Contains the final curated dataset organized by domain (D1-D10), with separate JSON files for each Pearl level (L1, L2, L3); see also **`final_dataset/clean/`** (deduplicated exports) and **`final_dataset/unlabelled/`** (D4 NO cases missing traps, excluded from clean)
 - **`unvalidated_dataset/`**: Contains unvalidated submissions organized by contributor groups
 - **`experiment/`**: Contains experimental results and analysis for each domain (D1-D10), including model predictions, evaluation metrics, and domain-specific writeups
 - **`Full_Experiments.tex`**: LaTeX appendix document with complete experimental results, domain-specific tables, and cross-domain aggregation
