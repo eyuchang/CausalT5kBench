@@ -10,14 +10,8 @@ This folder holds **deduplicated, evaluation-ready** JSON for Pearl levels L1 (a
 | `CausalT5K_L2_clean.json` | 3302 | All unique L2 cases in `D*/D*_L2.json` |
 | `CausalT5K_L3_clean.json` | 1536 | All unique L3 cases in `D*/D*_L3.json` |
 
-Regenerate all three levels:
-
-```bash
-python3 final_dataset/clean/build_clean_exports.py
-```
 
 ## Build rules (L1, L2, L3)
-
 From all domain shards under `final_dataset/D*/`:
 
 1. **Deduplicate** to one row per logical case:
@@ -67,7 +61,6 @@ final_dataset/
     build_clean_exports.py
     CausalT5K_L1_clean.json
     CausalT5K_L2_clean.json
-    CausalT5K_L2_clean_small.json   # alias / source for L2 clean
     CausalT5K_L3_clean.json
   D1/ … D10/
     D*_L1.json, D*_L2.json, D*_L3.json
