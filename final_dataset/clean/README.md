@@ -31,10 +31,6 @@ From all domain shards under `final_dataset/D*/`:
 
 The script asserts `len(clean) ==` domain unique-key count so exports cannot silently drop cases.
 
-## Legacy curated L2 slice
-
-`CausalT5K_L2_clean_small.json` (1360 rows, ~1101 unique `case_id`s, some duplicates) is an older hand-curated subset kept for reference. **`CausalT5K_L2_clean.json` is the full unique L2 export** (3302 cases), not a copy of `_small`.
-
 ## Schema (per case)
 
 Core fields used in experiments and writeups:
