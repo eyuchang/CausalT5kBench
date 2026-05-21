@@ -202,11 +202,14 @@ The appendix provides detailed definitions and explanations for all tables, maki
 If you use CausalT5K in your research, please cite:
 
 ```bibtex
-@article{causalt5k2026,
-  title={CausalT5K: Diagnosing Sycophancy, Rung Collapse, and Informed Refusal for Trustworthy Causal Reasoning},
-  author={Geng, Longling and Ouyang, Andy and Wu, Theodore and Cooper, Rachael and Zeng, Yuqiao and Hayes, Matthew John and Barretto, Daphne and Vijay, Sameer and Ancone, Gia and Rai, Ankit and Wolfman, Matthew and Flanagan, Patrick and Chang, Edward Y},
-  journal={under review},
-  year={2026}
+@misc{geng2026causalt5kdiagnosinginformingrefusal,
+  title={CausalT5K: Diagnosing and Informing Refusal for Trustworthy Causal Reasoning of Skepticism, Sycophancy, Detection-Correction, and Rung Collapse},
+  author={Longling Geng and Andy Ouyang and Theodore Wu and Daphne Barretto and Matthew John Hayes and Rachael Cooper and Yuqiao Zeng and Sameer Vijay and Gia Ancone and Ankit Rai and Matthew Wolfman and Patrick Flanagan and Edward Y. Chang},
+  year={2026},
+  eprint={2602.08939},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2602.08939},
 }
 ```
 
@@ -226,7 +229,10 @@ This dataset was created through a collaborative effort. Contributors are organi
 
 ## License
 
-[Specify license here]
+| Component | License |
+|-----------|---------|
+| **Code** (scripts, experiments, tooling) | [MIT](LICENSE) |
+| **Dataset** (`final_dataset/`, Hugging Face [GloriaGeng/CausalT5K](https://huggingface.co/datasets/GloriaGeng/CausalT5K)) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) |
 
 ## Contact
 
