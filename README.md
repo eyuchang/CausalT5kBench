@@ -234,9 +234,6 @@ This dataset was created through a collaborative effort. Contributors are organi
 | **Code** (scripts, experiments, tooling) | [MIT](LICENSE) |
 | **Dataset** (`final_dataset/`, Hugging Face [GloriaGeng/CausalT5K](https://huggingface.co/datasets/GloriaGeng/CausalT5K)) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) |
 
-## Contact
-
-For questions or issues related to the dataset, please [specify contact information].
 
 ## Acknowledgments
 
