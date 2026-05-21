@@ -62,30 +62,6 @@ Use **clean** files for training/eval splits and paper examples; use **domain** 
 
 Cases under `final_dataset/unlabelled/` are **excluded** from `CausalT5K_*_clean.json` and from `build_clean_exports.py` (which only reads `D*/D*_L*.json`, same as `scripts/causalt5k_data.py`).
 
-| Item | Value |
-|------|------:|
-| File | `unlabelled/NO_cases_missing_traps.json` |
-| Rows | 332 |
-| Unique `case_id` | 40 |
-| Pearl split | L1: 42, L2: 240, L3: 50 (row counts; many duplicate rows per id) |
-| Domain | Medicine & Health (D4) only |
-| Reason | **NO** cases removed because `trap` is missing (violates “exactly one trap type” for NO) |
-
-These cases were **moved out of** `D4/D4_L*.json` but often still have `final_score ≥ 9`. They are kept for manual relabelling, not for the main benchmark slice.
-
-### How this relates to README / paper statistics
-
-The root [README.md](../../README.md) table **Valid Total** (e.g. D4 = 1,233, all domains = 5,147) aligns with counting **valid rows in `D*/` plus the unlabelled holdout**, not with `D*/` alone:
-
-| Metric | `D*/` only (current files) | `D*/` + `unlabelled` |
-|--------|---------------------------:|---------------------:|
-| D4 valid rows (`final_score ≥ 9`) | ~902 | **~1,234** (≈ table 1,233) |
-| All domains valid rows (`final_score ≥ 9`) | ~4,855 | **~5,187** (≈ table 5,147) |
-
-**Clean exports** use globally deduplicated unique cases in **`D*/` only** (5,581 total: 743 + 3,302 + 1,536). That is the labeled, trap-complete benchmark. The 40 unique unlabelled ids are not included until traps are restored and cases are moved back into `D4/`.
-
-See `unlabelled/README.md` for remediation steps.
-
 ## Layout
 
 ```
