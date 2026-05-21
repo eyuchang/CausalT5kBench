@@ -7,7 +7,8 @@ How to test LLM for what they know and what they don't know?
 ```
 <p align="center">
   ⬇️ <a href="https://github.com/genglongling/CausalT5kBench">Github</a>  
-  📃 <a href="https://arxiv.org/abs/2502.18836">Paper</a>  
+  📃 <a href="https://arxiv.org/abs/2602.08939">Paper</a>  
+  🤗 <a href="https://huggingface.co/datasets/GloriaGeng/CausalT5K">Hugging Face</a>  
   🌐 <a href="https://example.com/project">Project Page</a>
 </p>
 
