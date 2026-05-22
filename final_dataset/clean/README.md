@@ -8,7 +8,7 @@ This folder holds **deduplicated, evaluation-ready** JSON for Pearl levels L1 (a
 |------|-------------:|--------|
 | `CausalT5K_L1_clean.json` | 743 | All unique L1 cases in `D*/D*_L1.json` |
 | `CausalT5K_L2_clean.json` | 3302 | All unique L2 cases in `D*/D*_L2.json` |
-| `CausalT5K_L2_clean_small.json` | 1360 | Curated L2 benchmark slice (~1100 unique `case_id`s; hand-selected subset) |
+| `CausalT5K_L2_clean_small.json` | 1360 | Curated L2 slice; clean ids `L2S_0000`–`L2S_1359` (distinct from `L2-####` in `L2_clean.json`) |
 | `CausalT5K_L3_clean.json` | 1536 | All unique L3 cases in `D*/D*_L3.json` |
 
 
