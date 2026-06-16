@@ -12,9 +12,9 @@ How to test LLM for what they know and what they don't know?
 
 ### Newest Update
 
-3. [2026/2/8] Benchmark: How to test LLM for what they know and what they don't know? 📃 <a href="https://arxiv.org/abs/2602.08939">CausalT5kBench Paper</a> 
-2. [2026/1/28] Diagnosing and Mitigating Sycophancy and Skepticism in LLM Causal Judgment 📃 <a href="https://arxiv.org/abs/2601.08258"> ACL 2026)</a> 
-1. [2026/1/28] Epistemic Regret Minimization: Label-Free Causal Critique Beyond Outcome Reward 📃 <a href="https://arxiv.org/abs/2602.11675"> (under review)</a>  
+3. [2026/2/8] CausalT5kBench Paper 📃 <a href="https://arxiv.org/abs/2602.08939"> ACM KDD, 2026</a> 
+2. [2026/1/28] Diagnosing and Mitigating Sycophancy and Skepticism in LLM Causal Judgment 📃 <a href="https://arxiv.org/abs/2601.08258"> ACL, 2026)</a> 
+1. [2026/5/19] Epistemic Regret Minimization: Label-Free Causal Critique Beyond Outcome Reward 📃 <a href="https://arxiv.org/abs/2602.11675"> (under review)</a>  
 
 ## Overview
 
