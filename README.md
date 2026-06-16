@@ -6,7 +6,7 @@ How to test LLM for what they know and what they don't know?
 ```
 
 <p align="center">
-  📃 <a href="https://doi.org/10.1145/3770855.3817567">Paper (KDD 2026)</a>  
+  📃 <a href="https://arxiv.org/abs/2602.08939">Paper (KDD 2026)</a>  
   ⬇️ <a href="https://github.com/eyuchang/CausalT5kBench">GitHub Repository</a>  
 </p>
 
