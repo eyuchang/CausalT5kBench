@@ -1,32 +1,28 @@
-# CausalT5K: Diagnosing and Informing Refusal for Trustworthy Causal Reasoning of Skepticism, Sycophancy, Detection-Correction, and Rung Collapse
+# CausalT5k: Diagnosing Refusal and Failure Modes in Trustworthy Causal Reasoning Across Causal Rungs
 
 ```
 How to test LLM for what they know and what they don't know?
-
---- CausalT5K Authors
+--- CausalT5k Authors
 ```
+
 <p align="center">
-  ⬇️ <a href="https://github.com/genglongling/CausalT5kBench">Github</a>  
-  📃 <a href="https://arxiv.org/abs/2602.08939">Paper</a>  
-  🤗 <a href="https://huggingface.co/datasets/GloriaGeng/CausalT5K">Hugging Face</a>  
-  🌐 <a href="https://example.com/project">Project Page</a>
+  📃 <a href="https://doi.org/10.1145/3770855.3817567">Paper (KDD 2026)</a>  
+  ⬇️ <a href="https://github.com/eyuchang/CausalT5kBench">GitHub Repository</a>  
 </p>
 
 ### Newest Update
-3. [2026/2/8] Benchmark: How to test LLM for what they know and what they don't know? 📃 <a href="https://arxiv.org/abs/2602.08939">CausalT5KBench Paper</a> 
+
+3. [2026/2/8] Benchmark: How to test LLM for what they know and what they don't know? 📃 <a href="https://doi.org/10.1145/3770855.3817567">CausalT5kBench Paper</a> 
 2. [2026/1/28] Benchmark: 📃 <a href="https://arxiv.org/abs/2601.08258">T3Bench Paper (ACL 2026)</a> 
 1. [2026/1/28] Post-training: How to teach LLM to specify what they know and what they don't know? 📃 <a href="https://arxiv.org/abs/2601.23133">RAudit Paper (in review)</a>  
 
 ## Overview
 
-CausalT5K is a comprehensive benchmark dataset designed to evaluate and diagnose critical failure modes in large language models' causal reasoning capabilities. This dataset focuses on four key diagnostic problems:
+CausalT5k is a comprehensive benchmark dataset designed to evaluate and diagnose critical failure modes in large language models' causal reasoning capabilities. This dataset focuses on four key diagnostic problems:
 
 1. **P1-The Skepticism Trap**: The Skepticism Trap occurs when a model systematically prioritizes safety over correctness, rejecting a large fraction of valid causal claims even when sufficient evidence is available. In this regime, high safety scores coexist with severely degraded utility.
-
 2. **P2-Inverse Scaling of Sycophancy**: Inverse Scaling of Sycophancy refers to the phenomenon where more capable or higher-capacity models become more, not less, susceptible to endorsing incorrect causal claims under social or rhetorical pressure.
-
 3. **P3-The Detection-Correction Gap**: The Detection-Correction Gap arises when a model correctly identifies the presence of a causal trap or insufficiency but fails to act on that recognition by revising its final answer.
-
 4. **P4-Rung Collapse**: Rung Collapse occurs when a model answers higher-order causal queries (diagnostic or counterfactual) using only lower-rung associative evidence, effectively ignoring the epistemic requirements of the task.
 
 ## Dataset Structure
@@ -52,11 +48,13 @@ The dataset is organized into 10 main domains (D1-D10) with the following Pearl 
 | **Total** | **805** | **3,867** | **1,479** | **6,151** | **5,147** |
 
 ### Pearl Hierarchy Levels
+
 - **L1 (Association)**: Observational data and correlations
 - **L2 (Intervention)**: Causal effects under interventions
 - **L3 (Counterfactual)**: Counterfactual reasoning about what would have happened
 
 ### Label Definitions
+
 The dataset uses three label types across all Pearl levels (L1, L2, L3):
 
 - **YES**: Cases where the claim matches the scenario, and no trap is identified (only L1 has a sheep type).
@@ -64,14 +62,18 @@ The dataset uses three label types across all Pearl levels (L1, L2, L3):
 - **AMBIGUOUS**: Cases where the claim can support a scenario, or the claim cannot support a scenario, or there are multiple trap types.
 
 ### Trap Type Rules
+
 Trap types are only present for:
+
 - **NO cases** at all Pearl levels (L1, L2, L3): Each NO case must have exactly one trap type.
 - **L1 YES cases**: L1 YES cases may have a trap type (sheep type).
 
 All other cases (L2 YES, L3 YES, and all AMBIGUOUS cases at any level) should have `trap` set to `null` or an empty object.
 
 ### Causal Traps
+
 The dataset includes various causal reasoning pitfalls:
+
 - **Confounding** (C): Omitted variables, common causes
 - **Selection Bias** (W1): Availability, media narrative, survivorship bias
 - **Mediation** (M): Intermediate variables
@@ -105,7 +107,7 @@ Each case in the dataset includes:
     "type_name": "Trap Name",
     "subtype": "subtype_code",
     "subtype_name": "Subtype Name"
-  },  // null for L2/L3 YES and all AMBIGUOUS cases; required for NO cases and optional for L1 YES cases
+  },
   "difficulty": "Easy|Medium|Hard",
   "scenario": "Description of the causal scenario",
   "claim": "Causal claim to evaluate",
@@ -133,18 +135,21 @@ Each case in the dataset includes:
 ## Key Features
 
 ### 1. Sycophancy Detection
+
 Cases are designed to test whether models will:
 - Agree with user claims that are causally invalid
 - Maintain correct causal reasoning despite user framing
 - Distinguish between correlation and causation
 
 ### 2. Rung Collapse Diagnosis
+
 The dataset systematically tests:
 - Whether models can distinguish L1 (association) from L2 (intervention) reasoning
 - Whether models collapse counterfactual (L3) reasoning to lower levels
 - Appropriate use of causal language at each Pearl level
 
 ### 3. Informed Refusal Evaluation
+
 Cases include scenarios where:
 - Causal claims cannot be reliably evaluated from available information
 - Models should refuse rather than guess
@@ -158,7 +163,7 @@ The validated datasets are available in JSON format in the `validated_dataset(ro
 
 ### Evaluation Metrics
 
-When evaluating models on CausalT5K, consider:
+When evaluating models on CausalT5k, consider:
 
 1. **Accuracy**: Overall correctness on YES/NO labels
 2. **Sycophancy Rate**: Agreement with invalid user claims
@@ -175,6 +180,7 @@ The `Full_Experiments.tex` file provides comprehensive experimental results acro
 - Two open-source models: Deepseek-R1, GPT-4o-2024-08
 
 **Structure:**
+
 - **Domain-Specific Results (D1-D10)**: For each domain, Tables 1-7 (corresponding to Tables A.1-A.7 in the main paper) present:
   - Table 1 (A.1): Rung-wise Performance across L1/L2/L3
   - Table 2 (A.2): Wise Refusal Score by Trap Family
@@ -194,32 +200,33 @@ The `Full_Experiments.tex` file provides comprehensive experimental results acro
   - Table 14: Inter-Annotator Agreement by Domain
   - Table 15: Qualitative Error Cases
 
-The appendix provides detailed definitions and explanations for all tables, making it a comprehensive reference for understanding model performance across the CausalT5K benchmark.
-
+The appendix provides detailed definitions and explanations for all tables, making it a comprehensive reference for understanding model performance across the CausalT5k benchmark.
 
 ## Citation
 
-If you use CausalT5K in your research, please cite:
+If you use CausalT5k in your research, please cite:
 
 ```bibtex
-@misc{geng2026causalt5kdiagnosinginformingrefusal,
-  title={CausalT5K: Diagnosing and Informing Refusal for Trustworthy Causal Reasoning of Skepticism, Sycophancy, Detection-Correction, and Rung Collapse},
-  author={Longling Geng and Andy Ouyang and Theodore Wu and Daphne Barretto and Matthew John Hayes and Rachael Cooper and Yuqiao Zeng and Sameer Vijay and Gia Ancone and Ankit Rai and Matthew Wolfman and Patrick Flanagan and Edward Y. Chang},
-  year={2026},
-  eprint={2602.08939},
-  archivePrefix={arXiv},
-  primaryClass={cs.AI},
-  url={https://arxiv.org/abs/2602.08939},
+@inproceedings{geng2026causalt5k,
+  author    = {Geng, Longling and Ouyang, Andy and Wu, Theodore and Barretto, Daphne and Hayes, Matthew J. and Cooper, Rachael and Zeng, Yuqiao and Vijay, Sameer and Ancone, Gia and Rai, Ankit and Wolfman, Matthew and Flanagan, Patrick and Chang, Edward Y.},
+  title     = {{CausalT5k}: Diagnosing Refusal and Failure Modes in Trustworthy Causal Reasoning Across Causal Rungs},
+  booktitle = {Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2 (KDD 2026)},
+  year      = {2026},
+  month     = aug,
+  address   = {Jeju Island, Republic of Korea},
+  publisher = {Association for Computing Machinery},
+  pages     = {12},
+  doi       = {10.1145/3770855.3817567}
 }
 ```
 
 ## Dataset Statistics
 
-- **Total Cases**: 5,000+
+- **Total Cases**: 5,147
 - **Pearl Level Distribution**: 
-  - L1 (Association): ~10%
-  - L2 (Intervention): ~60%
-  - L3 (Counterfactual): ~30%
+  - L1 (Association): ~13%
+  - L2 (Intervention): ~63%
+  - L3 (Counterfactual): ~24%
 - **Domains**: Sports, Healthcare, Economics, Environment, Technology, and more
 - **Validation**: Multi-round validation process with expert review
 
@@ -229,15 +236,11 @@ This dataset was created through a collaborative effort. Contributors are organi
 
 ## License
 
-| Component | License |
-|-----------|---------|
-| **Code** (scripts, experiments, tooling) | [MIT](LICENSE) |
-| **Dataset** (`final_dataset/`, Hugging Face [GloriaGeng/CausalT5K](https://huggingface.co/datasets/GloriaGeng/CausalT5K)) | [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) |
-
+CausalT5k is released under the **Creative Commons Attribution 4.0 International License (CC-BY-4.0)**. See [LICENSE](./LICENSE) for the full text.
 
 ## Acknowledgments
 
-We thank the following contributors for their work on CausalT5K development.
+We thank the following contributors for their work on CausalT5k development.
 
 ### Contributors Table
 
@@ -297,6 +300,7 @@ The following table summarizes the dataset quality scores organized by domain, c
 | Social Science (D10) | 492 | T3-BucketD-0011-T3-BucketLarge-J-A2.1.9 | Daphne Barretto, Gia Ancone, Kelvin Christian, Sreya Vangara | Daphne Barretto, Gia Ancone, Manolo Alvarez, Sreya Vangara | 4.00 | 0.75 | 4.50 | 3.66 | Longling Geng | 4.00 | 0.89 | 4.60 | 4.35 |
 
 **Score Definitions:**
+
 - **Rule-based Score (round=1)**: Average `final_score` from `assignment2.csv` for initial authors in this domain
 - **Rule-based Score (round=2)**: Average `final_score` from `grade_assignment2.py` output for initial authors in this domain (uses same grading script as round=1, so scores should be comparable)
 - **Score from Other (round=1)**: Average `validatee_score` from validators who validated cases in this domain (0-1 scale, normalized to 0-5 in final calculation) 
