@@ -236,7 +236,7 @@ This dataset was created through a collaborative effort. Contributors are organi
 
 ## License
 
-CausalT5k is released under the **Creative Commons Attribution 4.0 International License (CC-BY-4.0)**. See [LICENSE](./LICENSE) for the full text.
+The dataset files are released under the **Creative Commons Attribution 4.0 International License (CC-BY-4.0)**; see [DATA_LICENSE](./DATA_LICENSE). Code in this repository is under the MIT License; see [LICENSE](./LICENSE).
 
 ## Acknowledgments
 
